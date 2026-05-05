@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
 import "./globals.css";
 
-const SITE_URL = "https://whitneystevenson.com";
+const SITE_URL = "https://www.whitneystevenson.com";
 const TITLE = "Whitney Stevenson — B2B Event Marketing & Hospitality, San Francisco";
 const DESCRIPTION =
   "Whitney Stevenson is a San Francisco event and hospitality leader with 10+ years building B2B events for tech and entertainment. Plan Experiential, Illumio LATAM, RSA, Super Bowl, Latin Billboard Awards, Presidio Golf.";
@@ -75,49 +76,7 @@ export default function RootLayout({
       </head>
       <body>
         {children}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              name: "Whitney Stevenson",
-              jobTitle: "Event & Hospitality Leader",
-              description:
-                "B2B event marketing operator with 10+ years across tech and entertainment. Built Illumio's first LATAM channel partnership; co-founded the women's club at Presidio Golf; produced PepsiCo Tostitos at Super Bowl 2026; anchored Arxan at three RSA Conferences.",
-              url: SITE_URL,
-              image: `${SITE_URL}/photos/whitney-hero.jpeg`,
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "San Francisco",
-                addressRegion: "CA",
-                addressCountry: "US",
-              },
-              knowsAbout: [
-                "B2B Event Marketing",
-                "Event Production",
-                "Event Hospitality",
-                "Channel Partner Programs",
-                "Field Marketing",
-                "Experiential Marketing",
-                "Cybersecurity Industry Events",
-                "Latin America B2B Markets",
-                "Artist Relations",
-                "Brand Activation",
-              ],
-              worksFor: [
-                { "@type": "Organization", name: "Plan Experiential" },
-              ],
-              alumniOf: [
-                { "@type": "Organization", name: "Illumio (LATAM Channel)" },
-                { "@type": "Organization", name: "Arxan Technologies" },
-              ],
-              memberOf: [
-                { "@type": "Organization", name: "Presidio Women's Golf Club" },
-              ],
-            }),
-          }}
-        />
+        <JsonLd />
       </body>
     </html>
   );
