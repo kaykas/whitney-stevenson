@@ -17,7 +17,7 @@ export function targetRunPost() {
         knew anything had gone wrong.
       </p>
 
-      <h2>This Is the Work, Not the Exception.</h2>
+      <h2>What Does &ldquo;This Is the Work&rdquo; Actually Mean in Event Production?</h2>
 
       <p>
         People hear that story and call it heroic. It isn&rsquo;t. It&rsquo;s
@@ -37,7 +37,7 @@ export function targetRunPost() {
         explain.
       </p>
 
-      <h2>Solutions Over Panic.</h2>
+      <h2>How Do You Stay Calm When Everything Goes Wrong?</h2>
 
       <p>
         Panic is contagious. So is composure. The minute you let the team see

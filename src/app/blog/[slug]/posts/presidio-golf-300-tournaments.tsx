@@ -43,7 +43,7 @@ export function presidioGolfPost() {
         broke, the whole day felt off.
       </p>
 
-      <h2>Every Detail Compounds.</h2>
+      <h2>How Do Small Details Compound in Event Operations?</h2>
 
       <p>
         Three hundred tournaments is enough to teach you that small details
