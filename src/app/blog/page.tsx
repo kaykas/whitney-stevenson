@@ -40,7 +40,9 @@ export default function BlogIndex() {
               <p className="sans-body" style={{ marginTop: 30, maxWidth: 560 }}>
                 Case studies, signature moments, and operational philosophy from
                 a decade of running B2B events for technology companies and
-                entertainment brands.
+                entertainment brands. Explore blog posts and articles that share
+                insights from my life and experience as a writer publishing
+                content for this niche.
               </p>
             </div>
           </section>

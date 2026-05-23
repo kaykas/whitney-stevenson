@@ -51,7 +51,7 @@ export function illumioLatamPost() {
         partners noticed.
       </p>
 
-      <h2>What Worked, What I&rsquo;d Do Differently.</h2>
+      <h2>What Does a Successful LATAM Channel Partnership Actually Look Like?</h2>
 
       <p>
         <strong>Worked:</strong> Treating the LATAM partners as if they were

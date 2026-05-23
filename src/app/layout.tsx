@@ -80,7 +80,81 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
           rel="stylesheet"
         />
-      </head>
+                <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(
+                {
+                    "@context": "https://schema.org",
+                    "@type": "FAQPage",
+                    "mainEntity": [
+                      {
+                        "@type": "Question",
+                        "name": "Who is Whitney Stevenson?",
+                        "acceptedAnswer": {
+                          "@type": "Answer",
+                          "text": "Whitney Stevenson is a professional whose work and portfolio are featured on whitneystevenson.com."
+                        }
+                      },
+                      {
+                        "@type": "Question",
+                        "name": "What kind of work does Whitney Stevenson do?",
+                        "acceptedAnswer": {
+                          "@type": "Answer",
+                          "text": "Whitney's professional background and areas of expertise are detailed on the site."
+                        }
+                      },
+                      {
+                        "@type": "Question",
+                        "name": "How can I contact Whitney Stevenson?",
+                        "acceptedAnswer": {
+                          "@type": "Answer",
+                          "text": "Contact information is available on the contact page of whitneystevenson.com."
+                        }
+                      },
+                      {
+                        "@type": "Question",
+                        "name": "Is Whitney Stevenson available for new projects?",
+                        "acceptedAnswer": {
+                          "@type": "Answer",
+                          "text": "Availability for new engagements is listed on whitneystevenson.com \u2014 check the contact or services page for current status."
+                        }
+                      },
+                      {
+                        "@type": "Question",
+                        "name": "Where is Whitney Stevenson based?",
+                        "acceptedAnswer": {
+                          "@type": "Answer",
+                          "text": "Location and availability details are available on the whitneystevenson.com website."
+                        }
+                      }
+                    ]
+                }
+              ),
+            }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(
+                {
+                    "@context": "https://schema.org",
+                    "@type": "WebPage",
+                    "speakable": {
+                      "@type": "SpeakableSpecification",
+                      "cssSelector": [
+                        "h1",
+                        "h2",
+                        ".speakable",
+                        "[data-speakable]"
+                      ]
+                    },
+                    "url": "https://www.whitneystevenson.com/"
+                }
+              ),
+            }}
+          />
+</head>
       <body>
         {children}
         <JsonLd />

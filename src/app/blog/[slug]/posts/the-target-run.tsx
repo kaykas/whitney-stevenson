@@ -52,7 +52,7 @@ export function targetRunPost() {
         never sees a frame of any of it.
       </p>
 
-      <h2>What I Tell People Who Want This Job.</h2>
+      <h2>What Do Event Producers Actually Do on the Ground?</h2>
 
       <p>
         If your nervous system spikes when something goes wrong, this isn&rsquo;t
