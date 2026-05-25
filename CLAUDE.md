@@ -64,3 +64,21 @@ Whitney's CV (reference, not deployed): `/Users/jkw/.claude/channels/telegram/in
 ## Last session
 
 2026-05-02 — Bootstrapped CLAUDE.md, ERRORS.md, ARCHITECTURE.md per Jascha's collaboration playbook. Site shell remains scaffolded pending content + Variant pass.
+
+<!-- skill-routing:start -->
+## Skill routing
+
+_Auto-generated from `~/.openclaw/workspace/skill-routing.yaml`. Do not edit between markers — re-run `tools/generate-skill-routing-sections.py` to refresh._
+
+**Surfaces:** marketing-site, seo
+
+**Skills relevant to this project (in priority order):**
+
+- `/design-review`
+- `/delight-pass`
+- `/qa`
+- `/verify`
+
+Run a skill by typing its slash-name. Proactive-suggest is enabled — phrasings matching each skill's `Use when:` description will surface the skill automatically.
+
+<!-- skill-routing:end -->

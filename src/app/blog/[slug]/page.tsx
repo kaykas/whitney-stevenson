@@ -37,7 +37,7 @@ export async function generateMetadata({
       title: post.title,
       description: post.description,
       type: "article",
-      url: `https://whitneystevenson.com/blog/${post.slug}`,
+      url: `https://www.whitneystevenson.com/blog/${post.slug}`,
       publishedTime: post.date,
       images: post.hero ? [{ url: post.hero }] : undefined,
     },
@@ -136,9 +136,9 @@ export default async function PostPage({
             datePublished: post.date,
             author: { "@type": "Person", name: "Whitney Stevenson" },
             keywords: post.keywords.join(", "),
-            url: `https://whitneystevenson.com/blog/${post.slug}`,
+            url: `https://www.whitneystevenson.com/blog/${post.slug}`,
             image: post.hero
-              ? `https://whitneystevenson.com${post.hero}`
+              ? `https://www.whitneystevenson.com${post.hero}`
               : undefined,
           }),
         }}

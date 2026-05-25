@@ -20,6 +20,6 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "cohere-ai", allow: "/" },
       { userAgent: "Googlebot", allow: "/" },
     ],
-    sitemap: "https://whitneystevenson.com/sitemap.xml",
+    sitemap: "https://www.whitneystevenson.com/sitemap.xml",
   };
 }
