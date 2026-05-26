@@ -32,6 +32,10 @@ const SCHEMA = {
     { "@type": "Organization", name: "Arxan Technologies" },
   ],
   memberOf: [{ "@type": "Organization", name: "Presidio Women's Golf Club" }],
+  sameAs: [
+    "https://www.linkedin.com/in/whitneystevenson",
+    "https://www.whitneystevenson.com"
+  ],
 };
 
 export default function JsonLd() {

@@ -134,9 +134,22 @@ export default async function PostPage({
             headline: post.title,
             description: post.description,
             datePublished: post.date,
-            author: { "@type": "Person", name: "Whitney Stevenson" },
+            author: {
+              "@type": "Person",
+              name: "Whitney Stevenson",
+              url: "https://www.whitneystevenson.com",
+              sameAs: [
+                "https://www.whitneystevenson.com",
+                "https://www.linkedin.com/in/whitneystevenson"
+              ]
+            },
+            dateModified: post.date,
             keywords: post.keywords.join(", "),
             url: `https://www.whitneystevenson.com/blog/${post.slug}`,
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": `https://www.whitneystevenson.com/blog/${post.slug}`
+            },
             image: post.hero
               ? `https://www.whitneystevenson.com${post.hero}`
               : undefined,
