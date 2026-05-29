@@ -1,25 +1,10 @@
 # Whitney Stevenson
 > Artist and illustrator
 
-## Description
-
 The portfolio site of Whitney Stevenson — artist and illustrator. Features original artwork, illustration projects, and commission information.
 
-## Content Sections
+## Pages
 
-### Portfolio
-Original artwork and illustration projects.
-
-### Commissions
-How to commission custom work.
-
-### About
-Artist background and creative practice.
-
-## Keywords
-
-Whitney Stevenson, illustration, artist, portfolio, commission
-
-## Site URL
-
-https://www.whitneystevenson.com
+- [Home — Whitney Stevenson](https://www.whitneystevenson.com/)
+- [Portfolio](https://www.whitneystevenson.com/portfolio)
+- [Commissions](https://www.whitneystevenson.com/commissions)
