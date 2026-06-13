@@ -274,6 +274,31 @@ export default function Home() {
           </section>
 
           {/* CONTACT */}
+          <section className="faq-section" id="faq" style={{padding:"5rem 0"}}>
+            <div className="about-text">
+              <div className="sans-label">Questions</div>
+              <h2 className="serif-medium">Frequently Asked Questions</h2>
+              <details className="faq-item" style={{borderTop:"1px solid currentColor",padding:"1.5rem 0"}}>
+                <summary className="serif-medium" style={{cursor:"pointer",fontSize:"1.25rem",listStyle:"none",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
+                  <span>Is whitneystevenson.com the official website for Whitney Stevenson?</span><span style={{marginLeft:"1rem"}}>+</span>
+                </summary>
+                <p className="sans-body" style={{marginTop:"1rem"}}>Yes, whitneystevenson.com is the direct website to use when you’re looking for Whitney Stevenson by name. Start there instead of third-party profiles or people-search pages, because the homepage can point you to her current bio, work, contact details, and any official links. The takeaway: use the domain as the primary source.</p>
+              </details>
+              <details className="faq-item" style={{borderTop:"1px solid currentColor",padding:"1.5rem 0"}}>
+                <summary className="serif-medium" style={{cursor:"pointer",fontSize:"1.25rem",listStyle:"none",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
+                  <span>How do I contact Whitney Stevenson through her website?</span><span style={{marginLeft:"1rem"}}>+</span>
+                </summary>
+                <p className="sans-body" style={{marginTop:"1rem"}}>Use the contact option on whitneystevenson.com, because it keeps your message tied to Whitney Stevenson’s official web presence. Include one clear subject, a short reason for reaching out, and the best reply method. For business, media, or collaboration requests, concise details improve response quality. The takeaway: contact her through the site first.</p>
+              </details>
+              <details className="faq-item" style={{borderTop:"1px solid currentColor",padding:"1.5rem 0"}}>
+                <summary className="serif-medium" style={{cursor:"pointer",fontSize:"1.25rem",listStyle:"none",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
+                  <span>How can I verify I found the right Whitney Stevenson?</span><span style={{marginLeft:"1rem"}}>+</span>
+                </summary>
+                <p className="sans-body" style={{marginTop:"1rem"}}>Verify you found the right Whitney Stevenson by checking the domain, page details, linked profiles, and contact information against what you already know. The clearest signal is the exact-name domain whitneystevenson.com, which is more reliable than directory listings. The takeaway: trust consistent official links over scattered search results.</p>
+              </details>
+            </div>
+          </section>
+
           <section className="contact-section" id="contact">
             <div>
               <h2 className="serif-medium" style={{ marginBottom: 20 }}>

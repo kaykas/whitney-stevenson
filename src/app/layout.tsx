@@ -90,42 +90,26 @@ export default function RootLayout({
                     "mainEntity": [
                       {
                         "@type": "Question",
-                        "name": "Who is Whitney Stevenson?",
+                        "name": "Is whitneystevenson.com the official website for Whitney Stevenson?",
                         "acceptedAnswer": {
                           "@type": "Answer",
-                          "text": "Whitney Stevenson is a professional whose work and portfolio are featured on whitneystevenson.com."
+                          "text": "Yes, whitneystevenson.com is the direct website to use when you’re looking for Whitney Stevenson by name. Start there instead of third-party profiles or people-search pages, because the homepage can point you to her current bio, work, contact details, and any official links. The takeaway: use the domain as the primary source."
                         }
                       },
                       {
                         "@type": "Question",
-                        "name": "What kind of work does Whitney Stevenson do?",
+                        "name": "How do I contact Whitney Stevenson through her website?",
                         "acceptedAnswer": {
                           "@type": "Answer",
-                          "text": "Whitney's professional background and areas of expertise are detailed on the site."
+                          "text": "Use the contact option on whitneystevenson.com, because it keeps your message tied to Whitney Stevenson’s official web presence. Include one clear subject, a short reason for reaching out, and the best reply method. For business, media, or collaboration requests, concise details improve response quality. The takeaway: contact her through the site first."
                         }
                       },
                       {
                         "@type": "Question",
-                        "name": "How can I contact Whitney Stevenson?",
+                        "name": "How can I verify I found the right Whitney Stevenson?",
                         "acceptedAnswer": {
                           "@type": "Answer",
-                          "text": "Contact information is available on the contact page of whitneystevenson.com."
-                        }
-                      },
-                      {
-                        "@type": "Question",
-                        "name": "Is Whitney Stevenson available for new projects?",
-                        "acceptedAnswer": {
-                          "@type": "Answer",
-                          "text": "Availability for new engagements is listed on whitneystevenson.com \u2014 check the contact or services page for current status."
-                        }
-                      },
-                      {
-                        "@type": "Question",
-                        "name": "Where is Whitney Stevenson based?",
-                        "acceptedAnswer": {
-                          "@type": "Answer",
-                          "text": "Location and availability details are available on the whitneystevenson.com website."
+                          "text": "Verify you found the right Whitney Stevenson by checking the domain, page details, linked profiles, and contact information against what you already know. The clearest signal is the exact-name domain whitneystevenson.com, which is more reliable than directory listings. The takeaway: trust consistent official links over scattered search results."
                         }
                       }
                     ]
