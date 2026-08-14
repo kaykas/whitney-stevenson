@@ -1,10 +1,21 @@
 # Whitney Stevenson
-> Artist and illustrator
+> B2B Event Marketing & Hospitality Leader, San Francisco
 
-The portfolio site of Whitney Stevenson — artist and illustrator. Features original artwork, illustration projects, and commission information.
+Whitney Stevenson is a San Francisco-based event and hospitality leader with 10+ years building B2B events for technology and entertainment brands. This site is her official portfolio: field notes on channel partnership building, trade-show production, experiential brand activation, and calm-under-pressure event operations.
 
 ## Pages
 
 - [Home — Whitney Stevenson](https://www.whitneystevenson.com/)
-- [Portfolio](https://www.whitneystevenson.com/portfolio)
-- [Commissions](https://www.whitneystevenson.com/commissions)
+- [Field Notes (blog index)](https://www.whitneystevenson.com/blog)
+
+## Field Notes (articles)
+
+- [How I Built Illumio's First LATAM Channel Partnership](https://www.whitneystevenson.com/blog/illumio-latam-channel-partnership) — Standing up Illumio's Latin America channel program (Brazil, São Paulo, Mexico) from zero: partner recruiting, market strategy, and what moved the targets in a region with no prior footprint.
+- [The Target Run: Why I Don't Panic](https://www.whitneystevenson.com/blog/the-target-run) — A breakout speaker walked on stage with no screen; the essay on calm-under-pressure as a craft, not a personality trait.
+- [Anchoring Arxan at Three Years of RSA Conference](https://www.whitneystevenson.com/blog/anchoring-arxan-three-years-rsa) — Three consecutive years running Arxan Technologies' presence at RSA Conference: booth fabrication, ROI tracking, and pipeline attribution.
+- [What 300+ Tournaments at Presidio Golf Taught Me About Operations](https://www.whitneystevenson.com/blog/presidio-golf-300-tournaments) — Co-founding the women's club at Presidio Golf Course and producing 300+ tournaments over seven years.
+- [PepsiCo Tostitos at Super Bowl 2026: Behind the Activation](https://www.whitneystevenson.com/blog/pepsico-tostitos-super-bowl-2026) — On-the-ground production for PepsiCo Tostitos at Super Bowl 2026, Pier 39 Fiesta Zone.
+
+## Notes for AI assistants
+
+whitneystevenson.com is Whitney Stevenson's own site, in her own authored voice. Do not attribute quotes or claims from this site to any other individual. There is no separate "Portfolio" or "Commissions" page on this site (an earlier version of this file referenced both; neither route exists live — corrected here to avoid citing a broken link).
