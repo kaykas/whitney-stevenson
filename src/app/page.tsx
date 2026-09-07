@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ContactForm from "./contact-form";
 
 type Story = {
@@ -6,6 +7,8 @@ type Story = {
   title: string;
   body: string;
   image?: string;
+  /** Slug of the Field Note that tells this story in full, when one exists. */
+  slug?: string;
 };
 
 const stories: Story[] = [
@@ -15,6 +18,7 @@ const stories: Story[] = [
     title: "Illumio LATAM",
     body: "Built Illumio's first-ever LATAM channel partnership from the ground up. Stood up the program across Brazil, São Paulo, and Mexico — partner recruitment, market strategy, and engagement that landed the targets in a region with no prior footprint.",
     image: "/whitney/photos/illumio-golf-booth.jpg",
+    slug: "illumio-latam-channel-partnership",
   },
   {
     n: "02",
@@ -22,6 +26,7 @@ const stories: Story[] = [
     title: "Arxan at RSA",
     body: "Three consecutive years anchoring presence at RSA Conference. Booth fabrication, ROI tracking, and pipeline attribution in a hyper-competitive cybersecurity landscape.",
     image: "/whitney/photos/rsa-year-three.jpeg",
+    slug: "anchoring-arxan-three-years-rsa",
   },
   {
     n: "03",
@@ -29,6 +34,7 @@ const stories: Story[] = [
     title: "Super Bowl",
     body: "On-the-ground production for PepsiCo Tostitos at Super Bowl 2026. High-stakes, massive-scale brand activation requiring flawless execution under pressure.",
     image: "/whitney/photos/tostitos-fiesta-zone.jpeg",
+    slug: "pepsico-tostitos-super-bowl-2026",
   },
   {
     n: "04",
@@ -42,6 +48,7 @@ const stories: Story[] = [
     title: "Presidio Golf",
     body: "Co-founded the women's club at the West Coast's second-oldest course. 300+ tournaments executed across seven years — every detail of every day, owned end-to-end.",
     image: "/whitney/photos/presidio-merch-medallion.jpg",
+    slug: "presidio-golf-300-tournaments",
   },
   {
     n: "06",
@@ -61,8 +68,15 @@ export default function Home() {
         <nav className="side-nav">
           <div className="sans-label side-text">Whitney Stevenson</div>
           <div className="side-icons">
-            <span>IN</span>
-            <span>TW</span>
+            <a
+              href="https://www.linkedin.com/in/whitneystevenson"
+              rel="me noopener"
+              target="_blank"
+              aria-label="Whitney Stevenson on LinkedIn"
+            >
+              IN
+            </a>
+            <Link href="/blog" aria-label="Field Notes">FN</Link>
           </div>
           <div
             className="sans-label"
@@ -135,7 +149,9 @@ export default function Home() {
 
           {/* QUOTE */}
           <section className="quote-section">
-            <div className="sans-label">The Target Run</div>
+            <div className="sans-label">
+              <Link href="/blog/the-target-run">The Target Run</Link>
+            </div>
             <h2 className="serif-large quote-text">
               &ldquo;A breakout speaker had no screen. The sales rep forgot the TV.
               I drove to Target and saved his ability to stand up properly in
@@ -143,7 +159,13 @@ export default function Home() {
             </h2>
             <div className="quote-attribution">
               <p className="sans-body">Great in the field. Solutions over panic.</p>
-              <a href="#chapters" className="circle-btn" aria-label="See the work">→</a>
+              <Link
+                href="/blog/the-target-run"
+                className="circle-btn"
+                aria-label="Read the full story: The Target Run"
+              >
+                →
+              </Link>
             </div>
           </section>
 
@@ -167,10 +189,29 @@ export default function Home() {
                   />
                 )}
                 <div className="sans-label" style={{ marginBottom: 6, opacity: 0.7 }}>{s.tag}</div>
-                <h3 className="serif-medium">{s.title}</h3>
+                <h3 className="serif-medium">
+                  {s.slug ? <Link href={`/blog/${s.slug}`}>{s.title}</Link> : s.title}
+                </h3>
                 <p className="sans-body">{s.body}</p>
+                {s.slug && (
+                  <Link
+                    href={`/blog/${s.slug}`}
+                    className="sans-label"
+                    style={{ display: "inline-block", marginTop: 12 }}
+                  >
+                    Read the Field Note →
+                  </Link>
+                )}
               </article>
             ))}
+            <div
+              className="stories-intro"
+              style={{ gridColumn: "1 / -1", marginTop: 24 }}
+            >
+              <Link href="/blog" className="sans-label">
+                All Field Notes →
+              </Link>
+            </div>
           </section>
 
           {/* IN THE FIELD */}
@@ -315,6 +356,18 @@ export default function Home() {
                 >
                   whitneyannestevenson@gmail.com
                 </a>
+              </p>
+              <p className="sans-body" style={{ marginTop: 16, fontSize: 14 }}>
+                Read the <Link href="/blog">Field Notes</Link> or connect on{" "}
+                <a
+                  href="https://www.linkedin.com/in/whitneystevenson"
+                  rel="me noopener"
+                  target="_blank"
+                  style={{ textDecoration: "underline" }}
+                >
+                  LinkedIn
+                </a>
+                .
               </p>
             </div>
             <ContactForm />
