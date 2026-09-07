@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
 import "./globals.css";
+import Script from "next/script";
 
 const SITE_URL = "https://www.whitneystevenson.com";
 const TITLE = "Whitney Stevenson — B2B Event Marketing & Hospitality, San Francisco";
@@ -142,6 +143,11 @@ export default function RootLayout({
       <body>
         {children}
         <JsonLd />
+        <Script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="s0n8sNjaBqGtru1g6u3f1Q"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
