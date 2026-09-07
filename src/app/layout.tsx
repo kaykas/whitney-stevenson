@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
+import SiteFooter from "@/components/SiteFooter";
 import "./globals.css";
 
 const SITE_URL = "https://www.whitneystevenson.com";
@@ -141,6 +142,7 @@ export default function RootLayout({
 </head>
       <body>
         {children}
+        <SiteFooter />
         <JsonLd />
       </body>
     </html>

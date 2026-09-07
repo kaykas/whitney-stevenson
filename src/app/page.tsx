@@ -1,4 +1,6 @@
+import Link from "next/link";
 import ContactForm from "./contact-form";
+import { posts } from "@/lib/posts";
 
 type Story = {
   n: string;
@@ -6,6 +8,7 @@ type Story = {
   title: string;
   body: string;
   image?: string;
+  slug?: string;
 };
 
 const stories: Story[] = [
@@ -13,6 +16,7 @@ const stories: Story[] = [
     n: "01",
     tag: "Technology",
     title: "Illumio LATAM",
+    slug: "illumio-latam-channel-partnership",
     body: "Built Illumio's first-ever LATAM channel partnership from the ground up. Stood up the program across Brazil, São Paulo, and Mexico — partner recruitment, market strategy, and engagement that landed the targets in a region with no prior footprint.",
     image: "/whitney/photos/illumio-golf-booth.jpg",
   },
@@ -20,6 +24,7 @@ const stories: Story[] = [
     n: "02",
     tag: "Technology",
     title: "Arxan at RSA",
+    slug: "anchoring-arxan-three-years-rsa",
     body: "Three consecutive years anchoring presence at RSA Conference. Booth fabrication, ROI tracking, and pipeline attribution in a hyper-competitive cybersecurity landscape.",
     image: "/whitney/photos/rsa-year-three.jpeg",
   },
@@ -27,6 +32,7 @@ const stories: Story[] = [
     n: "03",
     tag: "Entertainment",
     title: "Super Bowl",
+    slug: "pepsico-tostitos-super-bowl-2026",
     body: "On-the-ground production for PepsiCo Tostitos at Super Bowl 2026. High-stakes, massive-scale brand activation requiring flawless execution under pressure.",
     image: "/whitney/photos/tostitos-fiesta-zone.jpeg",
   },
@@ -40,6 +46,7 @@ const stories: Story[] = [
     n: "05",
     tag: "Founding Member",
     title: "Presidio Golf",
+    slug: "presidio-golf-300-tournaments",
     body: "Co-founded the women's club at the West Coast's second-oldest course. 300+ tournaments executed across seven years — every detail of every day, owned end-to-end.",
     image: "/whitney/photos/presidio-merch-medallion.jpg",
   },
@@ -61,8 +68,15 @@ export default function Home() {
         <nav className="side-nav">
           <div className="sans-label side-text">Whitney Stevenson</div>
           <div className="side-icons">
-            <span>IN</span>
-            <span>TW</span>
+            <a
+              href="https://www.linkedin.com/in/whitneystevenson"
+              rel="me noopener"
+              target="_blank"
+              aria-label="Whitney Stevenson on LinkedIn"
+            >
+              IN
+            </a>
+            <Link href="/blog" aria-label="Field Notes">FN</Link>
           </div>
           <div
             className="sans-label"
@@ -167,8 +181,15 @@ export default function Home() {
                   />
                 )}
                 <div className="sans-label" style={{ marginBottom: 6, opacity: 0.7 }}>{s.tag}</div>
-                <h3 className="serif-medium">{s.title}</h3>
+                <h3 className="serif-medium">
+                  {s.slug ? <Link href={`/blog/${s.slug}`}>{s.title}</Link> : s.title}
+                </h3>
                 <p className="sans-body">{s.body}</p>
+                {s.slug && (
+                  <Link href={`/blog/${s.slug}`} className="sans-label story-link">
+                    Read the full story →
+                  </Link>
+                )}
               </article>
             ))}
           </section>
@@ -215,6 +236,35 @@ export default function Home() {
                 <div className="caption sans-label">Off-the-clock</div>
               </div>
             </div>
+          </section>
+
+          {/* FIELD NOTES */}
+          <section className="notes-section" id="field-notes">
+            <div className="notes-intro">
+              <div className="sans-label" style={{ marginBottom: 8 }}>Field Notes</div>
+              <h2 className="serif-medium" style={{ maxWidth: 560 }}>
+                The longer version — how these rooms actually got built.
+              </h2>
+              <p className="sans-body" style={{ marginTop: 16, maxWidth: 560 }}>
+                Case studies and operational philosophy, written up in full.{" "}
+                <Link href="/blog" style={{ textDecoration: "underline" }}>
+                  Read all Field Notes
+                </Link>
+                .
+              </p>
+            </div>
+            <ul className="notes-list">
+              {posts.map((p) => (
+                <li className="note-item" key={p.slug}>
+                  <Link href={`/blog/${p.slug}`}>
+                    <span className="serif-medium note-title">{p.title}</span>
+                    <span className="sans-label note-meta">
+                      {p.readingMinutes} min read →
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </section>
 
           {/* ABOUT */}
