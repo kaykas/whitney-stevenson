@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
+import SiteFooter from "@/components/SiteFooter";
 import "./globals.css";
 import Script from "next/script";
 
@@ -142,6 +143,7 @@ export default function RootLayout({
 </head>
       <body>
         {children}
+        <SiteFooter />
         <JsonLd />
         <Script
           src="https://analytics.ahrefs.com/analytics.js"
