@@ -1,7 +1,14 @@
 export type Post = {
   slug: string;
   title: string;
+  /** Visible lede on the post page and blog index. Length is a design call. */
   description: string;
+  /**
+   * <meta name="description"> for the post. Must stay under 155 characters —
+   * Ahrefs/GSC flag anything longer as "Meta description too long" and Google
+   * truncates it in the SERP. Enforced by scripts/check-meta-descriptions.mjs.
+   */
+  metaDescription: string;
   date: string;
   readingMinutes: number;
   keywords: string[];
@@ -14,6 +21,8 @@ export const posts: Post[] = [
     title: "How I Built Illumio's First LATAM Channel Partnership",
     description:
       "Day-1 of standing up Illumio's Latin America channel program — Brazil, São Paulo, Mexico — from zero. Partner recruiting, market strategy, and what actually moved the targets in a region with no prior footprint.",
+    metaDescription:
+      "Standing up Illumio's first Latin America channel program from zero — Brazil, Sao Paulo, Mexico. Partner recruiting and what moved the targets.",
     date: "2026-04-28",
     readingMinutes: 7,
     keywords: [
@@ -29,6 +38,8 @@ export const posts: Post[] = [
     title: "The Target Run: Why I Don't Panic",
     description:
       "A breakout speaker walked on stage with no screen. The sales rep had forgotten the TV. I drove to Target. The session went on. A short essay on calm-under-pressure as a craft, not a personality trait.",
+    metaDescription:
+      "A speaker hit the stage with no screen. I drove to Target and the session went on. On calm under pressure as a craft, not a personality trait.",
     date: "2026-04-28",
     readingMinutes: 4,
     keywords: [
@@ -43,6 +54,8 @@ export const posts: Post[] = [
     title: "Anchoring Arxan at Three Years of RSA Conference",
     description:
       "Three consecutive years running Arxan Technologies' presence at RSA Conference — booth fabrication, ROI tracking, and pipeline attribution in the most over-budgeted, hyper-competitive trade show in cybersecurity. What worked, what we cut, and why showing up the same way three years in a row is the strategy.",
+    metaDescription:
+      "Three straight years running Arxan's RSA Conference presence — booth build, ROI tracking, pipeline attribution. What worked and what we cut.",
     date: "2026-04-28",
     readingMinutes: 8,
     keywords: [
@@ -59,6 +72,8 @@ export const posts: Post[] = [
     title: "What 300+ Tournaments at Presidio Golf Taught Me About Operations",
     description:
       "I founded the women's club at the West Coast's second-oldest golf course and produced 300+ tournaments over seven years. The lessons aren't about golf — they're about what operations actually means when nothing can fail and every detail compounds.",
+    metaDescription:
+      "I founded the women's club at the West Coast's second-oldest course and produced 300+ tournaments. What operations means when nothing can fail.",
     date: "2026-04-28",
     readingMinutes: 7,
     keywords: [
@@ -75,6 +90,8 @@ export const posts: Post[] = [
     title: "PepsiCo Tostitos at Super Bowl 2026: Behind the Activation",
     description:
       "On-the-ground production for PepsiCo Tostitos at Super Bowl 2026, Pier 39 Fiesta Zone. A massive-scale brand activation in a city that had never hosted the Super Bowl. Build week, show week, load-out — what flawless execution under that kind of pressure actually requires.",
+    metaDescription:
+      "On-the-ground production for PepsiCo Tostitos at Super Bowl 2026, Pier 39 Fiesta Zone. Build week, show week, load-out — what flawless requires.",
     date: "2026-04-28",
     readingMinutes: 6,
     keywords: [
