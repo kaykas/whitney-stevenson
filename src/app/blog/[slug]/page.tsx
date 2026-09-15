@@ -30,12 +30,12 @@ export async function generateMetadata({
   if (!post) return {};
   return {
     title: post.title,
-    description: post.description,
+    description: post.metaDescription,
     keywords: post.keywords,
     alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
       title: post.title,
-      description: post.description,
+      description: post.metaDescription,
       type: "article",
       url: `https://www.whitneystevenson.com/blog/${post.slug}`,
       publishedTime: post.date,
@@ -44,7 +44,7 @@ export async function generateMetadata({
     twitter: {
       card: "summary_large_image",
       title: post.title,
-      description: post.description,
+      description: post.metaDescription,
     },
   };
 }
@@ -132,7 +132,7 @@ export default async function PostPage({
             "@context": "https://schema.org",
             "@type": "BlogPosting",
             headline: post.title,
-            description: post.description,
+            description: post.metaDescription,
             datePublished: post.date,
             author: {
               "@type": "Person",

@@ -6,8 +6,10 @@ import Script from "next/script";
 
 const SITE_URL = "https://www.whitneystevenson.com";
 const TITLE = "Whitney Stevenson — B2B Event Marketing & Hospitality, San Francisco";
+// Keep under 155 chars — Ahrefs/GSC flag longer as "Meta description too long"
+// and Google truncates it in the SERP. Enforced by scripts/check-meta-descriptions.mjs.
 const DESCRIPTION =
-  "Whitney Stevenson is a San Francisco event and hospitality leader with 10+ years building B2B events for tech and entertainment. Plan Experiential, Illumio LATAM, RSA, Super Bowl, Latin Billboard Awards, Presidio Golf.";
+  "San Francisco event and hospitality leader with 10+ years of B2B events for tech and entertainment — Illumio LATAM, RSA, Super Bowl, Presidio Golf.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
