@@ -21,7 +21,11 @@
  *   4. a major AI agent is missing from the policy entirely;
  *   5. the wildcard group grows a `Disallow` (see the footgun note in
  *      src/lib/bot-policy.ts — named groups do not inherit from `*`);
- *   6. the Sitemap line is missing or points at the non-canonical apex host.
+ *   6. the Sitemap line is missing or points at the non-canonical apex host;
+ *   7. any `ai-search` / `ai-user` agent is disallowed (the AEO finding
+ *      "Indexable page blocked from some AI search bots");
+ *   8. a group grants access with `Allow:` but no `Disallow:` line, which
+ *      pre-RFC-9309 parsers may discard as malformed.
  *
  * Runs as `postbuild`. Standalone: `npm run check:bots`.
  */
@@ -50,6 +54,7 @@ const AGENTS = {
   "Claude-Web": { vendor: "Anthropic", purpose: "ai-training", retired: true },
   Googlebot: { vendor: "Google", purpose: "search" },
   "Google-Extended": { vendor: "Google", purpose: "ai-control" },
+  "Google-CloudVertexBot": { vendor: "Google", purpose: "ai-search" },
   Applebot: { vendor: "Apple", purpose: "search" },
   "Applebot-Extended": { vendor: "Apple", purpose: "ai-control" },
   PerplexityBot: { vendor: "Perplexity", purpose: "ai-search" },
@@ -60,11 +65,16 @@ const AGENTS = {
   Amazonbot: { vendor: "Amazon", purpose: "search" },
   CCBot: { vendor: "Common Crawl", purpose: "ai-training" },
   Bytespider: { vendor: "ByteDance", purpose: "ai-training" },
+  TikTokSpider: { vendor: "ByteDance", purpose: "ai-training" },
   "cohere-ai": { vendor: "Cohere", purpose: "ai-training" },
+  "cohere-training-data-crawler": { vendor: "Cohere", purpose: "ai-training" },
   DuckAssistBot: { vendor: "DuckDuckGo", purpose: "ai-search" },
   "MistralAI-User": { vendor: "Mistral", purpose: "ai-user" },
   YouBot: { vendor: "You.com", purpose: "ai-search" },
   AI2Bot: { vendor: "Allen Institute", purpose: "ai-training" },
+  "Ai2Bot-Dolma": { vendor: "Allen Institute", purpose: "ai-training" },
+  Bravebot: { vendor: "Brave", purpose: "search" },
+  Kagibot: { vendor: "Kagi", purpose: "search" },
 };
 
 /**
@@ -81,8 +91,13 @@ const MUST_COVER = [
   "Claude-User",
   "Googlebot",
   "Google-Extended",
+  "Google-CloudVertexBot",
   "Applebot-Extended",
   "PerplexityBot",
+  "Perplexity-User",
+  "DuckAssistBot",
+  "Bravebot",
+  "Kagibot",
   "CCBot",
   "meta-externalagent",
 ];
@@ -173,6 +188,41 @@ if (!wildcard) {
       .join(", ")} — every named agent below it has its OWN group and therefore ` +
       "ignores `*` entirely, so that rule silently does not apply to any AI bot. " +
       "Mirror it into every group in src/lib/bot-policy.ts, or drop it.",
+  );
+}
+
+// --- 8. permissive groups must say so in both dialects --------------------
+// `Allow:` postdates the original robots.txt spec. A parser written to that
+// spec expects a `Disallow` line in every group and may discard a group that
+// has none, leaving the bot with no record it recognises. An empty
+// `Disallow:` is the old spelling of "nothing is forbidden" — emitting it
+// alongside `Allow: /` makes the permission legible to every parser
+// generation. See the docblock in src/app/robots.ts.
+for (const group of groups) {
+  if (!decisionFor(group)) continue;
+  if (group.disallow.length) continue;
+  failures.push(
+    `group [${group.agents.join(", ")}] grants access with \`Allow:\` but has no ` +
+      "`Disallow:` line — parsers predating the Allow directive can discard it as " +
+      'malformed. Emit an empty `Disallow:` too (robots.ts renders `disallow: [""]`).',
+  );
+}
+
+// --- 7. no AI-search or AI-user agent may be blocked ---------------------
+// Check 1 only catches a vendor disagreeing with ITSELF, so a policy that
+// blocked every assistant crawler uniformly would pass it while being exactly
+// the AEO finding "Indexable page blocked from some AI search bots". These are
+// the agents that produce a cited link back; blocking one is never the intent
+// on a site whose whole job is being found.
+for (const [token, allowed] of decisions) {
+  if (allowed) continue;
+  const purpose = AGENTS[token]?.purpose;
+  if (purpose !== "ai-search" && purpose !== "ai-user") continue;
+  failures.push(
+    `"${token}" (${AGENTS[token].vendor}, ${purpose}) is disallowed — that is an ` +
+      "assistant-search/citation agent, and blocking it hides indexable pages from " +
+      "AI answers. If this is deliberate, it contradicts public/llms.txt and both " +
+      "have to change together.",
   );
 }
 

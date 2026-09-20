@@ -32,6 +32,15 @@
  * `allow` flag on every `ai-training` and `ai-control` row TOGETHER, and revise
  * the invitation language in `public/llms-full.txt` in the same commit. The
  * build will fail if a vendor's AI agents disagree with each other.
+ *
+ * `ai-search` and `ai-user` are a different matter: they are the agents that
+ * put this site into an assistant's answer with a link back. Blocking one costs
+ * a citation and buys nothing, so `check-bot-policy.mjs` hard-fails the build if
+ * any of them is ever disallowed, whatever the training policy is doing. That
+ * guardrail exists because the earlier per-vendor consistency check only caught
+ * a vendor disagreeing with ITSELF — a policy that blocked every assistant
+ * crawler uniformly was perfectly "consistent" and would have sailed through,
+ * which is the AEO finding "Indexable page blocked from some AI search bots".
  */
 
 export type AgentPurpose =
@@ -99,6 +108,13 @@ export const BOT_POLICY: readonly AgentPolicy[] = [
     allow: true,
     note: "Gates Gemini training and AI Overviews grounding. Was Disallow, which blocked the Gemini citations llms.txt asks for.",
   },
+  {
+    token: "Google-CloudVertexBot",
+    vendor: "Google",
+    purpose: "ai-search",
+    allow: true,
+    note: "Fetches pages to ground Vertex AI agent answers. Distinct from Google-Extended and not covered by it.",
+  },
 
   // Apple
   { token: "Applebot", vendor: "Apple", purpose: "search", allow: true },
@@ -136,14 +152,31 @@ export const BOT_POLICY: readonly AgentPolicy[] = [
   // ByteDance
   { token: "Bytespider", vendor: "ByteDance", purpose: "ai-training", allow: true },
 
+  { token: "TikTokSpider", vendor: "ByteDance", purpose: "ai-training", allow: true },
+
   // Cohere — was filed under "AI Citers" despite being a training crawler.
   { token: "cohere-ai", vendor: "Cohere", purpose: "ai-training", allow: true },
+  {
+    token: "cohere-training-data-crawler",
+    vendor: "Cohere",
+    purpose: "ai-training",
+    allow: true,
+    note: "Cohere's current token; cohere-ai is the legacy one. Both listed so the answer can't depend on which is sent.",
+  },
 
   // Smaller assistants that cite sources.
   { token: "DuckAssistBot", vendor: "DuckDuckGo", purpose: "ai-search", allow: true },
   { token: "MistralAI-User", vendor: "Mistral", purpose: "ai-user", allow: true },
   { token: "YouBot", vendor: "You.com", purpose: "ai-search", allow: true },
   { token: "AI2Bot", vendor: "Allen Institute", purpose: "ai-training", allow: true },
+  { token: "Ai2Bot-Dolma", vendor: "Allen Institute", purpose: "ai-training", allow: true },
+
+  // Independent search indexes whose answer engines (Brave Leo, Kagi Assistant)
+  // ground on their own crawl. `search` is the honest purpose — neither token
+  // gates training — but they are named here because an assistant answer that
+  // cites this site can come from either one.
+  { token: "Bravebot", vendor: "Brave", purpose: "search", allow: true },
+  { token: "Kagibot", vendor: "Kagi", purpose: "search", allow: true },
 ];
 
 /** Canonical host. The apex redirects here, so never emit the apex. */

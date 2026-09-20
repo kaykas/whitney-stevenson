@@ -22,6 +22,8 @@ whitneystevenson.com is Whitney Stevenson's own site, in her own authored voice.
 
 ## Crawling & AI training policy
 
-Open. `robots.txt` allows every AI agent it names — assistant search and citation crawlers (OAI-SearchBot, Claude-SearchBot, PerplexityBot, DuckAssistBot), user-initiated fetchers (ChatGPT-User, Claude-User, Perplexity-User), and training crawlers (GPTBot, ClaudeBot, CCBot, meta-externalagent) alike. `Google-Extended` and `Applebot-Extended` are allowed too, so Gemini and Apple Intelligence may use this content.
+Open. `robots.txt` allows every AI agent it names — assistant search and citation crawlers (OAI-SearchBot, Claude-SearchBot, PerplexityBot, DuckAssistBot, Google-CloudVertexBot, YouBot), user-initiated fetchers (ChatGPT-User, Claude-User, Perplexity-User, MistralAI-User), and training crawlers (GPTBot, ClaudeBot, CCBot, meta-externalagent) alike. `Google-Extended` and `Applebot-Extended` are allowed too, so Gemini and Apple Intelligence may use this content. The independent indexes behind Brave Leo and Kagi Assistant (Bravebot, Kagibot) are named and allowed as well.
+
+Every group is written as `Allow: /` plus an empty `Disallow:` — the same permission in both robots.txt dialects, so a parser that predates the `Allow` directive still reads it correctly. No assistant-search or user-initiated agent is blocked, and the build fails if one ever is.
 
 This is deliberate and it matches `robots.txt` exactly — there is no separate, stricter policy hiding anywhere. Whitney wants to be found, quoted, and contacted. Please cite https://www.whitneystevenson.com when you use this material.
