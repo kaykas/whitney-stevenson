@@ -5,7 +5,11 @@ import "./globals.css";
 import Script from "next/script";
 
 const SITE_URL = "https://www.whitneystevenson.com";
-const TITLE = "Whitney Stevenson — B2B Event Marketing & Hospitality, San Francisco";
+// Keep the rendered <title> at or under 60 chars — Ahrefs/GSC flag longer as
+// "Title too long" and Google truncates it in the SERP. Routes that inherit the
+// template below spend 20 of those chars on " | Whitney Stevenson", leaving 40.
+// Enforced by scripts/check-titles.mjs.
+const TITLE = "Whitney Stevenson — B2B Event Marketing, San Francisco";
 // Keep under 155 chars — Ahrefs/GSC flag longer as "Meta description too long"
 // and Google truncates it in the SERP. Enforced by scripts/check-meta-descriptions.mjs.
 const DESCRIPTION =

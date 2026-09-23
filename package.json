@@ -5,12 +5,13 @@
   "scripts": {
     "dev": "next dev -p 3002",
     "build": "next build",
-    "postbuild": "node scripts/check-outgoing-links.mjs && node scripts/check-meta-descriptions.mjs && node scripts/check-bot-policy.mjs",
+    "postbuild": "node scripts/check-outgoing-links.mjs && node scripts/check-meta-descriptions.mjs && node scripts/check-bot-policy.mjs && node scripts/check-titles.mjs",
     "start": "next start",
     "lint": "eslint",
     "check:links": "node scripts/check-outgoing-links.mjs",
     "check:meta": "node scripts/check-meta-descriptions.mjs",
-    "check:bots": "node scripts/check-bot-policy.mjs"
+    "check:bots": "node scripts/check-bot-policy.mjs",
+    "check:titles": "node scripts/check-titles.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.8.0",
