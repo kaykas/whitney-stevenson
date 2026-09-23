@@ -29,12 +29,15 @@ export async function generateMetadata({
   const post = getPost(slug);
   if (!post) return {};
   return {
-    title: post.title,
+    // metaTitle, not title: the visible <h1> is design copy and runs long,
+    // while the <title> has a ~60-char SERP budget that the layout template's
+    // " | Whitney Stevenson" suffix eats 20 of. See ERRORS.md (2026-09-12).
+    title: post.metaTitle,
     description: post.metaDescription,
     keywords: post.keywords,
     alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
-      title: post.title,
+      title: post.metaTitle,
       description: post.metaDescription,
       type: "article",
       url: `https://www.whitneystevenson.com/blog/${post.slug}`,
@@ -43,7 +46,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: post.title,
+      title: post.metaTitle,
       description: post.metaDescription,
     },
   };

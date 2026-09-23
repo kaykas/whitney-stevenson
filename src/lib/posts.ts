@@ -1,6 +1,14 @@
 export type Post = {
   slug: string;
+  /** Visible <h1> on the post page and the card heading on /blog. */
   title: string;
+  /**
+   * <title> text for the post, BEFORE the " | Whitney Stevenson" template
+   * suffix in layout.tsx adds 20 characters. Must stay at or under 40 chars so
+   * the rendered title tag fits the ~60-character SERP budget — Ahrefs/GSC flag
+   * longer as "Title too long". Enforced by scripts/check-titles.mjs.
+   */
+  metaTitle: string;
   /** Visible lede on the post page and blog index. Length is a design call. */
   description: string;
   /**
@@ -19,6 +27,7 @@ export const posts: Post[] = [
   {
     slug: "illumio-latam-channel-partnership",
     title: "How I Built Illumio's First LATAM Channel Partnership",
+    metaTitle: "Building Illumio's First LATAM Channel",
     description:
       "Day-1 of standing up Illumio's Latin America channel program — Brazil, São Paulo, Mexico — from zero. Partner recruiting, market strategy, and what actually moved the targets in a region with no prior footprint.",
     metaDescription:
@@ -36,6 +45,7 @@ export const posts: Post[] = [
   {
     slug: "the-target-run",
     title: "The Target Run: Why I Don't Panic",
+    metaTitle: "The Target Run: Why I Don't Panic",
     description:
       "A breakout speaker walked on stage with no screen. The sales rep had forgotten the TV. I drove to Target. The session went on. A short essay on calm-under-pressure as a craft, not a personality trait.",
     metaDescription:
@@ -52,6 +62,7 @@ export const posts: Post[] = [
   {
     slug: "anchoring-arxan-three-years-rsa",
     title: "Anchoring Arxan at Three Years of RSA Conference",
+    metaTitle: "Three Years of RSA: Anchoring Arxan",
     description:
       "Three consecutive years running Arxan Technologies' presence at RSA Conference — booth fabrication, ROI tracking, and pipeline attribution in the most over-budgeted, hyper-competitive trade show in cybersecurity. What worked, what we cut, and why showing up the same way three years in a row is the strategy.",
     metaDescription:
@@ -70,6 +81,7 @@ export const posts: Post[] = [
   {
     slug: "presidio-golf-300-tournaments",
     title: "What 300+ Tournaments at Presidio Golf Taught Me About Operations",
+    metaTitle: "What 300+ Tournaments Taught Me",
     description:
       "I founded the women's club at the West Coast's second-oldest golf course and produced 300+ tournaments over seven years. The lessons aren't about golf — they're about what operations actually means when nothing can fail and every detail compounds.",
     metaDescription:
@@ -88,6 +100,7 @@ export const posts: Post[] = [
   {
     slug: "pepsico-tostitos-super-bowl-2026",
     title: "PepsiCo Tostitos at Super Bowl 2026: Behind the Activation",
+    metaTitle: "Tostitos at Super Bowl 2026",
     description:
       "On-the-ground production for PepsiCo Tostitos at Super Bowl 2026, Pier 39 Fiesta Zone. A massive-scale brand activation in a city that had never hosted the Super Bowl. Build week, show week, load-out — what flawless execution under that kind of pressure actually requires.",
     metaDescription:
