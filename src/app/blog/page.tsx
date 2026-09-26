@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   description:
     "Stories from the room — case studies, signature moments, and operational philosophy from 10+ years of B2B event marketing in San Francisco.",
   alternates: { canonical: "/blog" },
+  // Override the layout's openGraph.url — without this the page inherits the
+  // homepage og:url, which mismatches the /blog canonical ("Open Graph URL
+  // not matching canonical").
+  openGraph: {
+    url: "https://www.whitneystevenson.com/blog",
+  },
 };
 
 export default function BlogIndex() {

@@ -40,7 +40,10 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
     type: "website",
-    url: SITE_URL,
+    // Trailing slash: must match the canonical exactly (metadataBase + "/"
+    // renders https://www.whitneystevenson.com/) or Ahrefs flags
+    // "Open Graph URL not matching canonical".
+    url: `${SITE_URL}/`,
     siteName: "Whitney Stevenson",
     images: [{ url: "/photos/whitney-hero.jpeg", width: 800, height: 800 }],
   },
