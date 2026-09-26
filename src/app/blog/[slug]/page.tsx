@@ -44,7 +44,12 @@ export async function generateMetadata({
       type: "article",
       url: `https://www.whitneystevenson.com/blog/${post.slug}`,
       publishedTime: post.date,
-      images: post.hero ? [{ url: post.hero }] : undefined,
+      // Always emit og:image — posts without a hero photo fall back to the
+      // site default, otherwise Ahrefs flags the URL as
+      // "Open Graph tags incomplete".
+      images: [
+        { url: post.hero ?? "/photos/whitney-hero.jpeg", width: 800, height: 800 },
+      ],
     },
     twitter: {
       card: "summary_large_image",
