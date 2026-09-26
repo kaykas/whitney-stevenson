@@ -25,6 +25,25 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "latin-billboard-awards-artist-relations",
+    title:
+      "Artist Relations at the Latin Billboard Awards: Three Artists, One Broadcast Clock",
+    metaTitle: "Backstage at the Latin Billboard Awards",
+    description:
+      "Running artist relations for three performing artists at the Latin Billboard Awards — riders as trust contracts, run-of-show timing against a broadcast clock that doesn't bend, and why hospitality is risk management with warmer lighting.",
+    metaDescription:
+      "Artist relations for three performers at the Latin Billboard Awards — riders, green rooms, and run-of-show timing against a broadcast clock.",
+    date: "2026-09-26",
+    readingMinutes: 7,
+    keywords: [
+      "Latin Billboard Awards",
+      "artist relations events",
+      "backstage hospitality production",
+      "run of show broadcast",
+      "awards show production",
+    ],
+  },
+  {
     slug: "illumio-latam-channel-partnership",
     title: "How I Built Illumio's First LATAM Channel Partnership",
     metaTitle: "Building Illumio's First LATAM Channel",
