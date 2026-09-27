@@ -8,8 +8,10 @@ import { arxanRsaPost } from "./posts/anchoring-arxan-three-years-rsa";
 import { presidioGolfPost } from "./posts/presidio-golf-300-tournaments";
 import { tostitosSuperBowlPost } from "./posts/pepsico-tostitos-super-bowl-2026";
 import { latinBillboardAwardsPost } from "./posts/latin-billboard-awards-artist-relations";
+import { nyeEightYearsPost } from "./posts/eight-years-sf-nye-party";
 
 const POST_BODIES: Record<string, () => React.ReactNode> = {
+  "eight-years-sf-nye-party": nyeEightYearsPost,
   "latin-billboard-awards-artist-relations": latinBillboardAwardsPost,
   "illumio-latam-channel-partnership": illumioLatamPost,
   "the-target-run": targetRunPost,
