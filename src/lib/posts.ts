@@ -25,6 +25,25 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "eight-years-sf-nye-party",
+    title:
+      "Eight Years of Midnight: What Producing the Same Party Taught Me",
+    metaTitle: "Eight Years of SF's New Year's Eve",
+    description:
+      "Eight consecutive years producing San Francisco's New Year's Eve party. Midnight is the one deadline in this business that never moves, and a recurring event teaches you things a one-off never can: compounding vendor trust, the January post-mortem as the real deliverable, and hospitality that turns a ticketed night into an appointment people keep.",
+    metaDescription:
+      "Eight consecutive years producing San Francisco's New Year's Eve party. What a recurring event teaches you that a one-off never can.",
+    date: "2026-09-27",
+    readingMinutes: 6,
+    keywords: [
+      "New Year's Eve event production",
+      "recurring event strategy",
+      "San Francisco NYE party producer",
+      "annual event production",
+      "countdown run of show",
+    ],
+  },
+  {
     slug: "latin-billboard-awards-artist-relations",
     title:
       "Artist Relations at the Latin Billboard Awards: Three Artists, One Broadcast Clock",
