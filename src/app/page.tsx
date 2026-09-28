@@ -55,6 +55,7 @@ const stories: Story[] = [
     n: "06",
     tag: "Founder · Practitioner",
     title: "Retail & Wellness",
+    slug: "sunglasses-shops-and-bodywork",
     body: "Founder of an entrepreneurial sunglasses venture — two San Francisco locations. Alongside the business, a practicing bodyworker — Facial Release and Access Consciousness — bringing the same precision and care to one-on-one work.",
     image: "/whitney/photos/sunglasses-retail-portrait.jpg",
   },
