@@ -25,6 +25,25 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "sunglasses-shops-and-bodywork",
+    title:
+      "Two Shops and a Treatment Table: The Other Half of My Resume",
+    metaTitle: "Sunglasses Shops, Bodywork, and Events",
+    description:
+      "Before the Super Bowl and RSA, I founded a sunglasses venture and grew it to two San Francisco locations, and I still practice bodywork alongside event work. What a storefront and a treatment table taught me about foot traffic, scaling past the founder, and noticing trouble ten minutes before it arrives.",
+    metaDescription:
+      "Founding two San Francisco sunglasses shops and practicing bodywork taught me more about event hospitality than any trade show ever did.",
+    date: "2026-09-28",
+    readingMinutes: 5,
+    keywords: [
+      "retail founder event marketer",
+      "event hospitality philosophy",
+      "booth design foot traffic",
+      "San Francisco sunglasses shop",
+      "bodywork and event production",
+    ],
+  },
+  {
     slug: "eight-years-sf-nye-party",
     title:
       "Eight Years of Midnight: What Producing the Same Party Taught Me",
