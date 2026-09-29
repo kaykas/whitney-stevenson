@@ -326,7 +326,14 @@ export default function Home() {
                 I want to grow inside a company for a while. Mission-driven,
                 where the work nurtures a career rather than fills a role. And
                 if that means starting with event coordination — that&apos;s fine
-                by me. I&apos;m also great in the field.
+                by me. I&apos;m also great in the field.{" "}
+                <Link
+                  href="/blog/freelance-to-in-house"
+                  style={{ color: "var(--text-light)", textDecoration: "underline" }}
+                >
+                  Why I want a year two
+                </Link>
+                .
               </p>
               <div
                 className="oval-badge"

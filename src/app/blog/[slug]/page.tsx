@@ -10,8 +10,10 @@ import { tostitosSuperBowlPost } from "./posts/pepsico-tostitos-super-bowl-2026"
 import { latinBillboardAwardsPost } from "./posts/latin-billboard-awards-artist-relations";
 import { nyeEightYearsPost } from "./posts/eight-years-sf-nye-party";
 import { sunglassesBodyworkPost } from "./posts/sunglasses-shops-and-bodywork";
+import { freelanceToInHousePost } from "./posts/freelance-to-in-house";
 
 const POST_BODIES: Record<string, () => React.ReactNode> = {
+  "freelance-to-in-house": freelanceToInHousePost,
   "sunglasses-shops-and-bodywork": sunglassesBodyworkPost,
   "eight-years-sf-nye-party": nyeEightYearsPost,
   "latin-billboard-awards-artist-relations": latinBillboardAwardsPost,
