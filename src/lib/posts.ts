@@ -25,6 +25,24 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "freelance-to-in-house",
+    title: "Why I Want a Year Two: Trading Freelance for One Team",
+    metaTitle: "Why I'm Going In-House After Freelance",
+    description:
+      "Freelance event work ends on load-out night, and you never learn what the badge scans turned into. After agency work at Plan Experiential and the long runs I'm proudest of (Presidio Golf, eight years of New Year's Eve), here's why I want to join one events team and stay long enough to compound.",
+    metaDescription:
+      "Why a freelance event producer wants to go in-house: recurring work compounds, and the best events are built from last year's receipts.",
+    date: "2026-09-29",
+    readingMinutes: 4,
+    keywords: [
+      "in-house event marketing manager",
+      "freelance to in-house events",
+      "B2B event marketer hiring",
+      "event coordinator San Francisco",
+      "recurring event strategy",
+    ],
+  },
+  {
     slug: "sunglasses-shops-and-bodywork",
     title:
       "Two Shops and a Treatment Table: The Other Half of My Resume",
