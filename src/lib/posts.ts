@@ -25,6 +25,24 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "event-concierge-b2b-hospitality",
+    title: "Why \"Concierge\" Is in My Title: The Half of Events Nobody Recaps",
+    metaTitle: "What an Event Concierge Actually Does",
+    description:
+      "The word next to my name on this site confuses people, and I kept it on purpose. In B2B events, concierge work is the part nobody puts in the recap deck: the VP who landed late and hasn't eaten, the partner who flew in to meet one person. It's also where a lot of pipeline quietly moves.",
+    metaDescription:
+      "What an event concierge does at B2B events: guest notes and speaker care, the quiet hospitality work that moves B2B pipeline.",
+    date: "2026-09-30",
+    readingMinutes: 4,
+    keywords: [
+      "event concierge B2B",
+      "executive event hospitality",
+      "customer dinner event planning",
+      "VIP guest experience events",
+      "B2B event marketer San Francisco",
+    ],
+  },
+  {
     slug: "freelance-to-in-house",
     title: "Why I Want a Year Two: Trading Freelance for One Team",
     metaTitle: "Why I'm Going In-House After Freelance",

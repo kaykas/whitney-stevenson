@@ -93,7 +93,8 @@ export default function Home() {
           <section className="hero-section">
             <div className="hero-text-container">
               <div className="sans-label" style={{ marginBottom: 20 }}>
-                Event &amp; Hospitality Leader · Concierge
+                Event &amp; Hospitality Leader ·{" "}
+                <Link href="/blog/event-concierge-b2b-hospitality">Concierge</Link>
               </div>
               <h1 className="serif-huge">
                 WHITNEY<br />STEVENSON
