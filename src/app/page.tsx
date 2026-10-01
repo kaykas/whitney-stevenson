@@ -105,7 +105,8 @@ export default function Home() {
             <div className="spine-line">
               <p className="sans-body">
                 Event and hospitality leader. I build the room, run the room, and
-                care for every person in it — white-glove from the first walkthrough
+                care for every person in it — white-glove from the{" "}
+                <Link href="/blog/first-venue-walkthrough">first walkthrough</Link>{" "}
                 to load-out, every guest considered.
               </p>
             </div>

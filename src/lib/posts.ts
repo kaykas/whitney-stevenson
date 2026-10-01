@@ -25,6 +25,24 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "first-venue-walkthrough",
+    title: "The First Walkthrough: What I Look For Before Anyone Signs the Venue Contract",
+    metaTitle: "What I Look For on a Venue Walkthrough",
+    description:
+      "My homepage promises white-glove care from the first walkthrough to load-out, and people mostly ask about load-out. The walkthrough is where I earn it. Here's what I'm doing when I wander a venue with a coffee and my phone camera, and why the loading dock gets more of my attention than the ballroom.",
+    metaDescription:
+      "How a B2B event marketer walks a venue before the contract: the loading dock, the outlets, and the route a late VP takes from the curb.",
+    date: "2026-10-01",
+    readingMinutes: 4,
+    keywords: [
+      "event venue walkthrough",
+      "venue site visit checklist",
+      "B2B event planning venue",
+      "conference venue selection",
+      "B2B event marketer San Francisco",
+    ],
+  },
+  {
     slug: "event-concierge-b2b-hospitality",
     title: "Why \"Concierge\" Is in My Title: The Half of Events Nobody Recaps",
     metaTitle: "What an Event Concierge Actually Does",

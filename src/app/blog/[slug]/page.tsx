@@ -12,8 +12,10 @@ import { nyeEightYearsPost } from "./posts/eight-years-sf-nye-party";
 import { sunglassesBodyworkPost } from "./posts/sunglasses-shops-and-bodywork";
 import { freelanceToInHousePost } from "./posts/freelance-to-in-house";
 import { eventConciergePost } from "./posts/event-concierge-b2b-hospitality";
+import { firstWalkthroughPost } from "./posts/first-venue-walkthrough";
 
 const POST_BODIES: Record<string, () => React.ReactNode> = {
+  "first-venue-walkthrough": firstWalkthroughPost,
   "event-concierge-b2b-hospitality": eventConciergePost,
   "freelance-to-in-house": freelanceToInHousePost,
   "sunglasses-shops-and-bodywork": sunglassesBodyworkPost,
