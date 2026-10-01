@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { posts, getPost } from "@/lib/posts";
+import BreadcrumbJsonLd, { HOME_CRUMB, FIELD_NOTES_CRUMB } from "@/components/BreadcrumbJsonLd";
 import { illumioLatamPost } from "./posts/illumio-latam-channel-partnership";
 import { targetRunPost } from "./posts/the-target-run";
 import { arxanRsaPost } from "./posts/anchoring-arxan-three-years-rsa";
@@ -145,6 +146,9 @@ export default async function PostPage({
           </article>
         </main>
       </div>
+      <BreadcrumbJsonLd
+        items={[HOME_CRUMB, FIELD_NOTES_CRUMB, { name: post.title, path: `/blog/${post.slug}` }]}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

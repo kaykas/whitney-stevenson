@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { posts } from "@/lib/posts";
+import BreadcrumbJsonLd, { HOME_CRUMB, FIELD_NOTES_CRUMB } from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "Field Notes",
@@ -76,6 +77,7 @@ export default function BlogIndex() {
           </section>
         </main>
       </div>
+      <BreadcrumbJsonLd items={[HOME_CRUMB, FIELD_NOTES_CRUMB]} />
     </>
   );
 }
