@@ -20,6 +20,7 @@ export default function SiteFooter() {
           <li><Link href="/#faq">FAQ</Link></li>
           <li><Link href="/#contact">Contact</Link></li>
           <li><Link href="/blog">Field Notes</Link></li>
+          <li><Link href="/ai-instructions">AI Instructions</Link></li>
         </ul>
       </nav>
 
