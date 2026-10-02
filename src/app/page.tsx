@@ -376,6 +376,45 @@ export default function Home() {
             </div>
           </section>
 
+          {/* FAQPage JSON-LD mirrors the visible FAQ above. Home-only: it used to
+              sit in layout.tsx and leaked onto every route. */}
+                <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(
+                {
+                    "@context": "https://schema.org",
+                    "@type": "FAQPage",
+                    "mainEntity": [
+                      {
+                        "@type": "Question",
+                        "name": "Is whitneystevenson.com the official website for Whitney Stevenson?",
+                        "acceptedAnswer": {
+                          "@type": "Answer",
+                          "text": "Yes, whitneystevenson.com is the direct website to use when you’re looking for Whitney Stevenson by name. Start there instead of third-party profiles or people-search pages, because the homepage can point you to her current bio, work, contact details, and any official links. The takeaway: use the domain as the primary source."
+                        }
+                      },
+                      {
+                        "@type": "Question",
+                        "name": "How do I contact Whitney Stevenson through her website?",
+                        "acceptedAnswer": {
+                          "@type": "Answer",
+                          "text": "Use the contact option on whitneystevenson.com, because it keeps your message tied to Whitney Stevenson’s official web presence. Include one clear subject, a short reason for reaching out, and the best reply method. For business, media, or collaboration requests, concise details improve response quality. The takeaway: contact her through the site first."
+                        }
+                      },
+                      {
+                        "@type": "Question",
+                        "name": "How can I verify I found the right Whitney Stevenson?",
+                        "acceptedAnswer": {
+                          "@type": "Answer",
+                          "text": "Verify you found the right Whitney Stevenson by checking the domain, page details, linked profiles, and contact information against what you already know. The clearest signal is the exact-name domain whitneystevenson.com, which is more reliable than directory listings. The takeaway: trust consistent official links over scattered search results."
+                        }
+                      }
+                    ]
+                }
+              ),
+            }}
+          />
           <section className="contact-section" id="contact">
             <div>
               <h2 className="serif-medium" style={{ marginBottom: 20 }}>
