@@ -25,6 +25,24 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "event-marketing-interview-questions",
+    title: "The Interview Questions I Want You to Ask Me (and What a Real Answer Sounds Like)",
+    metaTitle: "Event Marketing Interview Questions",
+    description:
+      "Every interview guide for event marketing managers is written for the person doing the hiring. This one is written from the other chair: the questions I'd want a hiring manager to ask me, what a real answer sounds like, and the one question none of the guides include. What happened ninety days after your last event?",
+    metaDescription:
+      "Event marketing interview questions from the candidate's side: what a real answer sounds like, and the 90-day question every guide skips.",
+    date: "2026-10-03",
+    readingMinutes: 5,
+    keywords: [
+      "event marketing manager interview questions",
+      "hiring a B2B event marketer",
+      "event marketing interview",
+      "field marketing events manager hiring",
+      "B2B event marketer San Francisco",
+    ],
+  },
+  {
     slug: "first-venue-walkthrough",
     title: "The First Walkthrough: What I Look For Before Anyone Signs the Venue Contract",
     metaTitle: "What I Look For on a Venue Walkthrough",
