@@ -123,6 +123,17 @@ export default async function PostPage({
             <div className="post-body">
               <Body />
             </div>
+            {post.faqs && post.faqs.length > 0 && (
+              <section className="post-body post-faq" aria-labelledby="post-faq-heading">
+                <h2 id="post-faq-heading">Frequently Asked Questions</h2>
+                {post.faqs.map((faq) => (
+                  <div key={faq.question} className="post-faq-item">
+                    <h3>{faq.question}</h3>
+                    <p>{faq.answer}</p>
+                  </div>
+                ))}
+              </section>
+            )}
             <div className="post-footer">
               <div className="post-author">
                 <div
@@ -153,6 +164,26 @@ export default async function PostPage({
       <BreadcrumbJsonLd
         items={[HOME_CRUMB, FIELD_NOTES_CRUMB, { name: post.title, path: `/blog/${post.slug}` }]}
       />
+      {/* FAQPage JSON-LD renders from the same post.faqs array as the visible
+          section above, so the markup can't describe Q&As a reader can't see.
+          Enforced by scripts/check-faq.mjs. */}
+      {post.faqs && post.faqs.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              url: `https://www.whitneystevenson.com/blog/${post.slug}`,
+              mainEntity: post.faqs.map((faq) => ({
+                "@type": "Question",
+                name: faq.question,
+                acceptedAnswer: { "@type": "Answer", text: faq.answer },
+              })),
+            }),
+          }}
+        />
+      )}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

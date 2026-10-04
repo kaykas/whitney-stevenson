@@ -21,6 +21,13 @@ export type Post = {
   readingMinutes: number;
   keywords: string[];
   hero?: string;
+  /**
+   * Optional FAQ for the post. Rendered as a visible section under the body
+   * AND as FAQPage JSON-LD from this same array, so the structured data can
+   * never drift from what a reader sees. Answers are plain text, drawn only
+   * from what the post itself says. Enforced by scripts/check-faq.mjs.
+   */
+  faqs?: { question: string; answer: string }[];
 };
 
 export const posts: Post[] = [
@@ -77,6 +84,28 @@ export const posts: Post[] = [
       "conference venue selection",
       "B2B event marketer San Francisco",
     ],
+    faqs: [
+      {
+        question: "What should you check first on a venue walkthrough?",
+        answer:
+          "The loading dock. I start at the back door because that's where build week goes wrong. I want to know how tall the dock door is, how long a truck can sit there before somebody writes a ticket, whether the freight elevator fits a crate in real life or only on paper, and who holds the key at 9 p.m. on a Sunday when the fabricator is running late.",
+      },
+      {
+        question: "What do you look at in the main room during a site visit?",
+        answer:
+          "Mostly the cheap seats. I stand where the last row will be and check whether I can read a slide from there. I count the outlets, because a breakout room with two outlets and a demo station is going to have a very exciting Tuesday. Then I find the spot inside the door where people will bunch up and start moving the registration table in my head.",
+      },
+      {
+        question: "How do you check the guest experience on a walkthrough?",
+        answer:
+          "I go back out to the curb and come in again as the VP who just got off a delayed flight. How far is the rideshare drop from the door? Is there signage? Is the accessible entrance around the side past the dumpsters? Where can a speaker sit quietly for ten minutes? And I time the walk from the main room to the nearest restroom, every single time.",
+      },
+      {
+        question: "What happens to your walkthrough notes after the visit?",
+        answer:
+          "They go back to the venue the same day, photos of the power panel and the dock door included. That gives the venue a chance to correct me, and it starts a relationship with their operations people, who are the ones I'll be calling at 6 a.m. on show day.",
+      },
+    ],
   },
   {
     slug: "event-concierge-b2b-hospitality",
@@ -112,6 +141,28 @@ export const posts: Post[] = [
       "B2B event marketer hiring",
       "event coordinator San Francisco",
       "recurring event strategy",
+    ],
+    faqs: [
+      {
+        question: "Why is Whitney Stevenson moving from freelance to an in-house events role?",
+        answer:
+          "Freelance event work ends on load-out night, and you never find out what the badge scans turned into. I want to join one events team and stay long enough for the work to compound, the way it did across three straight years of RSA Conference at Arxan.",
+      },
+      {
+        question: "Why does recurring event work get better every year?",
+        answer:
+          "Year two gets built out of year one's receipts. At Arxan I was still there ninety days after RSA when the reps followed up, so we knew which parts of the booth were earning their keep. By year five of a recurring event, the caterer picks up at 11 p.m. because you picked up for them once, and the January post-mortem is a document people actually open.",
+      },
+      {
+        question: "Would Whitney start in an event coordination role?",
+        answer:
+          "Happily! If the right company needs me to begin by wrangling shipping manifests and badge lists, I'll do it, because I know exactly what a perfect badge list is worth at 7 a.m. on day one of a show. I'd rather earn the bigger job from inside the building.",
+      },
+      {
+        question: "What does a freelance event producer bring to an in-house team on day one?",
+        answer:
+          "Someone who has already made the scary mistakes on somebody else's budget. Agency life means learning a new stakeholder map every few weeks and reading a client's brand guidelines on the drive to the venue. When something breaks, I fix it and keep the room calm.",
+      },
     ],
   },
   {
