@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev -p 3002",
     "build": "next build",
-    "postbuild": "node scripts/check-outgoing-links.mjs && node scripts/check-meta-descriptions.mjs && node scripts/check-bot-policy.mjs && node scripts/check-titles.mjs && node scripts/check-canonical-origin.mjs && node scripts/check-og-canonical.mjs && node scripts/check-breadcrumbs.mjs",
+    "postbuild": "node scripts/check-outgoing-links.mjs && node scripts/check-meta-descriptions.mjs && node scripts/check-bot-policy.mjs && node scripts/check-titles.mjs && node scripts/check-canonical-origin.mjs && node scripts/check-og-canonical.mjs && node scripts/check-breadcrumbs.mjs && node scripts/check-faq.mjs",
     "start": "next start",
     "lint": "eslint",
     "check:links": "node scripts/check-outgoing-links.mjs",
@@ -14,7 +14,8 @@
     "check:titles": "node scripts/check-titles.mjs",
     "check:origin": "node scripts/check-canonical-origin.mjs",
     "check:og": "node scripts/check-og-canonical.mjs",
-    "check:breadcrumbs": "node scripts/check-breadcrumbs.mjs"
+    "check:breadcrumbs": "node scripts/check-breadcrumbs.mjs",
+    "check:faq": "node scripts/check-faq.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.8.0",
