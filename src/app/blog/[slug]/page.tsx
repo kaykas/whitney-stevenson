@@ -15,8 +15,10 @@ import { freelanceToInHousePost } from "./posts/freelance-to-in-house";
 import { eventConciergePost } from "./posts/event-concierge-b2b-hospitality";
 import { firstWalkthroughPost } from "./posts/first-venue-walkthrough";
 import { interviewQuestionsPost } from "./posts/event-marketing-interview-questions";
+import { clientGolfOutingPost } from "./posts/b2b-client-golf-outing";
 
 const POST_BODIES: Record<string, () => React.ReactNode> = {
+  "b2b-client-golf-outing": clientGolfOutingPost,
   "event-marketing-interview-questions": interviewQuestionsPost,
   "first-venue-walkthrough": firstWalkthroughPost,
   "event-concierge-b2b-hospitality": eventConciergePost,

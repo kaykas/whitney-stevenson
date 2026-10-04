@@ -25,6 +25,24 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "b2b-client-golf-outing",
+    title: "The Scoring Tent Is the Meeting: How I'd Plan a B2B Client Golf Outing",
+    metaTitle: "How to Plan a B2B Client Golf Outing",
+    description:
+      "I produced 300+ tournaments at Presidio Golf Course, and I've worked the sponsor table at B2B outings too. The planning guides cover format and budget well. They skip the stretch between the last putt and the awards, which is the only time all day your clients are standing still with nothing on their schedule.",
+    metaDescription:
+      "How to plan a B2B client golf outing from someone who ran 300+ tournaments: pairings, the turn, and the scoring tent most guides skip.",
+    date: "2026-10-04",
+    readingMinutes: 5,
+    keywords: [
+      "corporate golf outing planning",
+      "B2B client golf event",
+      "how to plan a corporate golf tournament",
+      "client golf outing ideas",
+      "B2B event marketer San Francisco",
+    ],
+  },
+  {
     slug: "event-marketing-interview-questions",
     title: "The Interview Questions I Want You to Ask Me (and What a Real Answer Sounds Like)",
     metaTitle: "Event Marketing Interview Questions",
