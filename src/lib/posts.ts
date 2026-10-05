@@ -66,6 +66,28 @@ export const posts: Post[] = [
       "field marketing events manager hiring",
       "B2B event marketer San Francisco",
     ],
+    faqs: [
+      {
+        question: "What interview question does Whitney Stevenson most want a hiring manager to ask?",
+        answer:
+          "What happened ninety days after your last event? None of the interview guides include it, because every question on them stops at load-out. Her best answer comes from Arxan, where she stayed long enough after RSA Conference to watch badge scans turn into specific opportunities with a dollar value attached.",
+      },
+      {
+        question: "How should you follow up when a candidate says they measure event success by ROI?",
+        answer:
+          "Ask when. When did they last look at the pipeline number, and who handed it to them? A candidate who can name the week they saw the number has lived it. Whitney can: by the end of Q2 after her second RSA with Arxan, the team could point to specific opportunities and their dollar value, and that spreadsheet bought them year three.",
+      },
+      {
+        question: "How did Whitney prove an RSA Conference booth produced revenue at Arxan?",
+        answer:
+          "After year one, leadership asked whether she could prove it. So the next year every badge scanned at the booth was tagged in the CRM as RSA-sourced, every lead went to a rep within 24 hours, and the team tracked the 30-60-90 day follow-up every single week.",
+      },
+      {
+        question: "What is a quick way to tell whether an event marketer has worked a real build?",
+        answer:
+          "Ask what they look at first on a site visit. People who have only seen events from the attendee side talk about the ballroom. People who have stood at a loading dock with a truck idling talk about the dock. Whitney starts at the back door every time and asks how tall the dock door is long before she says anything nice about the chandeliers.",
+      },
+    ],
   },
   {
     slug: "first-venue-walkthrough",
@@ -239,6 +261,33 @@ export const posts: Post[] = [
       "channel marketing Latin America",
     ],
     hero: "/whitney/photos/illumio-golf-booth.jpg",
+    faqs: [
+      {
+        question: "What did Illumio have in Latin America when Whitney Stevenson started?",
+        answer:
+          "Nothing yet. No channel program, no regional partners, no localized collateral and no relationships on the ground in Brazil, São Paulo or Mexico. The mandate was to build the program from scratch and hit the targets.",
+      },
+      {
+        question: "Where did Whitney start when building Illumio's LATAM channel?",
+        answer:
+          "On planes, for the first ninety days. São Paulo came first, because that's where the LATAM cybersecurity industry clusters and where channel decision-makers actually take meetings. Then Mexico City, then Brazil more broadly. She learned which restaurants the regional CISOs go to, which trade shows mattered, and which partners already had budget for Zero Trust.",
+      },
+      {
+        question: "What moved the targets for Illumio's Latin America channel program?",
+        answer:
+          "Hospitality and trust. The white papers and MDF budgets already existed. What partners needed was proof Illumio would still be there in twelve months, so Whitney ran quarterly partner roundtables in São Paulo, co-marketed regional events with anchor accounts, showed up at Latin American cybersecurity conferences with the same polish as the big San Francisco shows, and followed up within 24 hours every time.",
+      },
+      {
+        question: "What would Whitney do differently building a LATAM channel program again?",
+        answer:
+          "Bring the regional voice into the global event calendar earlier. Some of the best LATAM co-marketed plays could have happened sooner if the global event team had aligned to LATAM sequencing instead of the other way around.",
+      },
+      {
+        question: "Did the partners from Illumio's first LATAM program stick?",
+        answer:
+          "Yes! Every partner Whitney onboarded in those first ninety days is still in Illumio's book today.",
+      },
+    ],
   },
   {
     slug: "the-target-run",
