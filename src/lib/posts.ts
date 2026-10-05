@@ -32,6 +32,41 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "trade-show-booth-staff-training",
+    title: "What I Tell the Booth Team the Night Before a Trade Show",
+    metaTitle: "Trade Show Booth Staff Training Tips",
+    description:
+      "Three years running Arxan's booth at RSA Conference, between Palo Alto Networks and CrowdStrike, taught me what to say in the briefing before doors open. The usual training guides cover body language and pitches. They skip the twenty seconds after the badge scan, which is where the follow-up lives or dies.",
+    metaDescription:
+      "Trade show booth staff training from three years running Arxan's RSA booth: where to stand, the second question, and the note after every scan.",
+    date: "2026-10-05",
+    readingMinutes: 5,
+    keywords: [
+      "trade show booth staff training",
+      "booth staffing tips",
+      "trade show lead follow-up",
+      "RSA Conference booth staff",
+      "B2B event marketer San Francisco",
+    ],
+    faqs: [
+      {
+        question: "Where should booth staff stand at a trade show?",
+        answer:
+          "Front corners, angled toward the aisle, and never in a cluster behind the demo table catching up on last night's dinner. A booth with your own people huddled in the middle of it looks like a private party, and nobody walking past wants to crash one.",
+      },
+      {
+        question: "What should booth staff do right after scanning a badge?",
+        answer:
+          "Put one sentence in the notes field after every real conversation, before the next visitor walks up. Something the human actually said, like a renewal with their current vendor coming up in the spring. \"Wants pricing\" doesn't count, because everyone wants pricing.",
+      },
+      {
+        question: "How did Whitney Stevenson track trade show leads at RSA Conference?",
+        answer:
+          "At Arxan we tagged every scan in the CRM as RSA-sourced, got every lead to a rep within 24 hours, and tracked a 30-60-90 day follow-up cadence every single week. That spreadsheet is what bought us Year Three.",
+      },
+    ],
+  },
+  {
     slug: "b2b-client-golf-outing",
     title: "The Scoring Tent Is the Meeting: How I'd Plan a B2B Client Golf Outing",
     metaTitle: "How to Plan a B2B Client Golf Outing",
