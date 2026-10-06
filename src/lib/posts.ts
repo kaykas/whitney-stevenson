@@ -32,6 +32,46 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "event-run-of-show-cut-list",
+    title: "The \"If Late\" Column: How I Write a Run of Show",
+    metaTitle: "How to Write an Event Run of Show",
+    description:
+      "I've written run-of-show documents for golf tournaments, eight New Year's Eves and a live awards broadcast. The guides cover fixed times, owners and buffers. They skip what happens when the buffer is gone, so I add one more column on the far right and decide what gets cut while everyone is still calm.",
+    metaDescription:
+      "How to write an event run of show backwards from the cue that can't move, plus the \"If late\" column and cut list most run-of-show guides skip.",
+    date: "2026-10-06",
+    readingMinutes: 6,
+    keywords: [
+      "how to write a run of show",
+      "event run of show",
+      "run of show template",
+      "event timeline when running late",
+      "B2B event marketer San Francisco",
+    ],
+    faqs: [
+      {
+        question: "Where should you start when writing an event run of show?",
+        answer:
+          "At the cue that can't move, and then write backwards. On New Year's Eve that's midnight, so I start at 11:59:50 p.m. and walk the night in reverse. At a corporate event it might be the room flipping to another booking at 5. Writing backward from the immovable thing tells you where the slack actually lives.",
+      },
+      {
+        question: "What is the \"If late\" column in a run of show?",
+        answer:
+          "It's one more column on the far right of my run of show. Every line gets an answer before the day starts, like hold, shorten to five, or cut. The lines marked cut become a ranked cut list, agreed with the client a week out instead of decided in a whisper by the AV table.",
+      },
+      {
+        question: "What should you cut first when an event runs late?",
+        answer:
+          "Content before conversation. A B2B audience will forgive a missing video. They won't forgive losing the networking break they flew in for, so in my run of show that break never gets cut.",
+      },
+      {
+        question: "Who should decide on cuts during a live event?",
+        answer:
+          "One named person, written at the top of the run of show. Usually that's me. The executive sponsor gets a vote in the planning meeting, and on the day exactly one person reads the clock and calls the cut list.",
+      },
+    ],
+  },
+  {
     slug: "trade-show-booth-staff-training",
     title: "What I Tell the Booth Team the Night Before a Trade Show",
     metaTitle: "Trade Show Booth Staff Training Tips",
