@@ -278,6 +278,33 @@ export const posts: Post[] = [
       "run of show broadcast",
       "awards show production",
     ],
+    faqs: [
+      {
+        question: "What did Whitney Stevenson do at the Latin Billboard Awards?",
+        answer:
+          "She ran artist relations for three performing artists. In practice that meant one promise: when the stage manager called each artist to position, the artist was there and ready. Getting there meant absorbing every problem in the building before it could reach the person whose name was in the rundown.",
+      },
+      {
+        question: "How does Whitney handle an artist rider?",
+        answer:
+          "Like a booth build spec. Every line gets executed or flagged, and nothing gets quietly dropped. Two days out she walks the green room with the rider in hand and checks each item against what is physically there. If the venue can't source something, the tour manager hears it from her before load-in, while it's still a logistics note and long before it turns into a crisis.",
+      },
+      {
+        question: "How is run of show different for a live awards broadcast?",
+        answer:
+          "A broadcast rundown doesn't bend. Commercial breaks are sold, satellite windows are booked, and the network decides when the show ends. So the unit of measure is the call-to-position. Whitney ran the clock backward from every call: when glam finishes, when the artist starts moving, who clears the route and who holds the elevator.",
+      },
+      {
+        question: "How do you run artist relations for three artists on one show?",
+        answer:
+          "As three separate operations. One of Whitney's artists wanted energy and a crowd right up to the walk, one wanted silence and a single handler, and one arena veteran wanted accurate information early with no decoration. She read which was which at the first rehearsal and built the green room, the runners and the updates around each one.",
+      },
+      {
+        question: "What did broadcast production teach Whitney that corporate events didn't?",
+        answer:
+          "To rehearse the recoveries along with the plan. Corporate production teaches precision against a plan. Broadcast teaches precision against a clock that doesn't know you exist, where a performance runs long or a stage reset eats ninety seconds of the changeover and the show keeps going anyway.",
+      },
+    ],
   },
   {
     slug: "illumio-latam-channel-partnership",
@@ -397,6 +424,28 @@ export const posts: Post[] = [
       "high-pressure event execution",
     ],
     hero: "/whitney/photos/tostitos-fiesta-zone.jpeg",
+    faqs: [
+      {
+        question: "What was the Tostitos Fiesta Zone at Super Bowl 2026?",
+        answer:
+          "A multi-day PepsiCo Tostitos activation at Pier 39 for Super Bowl LX in San Francisco. It had a branded structure, roaming chip-cooler robots and family programming, and Whitney was on the ground producing it.",
+      },
+      {
+        question: "Why does build week decide a Super Bowl activation?",
+        answer:
+          "Because build week is when every problem nobody planned for shows up: a loading dock constraint missing from the site survey, a damaged panel whose replacement is on a truck somewhere on I-80, a permit revision before Saturday programming. Whitney solves those with relationships built before arrival, like the fabricator's lead carpenter, the pier's operations manager and a local permit runner who can unblock things in 90 minutes.",
+      },
+      {
+        question: "Who was the audience at the Tostitos Fiesta Zone?",
+        answer:
+          "Four audiences at once: families with kids, tourists wandering the pier, NFL fans walking between events, and PepsiCo stakeholders watching the brand experience. Families got a photo moment with the chip-cooler robot, locals got a clean space that didn't feel like a corporate intrusion on their pier, and executives got a disciplined operation with zero visible friction.",
+      },
+      {
+        question: "What does a good load-out look like after a Super Bowl activation?",
+        answer:
+          "The pier goes back to public access in six hours. Every panel, cable and crate is back on a truck, the site is photographed clean for hand-back, and vendor invoices and damage assessments are filed within 48 hours. Production teams that nail load-out get rebooked!",
+      },
+    ],
   },
 ];
 
