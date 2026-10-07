@@ -16,7 +16,8 @@ import { join, relative, sep } from "node:path";
 const APP_DIR = join(process.cwd(), ".next", "server", "app");
 const NOT_CRAWLABLE = new Set(["_global-error.html", "_error.html", "_not-found.html"]);
 const REQUIRED = ["/", "/blog/first-venue-walkthrough", "/blog/freelance-to-in-house",
-  "/blog/latin-billboard-awards-artist-relations", "/blog/pepsico-tostitos-super-bowl-2026"];
+  "/blog/latin-billboard-awards-artist-relations", "/blog/pepsico-tostitos-super-bowl-2026",
+  "/blog/sunglasses-shops-and-bodywork", "/blog/the-target-run"];
 
 function walk(dir) {
   return readdirSync(dir).flatMap((entry) => {
