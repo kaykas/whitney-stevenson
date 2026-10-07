@@ -261,6 +261,28 @@ export const posts: Post[] = [
       "VIP guest experience events",
       "B2B event marketer San Francisco",
     ],
+    faqs: [
+      {
+        question: "What does an event concierge do at a B2B event?",
+        answer:
+          "She remembers. The floorplan, booth build and shipping manifests can mostly ride on a good checklist. The concierge half is knowing that the VP who flew in for your customer dinner landed late and hasn't eaten, that the partner you need came to meet exactly one person on your team, and that the 2 p.m. speaker wants ten quiet minutes more than anything on the green room table.",
+      },
+      {
+        question: "Why does concierge work matter for B2B pipeline?",
+        answer:
+          "Because the big moments in a B2B deal rarely happen in the aisle. A badge scan is a maybe. The customer dinner, the executive meeting in a hotel suite, the partner seated next to your CRO on purpose: that's where a deal jumps a stage. Whitney tracked RSA Conference pipeline at Arxan from badge scan through the 90-day rep follow-up, and those numbers start with how a guest felt walking out the door.",
+      },
+      {
+        question: "Where did Whitney Stevenson learn event hospitality?",
+        answer:
+          "Backstage, mostly. Running artist relations at the Latin Billboard Awards taught her to read every rider as a performer saying what they need to walk on stage feeling like themselves. Seven years and 300+ tournaments at Presidio Golf taught her that the fastest way to make a Saturday feel effortless is to already know the members before they reach the registration table.",
+      },
+      {
+        question: "How does an event concierge keep track of guests?",
+        answer:
+          "Notes. Nice helps, notes scale. Whitney writes down allergies, the name of somebody's kid, the flight that got bumped to the red-eye, and the person a guest hoped to meet but was too polite to ask for. That file grows every time she sees someone, which is a big part of why eight years of the same New Year's Eve party got warmer each December.",
+      },
+    ],
   },
   {
     slug: "freelance-to-in-house",
@@ -365,6 +387,28 @@ export const posts: Post[] = [
       "San Francisco NYE party producer",
       "annual event production",
       "countdown run of show",
+    ],
+    faqs: [
+      {
+        question: "How long has Whitney Stevenson produced San Francisco's New Year's Eve party?",
+        answer:
+          "Eight consecutive years. Same night, same immovable second, a different room full of people every time. It's the longest running client relationship of her career, and eight midnights in, every one of them has landed on time.",
+      },
+      {
+        question: "Why is year two of a recurring event harder than year one?",
+        answer:
+          "Year one runs on adrenaline and sheer hours. Year two is when you find out what was skill and what was luck: the checklist nobody wrote down is gone, and the loading dock has a new manager who has never heard your name. Whitney's fix is to write the post-mortem in January while the bruises are still visible: what broke, what almost broke, who saved the night, and which vendor earned a bigger slice next year.",
+      },
+      {
+        question: "How do you produce a New Year's Eve countdown?",
+        answer:
+          "Backwards, starting from 11:59:50 p.m. The last ten seconds belong to the room and the fifty before them belong to the producer. Champagne is poured and staged by 11:40, every time. Anything that can be solved before 11 p.m. gets solved before 11 p.m., because in the last hour of the year the crowd compresses, the noise doubles, and every errand takes three times as long.",
+      },
+      {
+        question: "What does a recurring event build over time?",
+        answer:
+          "Relationships, mostly. The house electrician who answers your text in November, the security lead who already knows your pinch points. By year five the production has a bench, and guests start planning their December around the party. Strangers arrive at nine, and by midnight the floor feels like a reunion!",
+      },
     ],
   },
   {
