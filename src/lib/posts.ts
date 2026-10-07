@@ -32,6 +32,46 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "conference-customer-dinner",
+    title: "The Walk Over: How I Run a Customer Dinner During Conference Week",
+    metaTitle: "Planning a Conference Customer Dinner",
+    description:
+      "The guides for conference customer dinners cover the invite list, the private room and the seating chart. They skip the forty minutes between the expo hall closing and the first course, which is where I've watched these dinners go sideways. So every guest gets an escort, and the notes go out before breakfast.",
+    metaDescription:
+      "How to plan a customer dinner during conference week: writing backward from the reservation, an escort for every guest, and notes before breakfast.",
+    date: "2026-10-07",
+    readingMinutes: 6,
+    keywords: [
+      "conference customer dinner",
+      "how to plan a client dinner at a conference",
+      "executive dinner planning",
+      "B2B customer dinner",
+      "B2B event marketer San Francisco",
+    ],
+    faqs: [
+      {
+        question: "How do you plan the timing for a customer dinner during a conference?",
+        answer:
+          "Write the evening backward from the reservation. Seated at 7:30 means everyone walking in the door by 7:15, leaving the venue by 6:50, and the booth team told at 6:30 which guests are theirs to collect. Then walk the route yourself at the same hour, because a walk the map app calls eight minutes is a different walk during a 40,000-person conference.",
+      },
+      {
+        question: "How do you get guests from the conference to the dinner?",
+        answer:
+          "Each guest gets one named person from your team who is responsible for getting them from the show floor to their chair, usually the rep who owns the account. The rep gets fifteen uninterrupted minutes with their customer on the walk over, and by 6:55 you know exactly who isn't coming.",
+      },
+      {
+        question: "What should you do about no-shows and surprise guests at a conference dinner?",
+        answer:
+          "Seat in small clusters so losing any one guest doesn't strand a VP between two of your own employees, and keep a short list of nearby colleagues who can fill a seat. If a customer brings a colleague you didn't invite, the right answer is a warm hello and a chair, every time.",
+      },
+      {
+        question: "When should you follow up after a conference customer dinner?",
+        answer:
+          "The thank-you email can go within 48 hours, but the notes can't wait. Everyone from your team at the table sends two or three lines about each guest they talked to before they go to sleep, or over coffee the next morning at the latest.",
+      },
+    ],
+  },
+  {
     slug: "event-run-of-show-cut-list",
     title: "The \"If Late\" Column: How I Write a Run of Show",
     metaTitle: "How to Write an Event Run of Show",

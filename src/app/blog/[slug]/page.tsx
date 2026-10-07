@@ -18,8 +18,10 @@ import { interviewQuestionsPost } from "./posts/event-marketing-interview-questi
 import { clientGolfOutingPost } from "./posts/b2b-client-golf-outing";
 import { boothStaffTrainingPost } from "./posts/trade-show-booth-staff-training";
 import { runOfShowCutListPost } from "./posts/event-run-of-show-cut-list";
+import { conferenceCustomerDinnerPost } from "./posts/conference-customer-dinner";
 
 const POST_BODIES: Record<string, () => React.ReactNode> = {
+  "conference-customer-dinner": conferenceCustomerDinnerPost,
   "event-run-of-show-cut-list": runOfShowCutListPost,
   "trade-show-booth-staff-training": boothStaffTrainingPost,
   "b2b-client-golf-outing": clientGolfOutingPost,
