@@ -280,6 +280,33 @@ export const posts: Post[] = [
       "San Francisco sunglasses shop",
       "bodywork and event production",
     ],
+    faqs: [
+      {
+        question: "What did Whitney Stevenson do before event marketing?",
+        answer:
+          "She founded a sunglasses venture in San Francisco and grew it to two locations. Before the Super Bowl and before RSA, she was the person unlocking the door in the morning and counting the drawer at night. It's the least glamorous line on her resume, and she'd put it near the top.",
+      },
+      {
+        question: "What does running a retail shop teach an event marketer?",
+        answer:
+          "That foot traffic is honest. People walk in or they walk past, and you know which by lunch. Every booth Whitney has designed since starts with the question she used to ask about the storefront: what does a stranger see in their first three steps, and does any of it give them a reason to stop? She carried that straight into three years of running Arxan at RSA.",
+      },
+      {
+        question: "What did opening a second store teach Whitney about scaling events?",
+        answer:
+          "Instinct doesn't travel, and a checklist does, as long as the person holding it understands why each line is there. A second location forced her to write down everything she did by instinct and see which pieces survived the trip across town. That lesson went into 300+ tournaments at Presidio Golf, where the volunteer at the registration table has to know the reason behind a rule to make a good call when the rule doesn't fit.",
+      },
+      {
+        question: "What kind of bodywork does Whitney practice, and how does it connect to events?",
+        answer:
+          "She's a practicing bodyworker trained in Facial Release and Access Consciousness, working one person at a time alongside her event work. Both jobs run on attention. On the table you notice what a person is carrying before they say a word, and on a show floor you notice the exhibitor who is completely fine and about ten minutes from very much not fine. The earlier you notice, the smaller the fix.",
+      },
+      {
+        question: "How does Whitney think about hospitality in B2B event marketing?",
+        answer:
+          "Event marketing is hospitality with a budget line and a pipeline target attached. She learned the hospitality half behind a counter and beside a treatment table, long before anyone handed her a badge scanner, and it still does most of the work. Her measure of good lighting: nobody has ever thanked her for it!",
+      },
+    ],
   },
   {
     slug: "eight-years-sf-nye-party",
@@ -406,6 +433,33 @@ export const posts: Post[] = [
       "white-glove event execution",
       "B2B event hospitality",
       "calm under pressure events",
+    ],
+    faqs: [
+      {
+        question: "What is the Target Run story?",
+        answer:
+          "A breakout speaker walked on stage and there was no screen, because the sales rep had forgotten the TV. The room was full and the clock was running, so Whitney drove to Target and came back with a TV. The session went on, the speaker delivered the talk he'd prepared, and nobody in the room except the four people in the back knew anything had gone wrong.",
+      },
+      {
+        question: "What is an event producer's job when something breaks?",
+        answer:
+          "Making sure the audience never finds out. The speaker keeps their dignity, the sponsor keeps their ROI, and the room keeps its energy. Whitney's part is keeping a level head and figuring out which direction the nearest big-box electronics retailer is in.",
+      },
+      {
+        question: "How does Whitney Stevenson stay calm under pressure at events?",
+        answer:
+          "She treats calm as a practice she builds on purpose. She has run enough events to have already seen most of the failure modes, she separates \"this is bad\" from \"this is solvable in the next nine minutes,\" and she has trained herself to act before she explains.",
+      },
+      {
+        question: "Why does composure matter so much for an event team?",
+        answer:
+          "Panic is contagious, and so is composure. If the team watches the lead spiral, the problem doubles: the original failure plus a frightened team that can't execute. When Whitney says \"I'm driving to Target, you handle the speaker, you handle the AV crew, we reconvene in twenty,\" the team moves and the crisis splits into manageable parts.",
+      },
+      {
+        question: "Who is a good fit for on-the-ground event production?",
+        answer:
+          "Someone whose nervous system flattens out and starts problem-solving when something goes wrong. If yours spikes instead, it's a tough role. Whitney is the flatten-out-and-solve kind, and always has been!",
+      },
     ],
   },
   {
