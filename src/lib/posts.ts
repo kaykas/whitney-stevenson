@@ -564,6 +564,28 @@ export const posts: Post[] = [
       "Arxan Technologies events",
     ],
     hero: "/whitney/photos/rsa-year-three.jpeg",
+    faqs: [
+      {
+        question: "How did Whitney Stevenson run Arxan's presence at RSA Conference?",
+        answer:
+          "She ran it for three consecutive years: same company, same neighborhood on the floor, wedged between Palo Alto Networks and CrowdStrike, next to competitors who all spent more. Pipeline contribution grew every year, and Year Three was the highest of the three.",
+      },
+      {
+        question: "How should a smaller vendor design a booth at RSA Conference?",
+        answer:
+          "Skip the over-designed booth. Pick one core message, render it cleanly so it reads from 30 feet, and staff it with people who can hold a 90-second technical conversation without reading from a card. At Arxan, that calmer, more confident energy is what made people who walked past Palo Alto Networks and CrowdStrike stop at our booth.",
+      },
+      {
+        question: "How do you track trade show ROI and pipeline attribution?",
+        answer:
+          "In Year Two, Whitney instrumented everything. Every badge scanned at the Arxan booth was tagged in the CRM with RSA-source attribution, every lead went to a rep within 24 hours, and every rep had a 30-60-90 day follow-up cadence tracked weekly. By the end of Q2 the team could point to specific RSA-sourced opportunities, their dollar value, and conversion rates compared to other lead sources. That spreadsheet is what bought Year Three!",
+      },
+      {
+        question: "Should you redesign your trade show booth every year?",
+        answer:
+          "Don't! The buyers walking RSA are mostly the same CISOs, security architects and channel partners every year, and by Year Three Arxan registered as a fixture. Whitney tightened the booth slightly, refreshed the demo, and let the consistency do the work. Year One you arrive, Year Two you prove the math, Year Three you become a fixture.",
+      },
+    ],
   },
   {
     slug: "presidio-golf-300-tournaments",
@@ -583,6 +605,33 @@ export const posts: Post[] = [
       "white-glove event operations",
     ],
     hero: "/whitney/photos/presidio-merch-medallion.jpg",
+    faqs: [
+      {
+        question: "What did Whitney Stevenson do at Presidio Golf Course?",
+        answer:
+          "She founded the women's club at Presidio Golf Course in San Francisco, the West Coast's second-oldest course, and produced more than 300 tournaments over seven years. The club started with a charter membership of about thirty and ended her tenure at multiples of that.",
+      },
+      {
+        question: "What are the load-bearing moments of a golf tournament?",
+        answer:
+          "Five of them: arrival check-in, the shotgun horn, the turn (when half the field hits Hole 10), the scoring tent at finish, and the awards. If those hit clean, everything else can absorb minor friction. If any one of them breaks, the whole day feels off.",
+      },
+      {
+        question: "How do small details compound in event operations?",
+        answer:
+          "The temperature of the coffee at 7am check-in, the sequencing of the cart staging, where the photographer stands at the awards, whether the clubhouse music is two clicks too loud. None of them changes anyone's day on its own. Together they decide whether a player walks away saying \"that was a great day\" or \"that was fine,\" and that gap is the difference between a club that grows and a club that doesn't.",
+      },
+      {
+        question: "How did the Presidio women's golf club grow?",
+        answer:
+          "Through the day-of experience. People joined because a friend had played one of the tournaments and called them on the way home. Whitney got the experience right before spending on marketing, because marketing pulls people in once and the experience is what brings them back and makes them recruit their friends.",
+      },
+      {
+        question: "What do golf tournaments have to do with B2B event marketing?",
+        answer:
+          "The same skillset runs both. A partner roundtable for a B2B tech company has the same load-bearing moments, the same compounding small details, and the same insistence that the experience is the marketing. Three hundred tournaments is what made Whitney good at corporate events.",
+      },
+    ],
   },
   {
     slug: "pepsico-tostitos-super-bowl-2026",
