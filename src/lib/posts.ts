@@ -163,6 +163,23 @@ export const posts: Post[] = [
       "client golf outing ideas",
       "B2B event marketer San Francisco",
     ],
+    faqs: [
+      {
+        question: "How should you set the pairings for a B2B client golf outing?",
+        answer:
+          "Treat the pairings sheet as the real agenda, because a foursome spends most of the day sharing two carts. I build it the way I build guest notes for a customer dinner: who is a genuinely good golfer and would be miserable with three beginners, who hasn't swung a club since college, who has allergies or a flight home that night, and which partner is hoping to meet one particular person. Put that person in the cart.",
+      },
+      {
+        question: "What happens between the last putt and the awards at a client golf outing?",
+        answer:
+          "Groups finish at different times, cards get checked and totaled, and the field drifts in one foursome at a time. It's the only time all afternoon your guests are standing still with nothing on their schedule, so I plan it like a customer dinner. One person owns the scoring tent so the awards don't run late, each rep knows which finishing groups to greet, and the executive who skipped the golf shows up for this part knowing which two people to find.",
+      },
+      {
+        question: "How should you follow up after a client golf outing?",
+        answer:
+          "The same way we followed up RSA Conference leads at Arxan: tag every guest at the source, get each one to a rep within 24 hours, and track the 30-60-90 day follow-up every week. Have reps write down what they learned in the car on the way home, like a kid's volleyball schedule or a contract that renews in the spring. A thank-you note that mentions the eighth hole beats one with a logo on it.",
+      },
+    ],
   },
   {
     slug: "event-marketing-interview-questions",
