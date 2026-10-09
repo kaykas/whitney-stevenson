@@ -32,6 +32,46 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "measure-trade-show-roi",
+    title: "The Spreadsheet That Bought Year Three: How I Measure Trade Show ROI",
+    metaTitle: "How to Measure Trade Show ROI",
+    description:
+      "Going into our second year at RSA Conference, Arxan's leadership asked me to prove the booth produced revenue. The ROI guides cover the formula, the costs and the CRM tags. They all measure one show at a time, and I think a big annual show deserves three years before anyone calls it.",
+    metaDescription:
+      "How to measure trade show ROI from three years running Arxan's RSA booth: source tags, a 24-hour handoff, weekly follow-up and a three-year view.",
+    date: "2026-10-09",
+    readingMinutes: 6,
+    keywords: [
+      "how to measure trade show ROI",
+      "trade show ROI",
+      "trade show pipeline attribution",
+      "RSA Conference ROI",
+      "B2B event marketer San Francisco",
+    ],
+    faqs: [
+      {
+        question: "How do you measure trade show ROI?",
+        answer:
+          "Agree on the bookkeeping before the show. Tag every badge scan in the CRM with the show as its source, get every lead to a rep within 24 hours, track a 30-60-90 day follow-up cadence every week, and compare the show's leads against your other lead sources. At Arxan that let us point to specific RSA-sourced opportunities, their dollar value and their conversion rates by the end of Q2.",
+      },
+      {
+        question: "What should you compare trade show leads against?",
+        answer:
+          "Your other lead sources. An ROI percentage on its own persuades almost nobody in a budget meeting, because the CFO immediately wonders what the same money would have done somewhere else. Showing what a booth lead turned into next to what a lead from everywhere else turned into is the part that does the persuading.",
+      },
+      {
+        question: "How many years should you give a trade show before judging its ROI?",
+        answer:
+          "I'd judge a big annual trade show on a three-year arc and tell leadership that before the first deposit. At RSA, Arxan's pipeline contribution grew every year and Year Three was the highest of the three, with a booth we had barely changed. Measure a single show and you'll be tempted to cut it right when it starts compounding.",
+      },
+      {
+        question: "When should you report trade show ROI?",
+        answer:
+          "For RSA, I looked at the end of Q2. That was long enough for the 90-day follow-up cadence to run its course and early enough to have real numbers on the table before anybody started arguing about next year's budget.",
+      },
+    ],
+  },
+  {
     slug: "conference-customer-dinner",
     title: "The Walk Over: How I Run a Customer Dinner During Conference Week",
     metaTitle: "Planning a Conference Customer Dinner",
