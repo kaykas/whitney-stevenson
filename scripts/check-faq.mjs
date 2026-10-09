@@ -18,7 +18,8 @@ const NOT_CRAWLABLE = new Set(["_global-error.html", "_error.html", "_not-found.
 const REQUIRED = ["/", "/blog/first-venue-walkthrough", "/blog/freelance-to-in-house",
   "/blog/latin-billboard-awards-artist-relations", "/blog/pepsico-tostitos-super-bowl-2026",
   "/blog/sunglasses-shops-and-bodywork", "/blog/the-target-run",
-  "/blog/anchoring-arxan-three-years-rsa", "/blog/presidio-golf-300-tournaments"];
+  "/blog/anchoring-arxan-three-years-rsa", "/blog/presidio-golf-300-tournaments",
+  "/blog/b2b-client-golf-outing"];
 
 function walk(dir) {
   return readdirSync(dir).flatMap((entry) => {
