@@ -32,6 +32,46 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "breakout-speaker-care",
+    title: "The Breakout Speaker Gets a Rider Too: How I Look After Event Speakers",
+    metaTitle: "How I Handle Event Speaker Management",
+    description:
+      "The keynote gets a handler. The breakout speaker on at 2 p.m. gets a calendar invite and an upload link. The speaker management guides cover the paperwork well, and they skip the forty minutes before someone walks on, which is where I learned, backstage at the Latin Billboard Awards and on one fast drive to Target, that a speaker needs a rider and a person.",
+    metaDescription:
+      "Event speaker management, artist-relations style: ask about their worst event, find a quiet room, walk their route, split screen and speaker.",
+    date: "2026-10-10",
+    readingMinutes: 6,
+    keywords: [
+      "event speaker management",
+      "how to manage event speakers",
+      "breakout session speaker",
+      "conference speaker care",
+      "B2B event marketer San Francisco",
+    ],
+    faqs: [
+      {
+        question: "What should you ask event speakers before a conference?",
+        answer:
+          "Beyond the bio, headshot and AV needs, I'd ask every presenter two questions short enough to answer from a phone: what has gone wrong for you at somebody else's event, and what do you need in the last ten minutes before you go on? The first gets you their scar tissue for free. The second usually comes back sideways, and the sideways part is the part you write down.",
+      },
+      {
+        question: "Is a speaker-ready room enough for breakout speakers?",
+        answer:
+          "It's useful, and it's usually full of other speakers rehearsing out loud. The speaker on at 2 p.m. usually wants ten quiet minutes far more than anything on the green room table, so I ask where a speaker can sit quietly that isn't a supply closet on the first venue walkthrough, before anyone signs anything.",
+      },
+      {
+        question: "What do you do when a speaker's equipment fails during a session?",
+        answer:
+          "Split the problem before you fix it. When a breakout speaker walked on with no screen because the sales rep had forgotten the TV, I said I'm driving to Target, you handle the speaker, you handle the AV crew, we reconvene in twenty. One name owns the equipment and a different name owns the person, because whoever is fixing the screen is staring at the screen.",
+      },
+      {
+        question: "How should you tell a speaker their session is being shortened?",
+        answer:
+          "In person, at the break, with the new number and a reason. Every line in my run of show has an \"If late\" answer, and plenty of them land on a speaker. Hearing it from a moderator holding up a card at minute twenty-six is how a good presenter ends up rushing their best slide.",
+      },
+    ],
+  },
+  {
     slug: "event-post-mortem",
     title: "What Almost Broke: How I Write an Event Post-Mortem",
     metaTitle: "How to Write an Event Post-Mortem",
