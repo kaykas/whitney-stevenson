@@ -32,6 +32,46 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "event-post-mortem",
+    title: "What Almost Broke: How I Write an Event Post-Mortem",
+    metaTitle: "How to Write an Event Post-Mortem",
+    description:
+      "Eight Januarys in a row, I wrote the post-mortem for San Francisco's New Year's Eve party while the bruises were still visible. The debrief guides cover the meeting. I write the document for whoever runs the event next, which is usually me eleven months later, and I give the near misses their own section.",
+    metaDescription:
+      "How to write an event post-mortem for whoever runs it next: draft before anyone rests, log near misses, name who saved you, and leave room for pipeline.",
+    date: "2026-10-10",
+    readingMinutes: 6,
+    keywords: [
+      "event post-mortem",
+      "post-event debrief",
+      "event debrief template",
+      "recurring event planning",
+      "B2B event marketer San Francisco",
+    ],
+    faqs: [
+      {
+        question: "When should you write an event post-mortem?",
+        answer:
+          "Seven to fourteen days out is a sensible time for the debrief meeting, but it's much too late for the first draft. By day ten the story has been tidied and the small things have evaporated, and they're exactly what a stranger needs. I draft it while the bruises are still visible, then hold the meeting with a document already on the table.",
+      },
+      {
+        question: "What should an event post-mortem include?",
+        answer:
+          "Mine covers what broke, what almost broke, who saved us, and which vendor I would trust with a bigger slice of the night. Every rule gets the reason behind it, anything that got cut live goes into next year's \"If late\" column, and there's a dated heading left open for the pipeline number.",
+      },
+      {
+        question: "Why should a post-mortem track near misses?",
+        answer:
+          "Templates boil down to what worked and what didn't, and near misses fall through the gap because from the audience's seat nothing happened. When I drove to Target for a forgotten TV, nobody in the room knew. I'd argue the almost-broke list is worth more than the broke list, because real failures get remembered without anyone writing them down.",
+      },
+      {
+        question: "How do you measure a B2B event in a post-mortem written right after the show?",
+        answer:
+          "You leave room for it. Attendance, budget variance and survey scores are ready within a week, but the number leadership asks about arrives later. After RSA Conference at Arxan, every lead had a 30-60-90 day follow-up cadence and I didn't open the ROI spreadsheet until the end of Q2, so leave a heading with a date next to it and go back.",
+      },
+    ],
+  },
+  {
     slug: "measure-trade-show-roi",
     title: "The Spreadsheet That Bought Year Three: How I Measure Trade Show ROI",
     metaTitle: "How to Measure Trade Show ROI",
