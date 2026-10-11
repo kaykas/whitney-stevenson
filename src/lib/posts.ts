@@ -32,6 +32,46 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "channel-partner-events",
+    title: "Quarterly, in São Paulo: How I Plan Channel Partner Events in a New Region",
+    metaTitle: "How to Plan Channel Partner Events",
+    description:
+      "Illumio had white papers and MDF budgets for Latin America before it had a single partner there. What it didn't have was a reason for anyone in São Paulo to believe we'd still be around in a year. The partner event guides are good on goals and lead sharing. In a new region, I think the event's first job is to keep coming back.",
+    metaDescription:
+      "How I plan channel partner events in a new region, from Illumio's quarterly São Paulo roundtables: go early, run on their clock, come back every quarter.",
+    date: "2026-10-11",
+    readingMinutes: 6,
+    keywords: [
+      "channel partner events",
+      "how to plan a partner event",
+      "partner roundtable",
+      "LATAM channel marketing",
+      "B2B event marketer San Francisco",
+    ],
+    faqs: [
+      {
+        question: "How often should you hold channel partner events in a new region?",
+        answer:
+          "At Illumio we ran partner roundtables in São Paulo every quarter. In a new region I'd trade one big event for four small ones every time, because a partner who sees you in March and again in June, in the same city with the same faces from your side, starts planning around you.",
+      },
+      {
+        question: "How do you localize a partner event for Latin America?",
+        answer:
+          "Translate the slides, and then localize the cadence. At Illumio our meetings ran longer, hospitality went deeper, and follow-up still went out within 24 hours. If I were building a roundtable tomorrow, I'd cut the content to half of what a San Francisco team would plan and leave the rest of the time unclaimed for conversation.",
+      },
+      {
+        question: "What should you follow up on after a partner roundtable?",
+        answer:
+          "Whatever you promised at the table, within 24 hours: the intro to the account, the MDF answer someone on your team said they'd chase. The longer follow-up is the next roundtable, already on the calendar before anyone leaves the room.",
+      },
+      {
+        question: "Should the global events calendar drive regional partner events?",
+        answer:
+          "For a new region, I'd flip that for at least the first year. Some of our best LATAM co-marketed plays at Illumio could have happened sooner if we'd lined the global event team up behind LATAM sequencing instead of the other way around.",
+      },
+    ],
+  },
+  {
     slug: "breakout-speaker-care",
     title: "The Breakout Speaker Gets a Rider Too: How I Look After Event Speakers",
     metaTitle: "How I Handle Event Speaker Management",
