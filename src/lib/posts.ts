@@ -32,6 +32,46 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "event-load-out",
+    title: "Six Hours to Hand Back the Pier: How I Plan an Event Load-Out",
+    metaTitle: "How to Plan an Event Load-Out",
+    description:
+      "Tostitos had six hours to give Pier 39 back after Super Bowl LX. The teardown guides cover freight, rental returns and leaving the venue clean, and they're right. They stop at the dock door, though, and for a B2B event marketer the leads and next year's goodwill leave the building that same night.",
+    metaDescription:
+      "How I plan event load-out, from a six-hour Pier 39 hand-back: plan the exit on the walkthrough, get the leads out first, and learn the dock crew's names.",
+    date: "2026-10-12",
+    readingMinutes: 6,
+    keywords: [
+      "event load out",
+      "event teardown plan",
+      "trade show load out",
+      "event strike planning",
+      "B2B event marketer San Francisco",
+    ],
+    faqs: [
+      {
+        question: "When should you plan an event load-out?",
+        answer:
+          "On the first walkthrough. I write the loading dock questions down twice, once for the morning we arrive and once for the night we leave, because the freight elevator and the dock manager on shift at 1 a.m. are rarely the same as they were at 7 a.m.",
+      },
+      {
+        question: "What should happen to trade show leads during load-out?",
+        answer:
+          "They should be exported before anyone touches a crate. On the last afternoon of a show every exhibitor is dismantling at once, and that's when a scanner goes back in a case with a week of notes on it. At Arxan every lead reached a rep within 24 hours of the scan.",
+      },
+      {
+        question: "How do you handle load-out when guests are still in the room?",
+        answer:
+          "Break down from the back of the house forward. Storage and service areas go first, while the bar and the last couple of tables stay lit and staffed until the final guest is actually at the door.",
+      },
+      {
+        question: "Should you use a fresh crew for an overnight strike?",
+        answer:
+          "For the lifting, yes, because exhausted people drop things. I'd still keep one person from the show crew on, since somebody has to remember which case the spare extension cords went into and which panel was a replacement.",
+      },
+    ],
+  },
+  {
     slug: "channel-partner-events",
     title: "Quarterly, in São Paulo: How I Plan Channel Partner Events in a New Region",
     metaTitle: "How to Plan Channel Partner Events",
