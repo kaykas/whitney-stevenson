@@ -23,8 +23,10 @@ import { measureTradeShowRoiPost } from "./posts/measure-trade-show-roi";
 import { eventPostMortemPost } from "./posts/event-post-mortem";
 import { breakoutSpeakerCarePost } from "./posts/breakout-speaker-care";
 import { channelPartnerEventsPost } from "./posts/channel-partner-events";
+import { eventLoadOutPost } from "./posts/event-load-out";
 
 const POST_BODIES: Record<string, () => React.ReactNode> = {
+  "event-load-out": eventLoadOutPost,
   "channel-partner-events": channelPartnerEventsPost,
   "breakout-speaker-care": breakoutSpeakerCarePost,
   "event-post-mortem": eventPostMortemPost,
