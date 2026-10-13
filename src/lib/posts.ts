@@ -32,6 +32,46 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "event-vendor-management",
+    title: "The Caterer Picks Up at 11 p.m.: How I Manage Event Vendors",
+    metaTitle: "How I Manage Event Vendors",
+    description:
+      "During Super Bowl build week a damaged panel's replacement was stuck on I-80, and what mattered was the fabricator's lead carpenter. The vendor management guides are right about scope, contracts and backup plans. They manage companies, though. I manage the person on the dock, and I work hard at being the client they pick up for.",
+    metaDescription:
+      "How I manage event vendors: hire the person on the dock, name who confirms what and by when, share walkthrough notes, and be the client they pick up for.",
+    date: "2026-10-13",
+    readingMinutes: 6,
+    keywords: [
+      "event vendor management",
+      "how to manage event vendors",
+      "event vendor relationships",
+      "working with event vendors",
+      "B2B event marketer San Francisco",
+    ],
+    faqs: [
+      {
+        question: "What matters most when choosing an event vendor?",
+        answer:
+          "Who will be standing on the dock. The salesperson who walked me through the deck disappears after the deposit clears, so I ask for the crew lead on install day by name, and whether they'll be on my build or somebody else's that week.",
+      },
+      {
+        question: "What should an event vendor contract include besides scope?",
+        answer:
+          "A named person who confirms each critical item, and the hour they confirm it by. When a breakout speaker walked on with no screen because the sales rep forgot the TV, the lesson for the post-mortem was one line about who confirms the screen, and by when.",
+      },
+      {
+        question: "Should vendors see the venue walkthrough notes?",
+        answer:
+          "Yes. My walkthrough notes go back to the venue the same day, and I'd send them to every vendor who has to load in before anybody quotes a delivery time. A caterer who knows the freight elevator is shared will plan differently than one who finds out at the door.",
+      },
+      {
+        question: "How do you build long-term relationships with event vendors?",
+        answer:
+          "Be the client they pick up for. Get the load-in information right, keep the delivery windows you asked for, learn the crew lead's name, close out the paperwork fast, and answer when they're the one in trouble. Over eight years of San Francisco's New Year's Eve party, the caterer picked up at 11 p.m. because I had once picked up for them.",
+      },
+    ],
+  },
+  {
     slug: "event-load-out",
     title: "Six Hours to Hand Back the Pier: How I Plan an Event Load-Out",
     metaTitle: "How to Plan an Event Load-Out",
