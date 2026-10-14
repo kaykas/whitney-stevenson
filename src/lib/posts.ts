@@ -32,6 +32,46 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "plan-brand-activation",
+    title: "When to Slow the Robots: How I Plan a Brand Activation",
+    metaTitle: "How to Plan a Brand Activation",
+    description:
+      "At the Tostitos Fiesta Zone on Pier 39, the calls that mattered most during Super Bowl LX week were made by people with radios, deciding which family to wave forward next. The brand activation guides are right about goals, audience and a space worth photographing. I plan those floor calls too, because they're what the client actually buys.",
+    metaDescription:
+      "How I plan a brand activation, from the Tostitos Fiesta Zone at Pier 39: one goal per audience, the dock first, and the floor calls guides skip.",
+    date: "2026-10-14",
+    readingMinutes: 6,
+    keywords: [
+      "how to plan a brand activation",
+      "brand activation planning",
+      "experiential brand activation",
+      "Super Bowl brand activation",
+      "B2B event marketer San Francisco",
+    ],
+    faqs: [
+      {
+        question: "What is the first step in planning a brand activation?",
+        answer:
+          "Write one goal per audience, before anybody opens a design file. The Tostitos Fiesta Zone at Pier 39 had tourists, NFL ticketholders, San Francisco locals, press crews and executives walking through it, and each group we designed for got its own ten-second impression.",
+      },
+      {
+        question: "How do you choose a location for a brand activation?",
+        answer:
+          "On a public site like a pier you don't get to choose much, so I look for where people already slow down and put the moment there. Then I walk the loading dock, because build week at Pier 39 turned up a dock constraint nobody had flagged in the site survey.",
+      },
+      {
+        question: "What do brand activation guides usually leave out?",
+        answer:
+          "The judgment calls the floor team makes during show days. Before doors open I want those agreed in writing with a first name next to each: who can pause a robot, who walks a press crew in, and what happens when the photo line blocks the walkway the locals use.",
+      },
+      {
+        question: "How do you measure a brand activation?",
+        answer:
+          "Count foot traffic and survey people if you can catch them. I also keep a running log of the floor calls, which ones came up, how often, and which answers we would change, and that page goes straight into the post-mortem for whoever runs the next activation on that site.",
+      },
+    ],
+  },
+  {
     slug: "event-vendor-management",
     title: "The Caterer Picks Up at 11 p.m.: How I Manage Event Vendors",
     metaTitle: "How I Manage Event Vendors",
