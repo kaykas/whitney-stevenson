@@ -976,3 +976,44 @@ export const posts: Post[] = [
 export function getPost(slug: string): Post | undefined {
   return posts.find((p) => p.slug === slug);
 }
+
+/** Newest first. Same-day posts keep their order in `posts`. */
+function byDateDesc(): Post[] {
+  return [...posts].sort((a, b) => b.date.localeCompare(a.date));
+}
+
+/**
+ * The next `count` posts OLDER than `slug`, for the "Keep reading" links under
+ * every post. Older-only on purpose: publishing a new post never changes the
+ * links (or word count) on an existing page, and every post except the newest
+ * picks up incoming internal links from the posts published after it. Ahrefs
+ * flagged both "Word count changed" and "Page has only one dofollow incoming
+ * internal link" before this existed. See ERRORS.md (2026-10-22).
+ */
+export function getOlderPosts(slug: string, count = 3): Post[] {
+  const sorted = byDateDesc();
+  const i = sorted.findIndex((p) => p.slug === slug);
+  return i === -1 ? [] : sorted.slice(i + 1, i + 1 + count);
+}
+
+/**
+ * Pinned Field Notes in the sitewide footer: the five signature stories the
+ * homepage highlights. Pinned, not "latest", because the footer renders on
+ * every route: a rotating latest-five list changed the word count of every
+ * page on the site each time a post shipped. See ERRORS.md (2026-10-22).
+ */
+const FOOTER_SLUGS = [
+  "illumio-latam-channel-partnership",
+  "anchoring-arxan-three-years-rsa",
+  "pepsico-tostitos-super-bowl-2026",
+  "presidio-golf-300-tournaments",
+  "sunglasses-shops-and-bodywork",
+];
+
+export function getFooterPosts(): Post[] {
+  return FOOTER_SLUGS.map((slug) => {
+    const post = getPost(slug);
+    if (!post) throw new Error(`FOOTER_SLUGS: no post with slug "${slug}"`);
+    return post;
+  });
+}

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { posts } from "@/lib/posts";
+import { getFooterPosts } from "@/lib/posts";
 
 export default function SiteFooter() {
   return (
@@ -24,10 +24,10 @@ export default function SiteFooter() {
         </ul>
       </nav>
 
-      <nav className="site-footer-col" aria-label="Field Notes">
-        <div className="sans-label">Latest Field Notes</div>
+      <nav className="site-footer-col" aria-label="Start here">
+        <div className="sans-label">Start Here</div>
         <ul className="site-footer-links">
-          {posts.slice(0, 5).map((p) => (
+          {getFooterPosts().map((p) => (
             <li key={p.slug}>
               <Link href={`/blog/${p.slug}`}>{p.title}</Link>
             </li>

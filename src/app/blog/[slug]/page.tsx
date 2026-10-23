@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { posts, getPost } from "@/lib/posts";
+import { posts, getPost, getOlderPosts } from "@/lib/posts";
+import { articleSchema, withContext } from "@/lib/schema";
 import BreadcrumbJsonLd, { HOME_CRUMB, FIELD_NOTES_CRUMB } from "@/components/BreadcrumbJsonLd";
 import { illumioLatamPost } from "./posts/illumio-latam-channel-partnership";
 import { targetRunPost } from "./posts/the-target-run";
@@ -103,6 +104,8 @@ export default async function PostPage({
   const post = getPost(slug);
   const Body = POST_BODIES[slug];
   if (!post || !Body) return notFound();
+  // Older posts only, so shipping a new post never edits this page.
+  const older = getOlderPosts(post.slug);
 
   return (
     <>
@@ -153,6 +156,18 @@ export default async function PostPage({
                   </div>
                 ))}
               </section>
+            )}
+            {older.length > 0 && (
+              <nav className="post-body post-more" aria-labelledby="post-more-heading">
+                <h2 id="post-more-heading">Keep Reading</h2>
+                <ul>
+                  {older.map((p) => (
+                    <li key={p.slug}>
+                      <Link href={`/blog/${p.slug}`}>{p.title}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
             )}
             <div className="post-footer">
               <div className="post-author">
@@ -207,32 +222,19 @@ export default async function PostPage({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: post.title,
-            description: post.metaDescription,
-            datePublished: post.date,
-            author: {
-              "@type": "Person",
-              name: "Whitney Stevenson",
-              url: "https://www.whitneystevenson.com",
-              sameAs: [
-                "https://www.whitneystevenson.com",
-                "https://www.linkedin.com/in/whitneystevenson"
-              ]
-            },
-            dateModified: post.date,
-            keywords: post.keywords.join(", "),
-            url: `https://www.whitneystevenson.com/blog/${post.slug}`,
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id": `https://www.whitneystevenson.com/blog/${post.slug}`
-            },
-            image: post.hero
-              ? `https://www.whitneystevenson.com${post.hero}`
-              : undefined,
-          }),
+          __html: JSON.stringify(
+            withContext(
+              articleSchema({
+                type: "BlogPosting",
+                headline: post.title,
+                description: post.metaDescription,
+                path: `/blog/${post.slug}`,
+                datePublished: post.date,
+                image: post.hero,
+                keywords: post.keywords,
+              }),
+            ),
+          ),
         }}
       />
     </>
