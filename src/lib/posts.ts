@@ -32,6 +32,46 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "trade-show-booth-design",
+    title: "Next to Palo Alto Networks and CrowdStrike: How I Design a Trade Show Booth",
+    metaTitle: "Trade Show Booth Design Tips",
+    description:
+      "For three years at RSA Conference, Arxan's booth sat between two neighbors who outspent us every year. The booth design guides are right about the three-second rule, a short message and an open front. They design one booth for one show, though. I design for the neighbors I drew, for the staff on the front edge, and for Year Three.",
+    metaDescription:
+      "Trade show booth design from three years at RSA next to bigger budgets: one message readable from 30 feet, room for staff, and a booth built for Year Three.",
+    date: "2026-10-22",
+    readingMinutes: 6,
+    keywords: [
+      "trade show booth design",
+      "trade show booth design tips",
+      "small trade show booth design",
+      "RSA Conference booth",
+      "B2B event marketer San Francisco",
+    ],
+    faqs: [
+      {
+        question: "How should a smaller vendor design a booth next to bigger competitors?",
+        answer:
+          "Don't try to out-design them. At RSA Conference, Arxan's booth sat between Palo Alto Networks and CrowdStrike, who both spent more every year. Over-designing to make up for the budget gap reads as trying, so we built something calm and confident, and people who walked past both neighbors stopped at ours.",
+      },
+      {
+        question: "How much text should go on a trade show booth?",
+        answer:
+          "One anchor message. We built Arxan's booth to read cleanly from 30 feet with no clutter, because at RSA you get about 0.6 seconds before a passerby looks away. My test is to walk up the aisle from 30 feet with someone who hasn't seen the rendering and ask what we do. If they can't say it back, the wall gets cut.",
+      },
+      {
+        question: "Where should booth staff stand, and how does that affect the design?",
+        answer:
+          "Front corners, angled toward the aisle, never clustered behind the demo table. The design has to leave room for that, so I put the demo a step back and keep the corners clear. A counter at the aisle puts your team behind a wall.",
+      },
+      {
+        question: "Should you redesign your trade show booth every year?",
+        answer:
+          "Not for a big annual show. In Arxan's third year at RSA we tightened the booth slightly, refreshed the demo and left the rest alone, and pipeline contribution that year was the highest of the three. I brief designers for a booth we'll be happy to see again in two years, with one small piece we can swap out.",
+      },
+    ],
+  },
+  {
     slug: "plan-brand-activation",
     title: "When to Slow the Robots: How I Plan a Brand Activation",
     metaTitle: "How to Plan a Brand Activation",
