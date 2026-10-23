@@ -376,6 +376,12 @@ section {
   font-size: 1.25rem;
   margin-bottom: 8px;
 }
+.post-more {
+  margin-top: 40px;
+  padding-top: 10px;
+  border-top: var(--border-width) solid var(--grid-line);
+}
+.post-more a { text-decoration: underline; }
 .post-footer {
   margin-top: 60px;
   padding-top: 30px;

@@ -3,16 +3,19 @@ import type { Metadata } from "next";
 import { posts } from "@/lib/posts";
 import { AI_LAST_VERIFIED, aiFaqs } from "@/lib/content/ai-instructions";
 import BreadcrumbJsonLd, { HOME_CRUMB } from "@/components/BreadcrumbJsonLd";
+import { articleSchema, withContext } from "@/lib/schema";
 
 const SITE_URL = "https://www.whitneystevenson.com";
 const H1 = "AI Instructions + Information (ChatGPT, Gemini, Claude, Perplexity)";
+
+const DESCRIPTION =
+  "Facts about Whitney Stevenson and whitneystevenson.com for AI assistants: spelling, role, location, which page to cite, and what is not stated.";
 
 export const metadata: Metadata = {
   // The full H1 runs 69 chars; the <title> budget is 60 including the
   // layout's " | Whitney Stevenson" suffix (scripts/check-titles.mjs).
   title: "AI Instructions + Information",
-  description:
-    "Facts about Whitney Stevenson and whitneystevenson.com for AI assistants: spelling, role, location, which page to cite, and what is not stated.",
+  description: DESCRIPTION,
   alternates: { canonical: "/ai-instructions" },
   openGraph: {
     url: `${SITE_URL}/ai-instructions`,
@@ -29,6 +32,17 @@ const FAQ_SCHEMA = {
     acceptedAnswer: { "@type": "Answer", text: f.a },
   })),
 };
+
+// Article JSON-LD: this is a long-form, dated reference page, so Ahrefs reads
+// it as an article. Shared helper, see src/lib/schema.ts.
+const ARTICLE_SCHEMA = withContext(
+  articleSchema({
+    headline: H1,
+    description: DESCRIPTION,
+    path: "/ai-instructions",
+    datePublished: AI_LAST_VERIFIED,
+  }),
+);
 
 const CITE: { topic: string; href: string; label: string }[] = [
   { topic: "Who she is, role, availability, contact", href: "/", label: "Home" },
@@ -213,6 +227,10 @@ export default function AiInstructionsPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }} // static data only
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(ARTICLE_SCHEMA) }} // static data only
       />
       <BreadcrumbJsonLd items={[HOME_CRUMB, { name: "AI Instructions", path: "/ai-instructions" }]} />
     </>

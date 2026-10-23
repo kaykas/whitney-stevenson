@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { posts } from "@/lib/posts";
 import BreadcrumbJsonLd, { HOME_CRUMB, FIELD_NOTES_CRUMB } from "@/components/BreadcrumbJsonLd";
+import { articleSchema, withContext } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Field Notes",
@@ -15,6 +16,25 @@ export const metadata: Metadata = {
     url: "https://www.whitneystevenson.com/blog",
   },
 };
+
+// Blog JSON-LD: one BlogPosting per card, built by the same helper as the
+// post pages, so the index describes its articles as Article-family schema.
+const BLOG_SCHEMA = withContext({
+  "@type": "Blog",
+  name: "Field Notes",
+  url: "https://www.whitneystevenson.com/blog",
+  author: { "@type": "Person", name: "Whitney Stevenson", url: "https://www.whitneystevenson.com" },
+  blogPost: posts.map((p) =>
+    articleSchema({
+      type: "BlogPosting",
+      headline: p.title,
+      description: p.metaDescription,
+      path: `/blog/${p.slug}`,
+      datePublished: p.date,
+      image: p.hero,
+    }),
+  ),
+});
 
 export default function BlogIndex() {
   return (
@@ -78,6 +98,10 @@ export default function BlogIndex() {
         </main>
       </div>
       <BreadcrumbJsonLd items={[HOME_CRUMB, FIELD_NOTES_CRUMB]} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(BLOG_SCHEMA) }} // static data only
+      />
     </>
   );
 }

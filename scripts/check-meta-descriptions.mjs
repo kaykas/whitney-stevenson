@@ -12,13 +12,24 @@
  * regressions from anywhere metadata is composed — layout defaults, per-route
  * `metadata`, or `generateMetadata`.
  *
+ * Also locks published descriptions against scripts/meta-description-baseline.json
+ * (ERRORS.md 2026-10-22): Ahrefs raises "Meta description changed" whenever a
+ * live route's description differs from the previous crawl, so a description
+ * that is already published may not drift silently. A route missing from the
+ * baseline (a new post) is reported but passes. To change a published
+ * description on purpose, edit it and run `npm run meta:baseline`, then commit
+ * both.
+ *
  * Runs as `postbuild`, so a regression fails `npm run build` instead of
  * surfacing weeks later in Ahrefs. Standalone: `npm run check:meta`.
  */
-import { readdirSync, readFileSync, statSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { join, relative, sep } from "node:path";
 
 const APP_DIR = join(process.cwd(), ".next", "server", "app");
+
+const BASELINE = join(process.cwd(), "scripts", "meta-description-baseline.json");
+const UPDATE = process.argv.includes("--update");
 
 const MAX_LENGTH = 160; // Ahrefs warns above this
 const MIN_LENGTH = 70; // Ahrefs warns below this ("Meta description too short")
@@ -70,6 +81,7 @@ if (pages.length === 0) {
 }
 
 const failures = [];
+const current = {};
 
 for (const file of pages) {
   const route = routeOf(file);
@@ -86,6 +98,7 @@ for (const file of pages) {
 
   const description = found[0];
   const { length } = description;
+  current[route] = description;
 
   if (length > MAX_LENGTH) {
     failures.push(
@@ -98,12 +111,36 @@ for (const file of pages) {
   console.log(`  ${route.padEnd(42)} ${String(length).padStart(3)} chars`);
 }
 
+const baseline = existsSync(BASELINE) ? JSON.parse(readFileSync(BASELINE, "utf8")) : {};
+const sorted = Object.fromEntries(Object.entries(current).sort(([a], [b]) => a.localeCompare(b)));
+
+if (UPDATE) {
+  writeFileSync(BASELINE, JSON.stringify(sorted, null, 2) + "\n");
+  console.log(`\ncheck-meta-descriptions: baseline written for ${Object.keys(sorted).length} routes`);
+} else {
+  const unlocked = [];
+  for (const [route, description] of Object.entries(sorted)) {
+    if (!(route in baseline)) unlocked.push(route);
+    else if (baseline[route] !== description) {
+      failures.push(
+        `${route}: published description changed (Ahrefs "Meta description changed")\n` +
+          `      was: "${baseline[route]}"\n      now: "${description}"`,
+      );
+    }
+  }
+  if (unlocked.length) {
+    console.log(`\n  not yet in baseline (new routes, pass): ${unlocked.join(", ")}`);
+    console.log("  lock them with `npm run meta:baseline` and commit the JSON.");
+  }
+}
+
 if (failures.length) {
   console.error('\ncheck-meta-descriptions FAILED — Ahrefs "Meta description too long" would regress:\n');
   for (const f of failures) console.error(`  ✗ ${f}`);
   console.error("\nSee ERRORS.md (2026-09-09). Post metadata comes from `metaDescription`");
   console.error("in src/lib/posts.ts — the long `description` field is the visible lede,");
-  console.error("not the meta tag. Keep both; shorten the meta one.\n");
+  console.error("not the meta tag. Keep both; shorten the meta one.");
+  console.error("If you changed a published description ON PURPOSE, run `npm run meta:baseline`.\n");
   process.exit(1);
 }
 
