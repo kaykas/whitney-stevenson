@@ -366,6 +366,35 @@ section {
 }
 .post-body strong { font-weight: 600; }
 .post-body p { font-size: 17px; }
+.post-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.post-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.5;
+}
+.post-table caption {
+  text-align: left;
+  font-style: italic;
+  opacity: 0.75;
+  margin-bottom: 10px;
+}
+.post-table th,
+.post-table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 12px;
+  border-bottom: var(--border-width) solid var(--grid-line);
+}
+.post-table thead th {
+  color: var(--accent-orange);
+  font-weight: 600;
+}
+.post-table tbody th { font-weight: 600; min-width: 140px; }
 .post-faq {
   margin-top: 40px;
   padding-top: 10px;

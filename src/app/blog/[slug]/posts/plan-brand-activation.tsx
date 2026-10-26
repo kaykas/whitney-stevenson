@@ -111,6 +111,166 @@ export function planBrandActivationPost() {
         .
       </p>
 
+      <h2>Budget the Lines the Rendering Doesn&rsquo;t Show</h2>
+
+      <p>
+        Every activation budget I&rsquo;ve seen puts most of its weight on
+        the structure, because that&rsquo;s the part in the rendering. The
+        lines that actually moved during build week at Pier 39 were the
+        boring ones. So I break the production budget out like this, and I
+        price the bottom half of the table before I let anyone fall in love
+        with the top half.
+      </p>
+
+      <div className="post-table-wrap">
+        <table className="post-table">
+          <caption>
+            Experiential activation production budget, line by line
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Budget line</th>
+              <th scope="col">What it covers</th>
+              <th scope="col">Where it bites</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Structure and fabrication</th>
+              <td>The branded build, graphics, photo moments, signage</td>
+              <td>
+                A damaged panel at Pier 39 meant a replacement on a truck
+                somewhere on I-80. Price spares and a rush delivery up front.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Interactive elements</th>
+              <td>Robots, games, demos, and whoever keeps them running</td>
+              <td>
+                Each one needs an operator and a person allowed to pause it.
+                Budget the people, not just the hardware.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Site, dock and load-in</th>
+              <td>Site fees, dock access, freight, load-in labor</td>
+              <td>
+                Build week turned up a dock constraint the site survey missed.
+                Walk the dock before you sign off on this line.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Permits and approvals</th>
+              <td>City and venue permits, programming sign-offs</td>
+              <td>
+                The permit office wanted a revision before it would sign off
+                on the Saturday programming. Leave time and money for a
+                second round.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Floor staff</th>
+              <td>Brand ambassadors, leads with radios, press escorts</td>
+              <td>
+                This is the line that makes the floor calls. Cut it last.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Measurement</th>
+              <td>Foot traffic counts, exit surveys, the floor-call log</td>
+              <td>
+                Cheap, and the easiest line to forget until the client asks
+                how it went.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Load-out and hand-back</th>
+              <td>Strike labor, haul-away, cleaning, site photos</td>
+              <td>
+                The site has to be photographed clean before it goes back.
+                Nobody prices this hour, and everybody pays for it.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Contingency</th>
+              <td>The money you hope to hand back</td>
+              <td>
+                Every build-week surprise at Pier 39 landed on a line
+                somebody had trimmed. Hold this one separately so it
+                doesn&rsquo;t get spent on a bigger logo.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Book the Venue and Vendors in This Order</h2>
+
+      <p>
+        The order matters more than the dates, because each step tells you
+        what the next one is allowed to cost. Here&rsquo;s the sequence I
+        run, from the first site visit to the hand-back.
+      </p>
+
+      <div className="post-table-wrap">
+        <table className="post-table">
+          <caption>Venue and vendor timeline for a brand activation</caption>
+          <thead>
+            <tr>
+              <th scope="col">Phase</th>
+              <th scope="col">Venue</th>
+              <th scope="col">Vendors</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Kickoff</th>
+              <td>Walk the site starting at the dock. Get dock dimensions
+                and the permit calendar.</td>
+              <td>Write one goal per audience before any design work
+                starts.</td>
+            </tr>
+            <tr>
+              <th scope="row">Before the concept deck</th>
+              <td>Find where people already slow down. That&rsquo;s where
+                the moment goes.</td>
+              <td>Hand the dock and permit facts to the concept team on day
+                one.</td>
+            </tr>
+            <tr>
+              <th scope="row">Design and permits</th>
+              <td>File permits early enough to survive a revision.</td>
+              <td>Lock fabrication, then interactive elements, then staffing,
+                and name one owner per vendor.</td>
+            </tr>
+            <tr>
+              <th scope="row">Before doors open</th>
+              <td>Confirm press gates and the walkway the locals use.</td>
+              <td>Agree the floor calls in writing, with a first name next
+                to each.</td>
+            </tr>
+            <tr>
+              <th scope="row">Build week</th>
+              <td>Expect the dock, the permit office or a freight truck to
+                surprise you.</td>
+              <td>Each surprise goes to one specific person to solve.</td>
+            </tr>
+            <tr>
+              <th scope="row">Show days</th>
+              <td>Watch the photo line against the public walkway.</td>
+              <td>Keep the floor-call log running.</td>
+            </tr>
+            <tr>
+              <th scope="row">Hand-back</th>
+              <td>Photograph the site clean, about six hours after the last
+                family leaves.</td>
+              <td>Floor-call log and near misses go into the
+                post-mortem.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <h2>Agree on the Floor Calls Before Doors Open</h2>
 
       <p>
@@ -170,16 +330,6 @@ export function planBrandActivationPost() {
         the pier has been photographed clean for{" "}
         <Link href="/blog/event-load-out">hand-back</Link> and belongs to the
         people who actually use it again.
-      </p>
-
-      <h2>The Takeaway</h2>
-
-      <p>
-        Do everything the brand activation guides tell you, starting with the
-        goal. Then write one goal per audience, walk the dock before anyone
-        sketches, and give the floor team its judgment calls in writing,
-        with a name next to each. The structure gets the photo. The
-        people in the jackets decide what the photo is of.
       </p>
 
       <p>
