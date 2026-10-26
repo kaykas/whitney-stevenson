@@ -9,8 +9,8 @@ export function tradeShowBoothDesignPost() {
         For three years at RSA Conference, Arxan Technologies&rsquo; booth sat
         between Palo Alto Networks and CrowdStrike, on a floor with forty
         thousand attendees and a vendor hall that takes 25 minutes to cross.
-        Both neighbors spent more than we did, every single year. Every booth design decision I made
-        at RSA started from that fact. Smaller vendors try to design their
+        Both neighbors spent more than we did, every single year. Every booth
+        design decision I made at RSA started from that fact. Smaller vendors try to design their
         way out of that position all the time, and I think it&rsquo;s the
         wrong fight.
       </p>
@@ -105,8 +105,8 @@ export function tradeShowBoothDesignPost() {
       </p>
 
       <p>
-        Put the demo a step back and leave the corners clear. And please design
-        a place that isn&rsquo;t the front of the booth for the jackets,
+        Put the demo a step back and leave the corners clear. And please
+        design a place that isn&rsquo;t the front of the booth for the jackets,
         because otherwise by 11 a.m. there will be a pile of them on the
         nicest stool you own.
       </p>
@@ -167,8 +167,7 @@ export function tradeShowBoothDesignPost() {
           Arxan&rsquo;s presence at RSA for three consecutive years
         </Link>
         . In Year Three the temptation was to reinvent everything, starting
-        with the booth, and we didn&rsquo;t. We
-        tightened the booth slightly, refreshed the demo, and left the rest
+        with the booth, and we didn&rsquo;t. We tightened the booth slightly, refreshed the demo, and left the rest
         alone. Pipeline contribution that year was the highest of the three.
         By then the same CISOs had seen us in the same neighborhood with
         roughly the same message twice, and we had started to register as a
@@ -194,17 +193,10 @@ export function tradeShowBoothDesignPost() {
         design a spot for a backup that nobody can see from the aisle.
       </p>
 
-      <h2>The Takeaway</h2>
-
       <p>
-        Follow the booth design guides on the basics, starting with one short
-        message and a front you can walk into. Then design for the neighbors you
-        actually drew, give the front edge to your staff, show the
-        fabricator the dock before anyone falls in love with a rendering,
-        and build something you&rsquo;ll be glad to ship back in Year Three.
-        At RSA we were outspent on both sides for three straight years, and
-        Arxan&rsquo;s pipeline contribution from the show grew every one of
-        them.
+        We were outspent on both sides at RSA for three straight years. The
+        booth never tried to win that fight, and Year Three was still our
+        best one.
       </p>
 
       <p>
