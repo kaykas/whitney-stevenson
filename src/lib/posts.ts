@@ -32,6 +32,46 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "brand-activation-budget",
+    title: "A Line for the Truck on I-80: How I Plan a Brand Activation Budget",
+    metaTitle: "Plan a Brand Activation Budget",
+    description:
+      "During Super Bowl build week at Pier 39, a damaged panel's replacement sat in a truck on I-80, and no budget had a line for it. The guides are right about buckets, contingency and ROI. They budget one activation as if it never happens again. I budget Year One as the first of three, and I give the contingency a first name.",
+    metaDescription:
+      "How I plan an experiential brand activation budget: price each audience, walk the dock before quotes, name who spends contingency, plan for Year Three.",
+    date: "2026-10-26",
+    readingMinutes: 6,
+    keywords: [
+      "how to plan an experiential brand activation budget",
+      "brand activation budget",
+      "experiential marketing budget",
+      "event contingency budget",
+      "B2B event marketer San Francisco",
+    ],
+    faqs: [
+      {
+        question: "How do you start an experiential brand activation budget?",
+        answer:
+          "With one goal per audience, then a price for each. At the Tostitos Fiesta Zone on Pier 39, families wanted a photo moment with the robot, press crews needed somebody to walk them in, and locals needed their walkway kept clear. Those cost money in different ways, and one staffing number hides that.",
+      },
+      {
+        question: "What costs do brand activation budgets usually miss?",
+        answer:
+          "The ones a floor plan can't show you. Build week at Pier 39 turned up a dock constraint nobody had flagged in the site survey and a permit revision before Saturday programming. I walk the dock before any vendor quotes, and I ask every vendor what they assume I'm covering. On a trade show floor that's usually drayage and the booth internet.",
+      },
+      {
+        question: "How should you handle contingency in an activation budget?",
+        answer:
+          "Hold one, then decide who can spend it and how much they can spend without a phone call. When a breakout speaker walked on with no screen, I drove to Target and came back with a TV. The TV was the cheap part. Twenty minutes of finding out whose budget it came from would have been the expensive part.",
+      },
+      {
+        question: "Should a recurring activation be budgeted year by year?",
+        answer:
+          "I'd budget Year One as the first of three. At RSA Conference, Arxan's Year Three booth was barely changed and pipeline contribution was the highest of the three. Spend more up front on the parts that travel, spend less on novelty, and tell finance the timeline for judging it before the first deposit.",
+      },
+    ],
+  },
+  {
     slug: "trade-show-booth-design",
     title: "Next to Palo Alto Networks and CrowdStrike: How I Design a Trade Show Booth",
     metaTitle: "Trade Show Booth Design Tips",
