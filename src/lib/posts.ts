@@ -74,17 +74,19 @@ export const posts: Post[] = [
   {
     slug: "plan-brand-activation",
     title: "When to Slow the Robots: How I Plan a Brand Activation",
-    metaTitle: "How to Plan a Brand Activation",
+    metaTitle: "How to Plan a Brand Activation Budget",
     description:
       "At the Tostitos Fiesta Zone on Pier 39, the calls that mattered most during Super Bowl LX week were made by people with radios, deciding which family to wave forward next. The brand activation guides are right about goals, audience and a space worth photographing. I plan those floor calls too, because they're what the client actually buys.",
     metaDescription:
       "How I plan a brand activation, from the Tostitos Fiesta Zone at Pier 39: one goal per audience, the dock first, and the floor calls guides skip.",
     date: "2026-10-14",
-    readingMinutes: 6,
+    readingMinutes: 8,
     keywords: [
       "how to plan a brand activation",
       "brand activation planning",
       "experiential brand activation",
+      "how to plan an experiential brand activation budget",
+      "brand activation budget breakdown",
       "Super Bowl brand activation",
       "B2B event marketer San Francisco",
     ],
@@ -103,6 +105,16 @@ export const posts: Post[] = [
         question: "What do brand activation guides usually leave out?",
         answer:
           "The judgment calls the floor team makes during show days. Before doors open I want those agreed in writing with a first name next to each: who can pause a robot, who walks a press crew in, and what happens when the photo line blocks the walkway the locals use.",
+      },
+      {
+        question: "How do you plan an experiential brand activation budget?",
+        answer:
+          "Break it out line by line: structure and fabrication, interactive elements, site and dock, permits, floor staff, measurement, load-out and hand-back, and a separate contingency. Price the unglamorous lines before anyone falls in love with the rendering, because every build-week surprise at Pier 39 landed on a line somebody had trimmed.",
+      },
+      {
+        question: "In what order should you book the venue and vendors for an activation?",
+        answer:
+          "Walk the site from the dock first and get the permit calendar, then hand those facts to the concept team before design starts. File permits early enough to survive a revision, lock fabrication, interactive elements and staffing with one owner per vendor, and agree the floor calls in writing before doors open.",
       },
       {
         question: "How do you measure a brand activation?",
