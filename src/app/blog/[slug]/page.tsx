@@ -28,8 +28,10 @@ import { eventLoadOutPost } from "./posts/event-load-out";
 import { eventVendorManagementPost } from "./posts/event-vendor-management";
 import { planBrandActivationPost } from "./posts/plan-brand-activation";
 import { tradeShowBoothDesignPost } from "./posts/trade-show-booth-design";
+import { brandActivationBudgetPost } from "./posts/brand-activation-budget";
 
 const POST_BODIES: Record<string, () => React.ReactNode> = {
+  "brand-activation-budget": brandActivationBudgetPost,
   "trade-show-booth-design": tradeShowBoothDesignPost,
   "plan-brand-activation": planBrandActivationPost,
   "event-vendor-management": eventVendorManagementPost,
