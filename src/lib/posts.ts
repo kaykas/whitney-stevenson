@@ -32,6 +32,46 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "client-holiday-party",
+    title: "Say Next December Out Loud: How I'd Plan a Client Holiday Party",
+    metaTitle: "How to Plan a Client Holiday Party",
+    description:
+      "After a few years producing San Francisco's New Year's Eve party, the guests stopped buying tickets and started keeping an appointment. The client holiday party guides are right about the date, the invitations and keeping it light. They plan one December night. I'd plan the second one, starting with a date you can hold for years.",
+    metaDescription:
+      "How I'd plan a B2B client holiday party: a date you can keep for years, the first ten minutes, a toast as the fixed cue, and next December announced.",
+    date: "2026-10-27",
+    readingMinutes: 6,
+    keywords: [
+      "how to plan a client holiday party",
+      "client holiday party",
+      "client appreciation event",
+      "corporate holiday party planning",
+      "B2B event marketer San Francisco",
+    ],
+    faqs: [
+      {
+        question: "How do you pick a date for a client holiday party?",
+        answer:
+          "Pick one you can keep for years. Same week every year, and ideally the same room. Check it against your clients' calendars as well as your own, especially their fiscal year-end, then hold it. By the third year, if the party was good, guests block the night before you've sent a thing.",
+      },
+      {
+        question: "Who should you invite to a client holiday party?",
+        answer:
+          "Start with titles, then add the people who run the account day to day, like the admin who fixed your PO or the engineer on your implementation calls. Plan for plus-ones you didn't expect, and agree with the venue ahead of time on what a couple of extra covers will cost.",
+      },
+      {
+        question: "Should you talk business at a client holiday party?",
+        answer:
+          "Nobody pitches. Everybody from your team who worked the room sends two or three lines about each guest they talked to, before they go to sleep or over coffee the next day. That file is how concierge work scales.",
+      },
+      {
+        question: "How do you make a client holiday party a tradition?",
+        answer:
+          "Announce next year's date at this year's party, in the toast, and put it on the thank-you note too. Then write the post-mortem in January, while you still remember which vendor saved you and which corner of the room went dead.",
+      },
+    ],
+  },
+  {
     slug: "brand-activation-budget",
     title: "A Line for the Truck on I-80: How I Plan a Brand Activation Budget",
     metaTitle: "Plan a Brand Activation Budget",
