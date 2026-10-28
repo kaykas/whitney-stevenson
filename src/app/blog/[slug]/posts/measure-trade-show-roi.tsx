@@ -119,7 +119,11 @@ export function measureTradeShowRoiPost() {
 
       <p>
         Measure a single show and you will be tempted to cut it at exactly
-        the moment it starts compounding. I&rsquo;d judge a big annual
+        the moment it starts compounding (I wrote about{" "}
+        <Link href="/blog/b2b-event-calendar">
+          what I&rsquo;d cut from an event calendar instead
+        </Link>
+        ). I&rsquo;d judge a big annual
         trade show on a three-year arc, and I&rsquo;d tell leadership that
         up front, before the first deposit. Year One you arrive. Year Two
         you prove the math, which is the job of the spreadsheet. Year Three

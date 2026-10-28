@@ -32,6 +32,41 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "b2b-event-calendar",
+    title: "Cut the New Thing First: How I Build a B2B Event Calendar",
+    metaTitle: "How to Build a B2B Event Calendar",
+    description:
+      "The events budget always comes back smaller than the plan, and then somebody has to pick which rows come off the calendar. The strategy guides cover goals, formats and follow-up. None of them say what to cut. I label every event with its year, cut the new thing first, and keep the small rooms longest.",
+    metaDescription:
+      "How I build a B2B event calendar and what I cut first when the budget shrinks: label each event by its year, shrink the big show, keep the small rooms.",
+    date: "2026-10-28",
+    readingMinutes: 6,
+    keywords: [
+      "B2B event calendar",
+      "B2B event marketing strategy",
+      "event marketing budget cuts",
+      "annual event marketing plan",
+      "B2B event marketer San Francisco",
+    ],
+    faqs: [
+      {
+        question: "What should you cut first from a B2B event calendar when the budget shrinks?",
+        answer:
+          "The Year One events nobody has committed to out loud yet, like a brand-new regional show someone found on a list. They haven't started compounding, so cutting them costs you the least history. I label every row on the calendar with its year before I cut anything.",
+      },
+      {
+        question: "Should you skip a year of a big annual trade show to save money?",
+        answer:
+          "I wouldn't. By our third year at RSA Conference, Arxan registered as a fixture, and pipeline contribution that year was the highest of the three. Skip a year and you're back to Year One with a bigger bill. I'd negotiate a smaller footprint and keep the presence.",
+      },
+      {
+        question: "Which events should be the last to go from a B2B event calendar?",
+        answer:
+          "The small rooms. A customer dinner during conference week rides on a trip you're already paying for, and at Illumio we ran partner roundtables in São Paulo every quarter. A partner who saw us in March and again in June started planning around us.",
+      },
+    ],
+  },
+  {
     slug: "client-holiday-party",
     title: "Say Next December Out Loud: How I'd Plan a Client Holiday Party",
     metaTitle: "How to Plan a Client Holiday Party",

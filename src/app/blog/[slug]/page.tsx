@@ -30,8 +30,10 @@ import { planBrandActivationPost } from "./posts/plan-brand-activation";
 import { tradeShowBoothDesignPost } from "./posts/trade-show-booth-design";
 import { brandActivationBudgetPost } from "./posts/brand-activation-budget";
 import { clientHolidayPartyPost } from "./posts/client-holiday-party";
+import { b2bEventCalendarPost } from "./posts/b2b-event-calendar";
 
 const POST_BODIES: Record<string, () => React.ReactNode> = {
+  "b2b-event-calendar": b2bEventCalendarPost,
   "client-holiday-party": clientHolidayPartyPost,
   "brand-activation-budget": brandActivationBudgetPost,
   "trade-show-booth-design": tradeShowBoothDesignPost,
@@ -188,7 +190,7 @@ export default async function PostPage({
                   </div>
                   <p className="sans-body" style={{ fontSize: 14, marginBottom: 8 }}>
                     Event &amp; hospitality leader, San Francisco. 10+ years building
-                    B2B events for technology and entertainment — Plan Experiential,
+                    B2B events for technology and entertainment: Plan Experiential,
                     Illumio LATAM, RSA, Super Bowl, Latin Billboard Awards, Presidio
                     Golf.
                   </p>
