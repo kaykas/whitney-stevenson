@@ -12,6 +12,10 @@ const DEFAULT_IMAGE = "/photos/whitney-hero.jpeg";
 const AUTHOR = {
   "@type": "Person",
   name: "Whitney Stevenson",
+  // Mirrors the visible author block under every post.
+  jobTitle: "Event & hospitality leader",
+  description:
+    "Event & hospitality leader, San Francisco. 10+ years building B2B events for technology and entertainment.",
   url: ORIGIN,
   sameAs: [ORIGIN, "https://www.linkedin.com/in/whitneystevenson"],
 };

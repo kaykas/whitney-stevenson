@@ -170,7 +170,12 @@ export function channelPartnerEventsPost() {
         at least the first year. Ask your partners when their customers set
         budgets and which local shows already own the month, then hand those
         answers to the global events team as a constraint. They will grumble.
-        Do it anyway.
+        Do it anyway. And when the budget shrinks, the quarterly roundtable is
+        one of the{" "}
+        <Link href="/blog/b2b-event-calendar">
+          last rows I&rsquo;d cut from the event calendar
+        </Link>
+        .
       </p>
 
       <h2>Twenty-Four Hours, Then Next Quarter</h2>
