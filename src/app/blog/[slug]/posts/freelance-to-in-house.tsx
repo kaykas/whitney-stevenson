@@ -39,7 +39,14 @@ export function freelanceToInHousePost() {
         built out of both.
       </p>
 
-      <p>Freelance almost never gets you a year two.</p>
+      <p>
+        Freelance almost never gets you a year two. (It&rsquo;s also why I
+        tell companies with a repeating calendar to{" "}
+        <Link href="/blog/event-agency-vs-in-house">
+          hire in-house instead of an agency
+        </Link>
+        , and companies with one giant one-off to do the opposite.)
+      </p>
 
       <h2>Why Does Staying Matter So Much to Me?</h2>
 

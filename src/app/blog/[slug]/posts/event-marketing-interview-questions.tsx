@@ -128,7 +128,12 @@ export function interviewQuestionsPost() {
         invoices and damage assessments filed within 48. Then, like almost
         every agency job, I handed back the radio. The badge scans, the
         follow-ups and the deals that did or didn&rsquo;t come out of that
-        weekend all happened in a building I wasn&rsquo;t in.
+        weekend all happened in a building I wasn&rsquo;t in (which is
+        most of how I&rsquo;d decide{" "}
+        <Link href="/blog/event-agency-vs-in-house">
+          between an event agency and an in-house hire
+        </Link>
+        ).
       </p>
 
       <p>

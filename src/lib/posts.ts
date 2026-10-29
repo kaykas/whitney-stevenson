@@ -32,6 +32,41 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "event-agency-vs-in-house",
+    title: "Who Keeps the Receipts: Event Agency or In-House Hire for B2B Events",
+    metaTitle: "Event Agency vs. In-House for B2B Events",
+    description:
+      "Hire an agency for the one-off that has to be enormous, like a Super Bowl activation. Hire a freelance producer when someone inside already owns the follow-up. If most of your events repeat every year, hire the in-house marketer, because the agency hands back the radio at load-out and Year Two gets built by whoever is still in the building.",
+    metaDescription:
+      "Agency, freelance producer or in-house event marketer? Agencies win the one-off. If your B2B events repeat every year, hire someone who stays past load-out.",
+    date: "2026-10-29",
+    readingMinutes: 6,
+    keywords: [
+      "event agency vs in-house",
+      "hire an event agency or event marketer",
+      "in-house event marketing team",
+      "freelance event producer",
+      "B2B event marketer San Francisco",
+    ],
+    faqs: [
+      {
+        question: "Should a B2B company hire an event agency or an in-house event marketer?",
+        answer:
+          "It depends on how much of your calendar repeats. An agency wins a one-off that has to be enormous, like a Super Bowl activation, because it keeps fabricators and venue contacts on call. If most of your events happen again next year, hire someone in-house, because Year Two is built from Year One's follow-up and an agency hands back the radio at load-out.",
+      },
+      {
+        question: "When does a freelance event producer make sense?",
+        answer:
+          "When someone inside the company already owns the goal and the leads, and you need a second experienced pair of hands for the build and show days. Without that internal owner, the freelancer goes home on load-out night and never finds out what happened next.",
+      },
+      {
+        question: "Does an in-house event marketer replace an agency?",
+        answer:
+          "No. The setup I'd build at most B2B companies is one in-house owner who hires an agency or a freelance crew for the weeks that need a build. The owner keeps the receipts from year to year, and the agency brings the dock crew and fabricators.",
+      },
+    ],
+  },
+  {
     slug: "b2b-event-calendar",
     title: "Cut the New Thing First: How I Build a B2B Event Calendar",
     metaTitle: "How to Build a B2B Event Calendar",
