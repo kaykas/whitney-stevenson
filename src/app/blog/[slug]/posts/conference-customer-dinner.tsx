@@ -189,7 +189,12 @@ export function conferenceCustomerDinnerPost() {
         happens at the table, but whether it works gets decided in the
         forty minutes before anybody sits down, when every guest either
         has someone walking beside them or is alone on a crowded sidewalk
-        checking the address again. Plan the walk.
+        checking the address again. Plan the walk. And if the dinner is
+        competing with a booth upgrade for the same money, here is{" "}
+        <Link href="/blog/conference-sponsorship-package">
+          how I&rsquo;d choose between sponsorship packages
+        </Link>
+        .
       </p>
 
       <p>
