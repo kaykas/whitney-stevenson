@@ -32,6 +32,46 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "conference-sponsorship-package",
+    title: "Who Has to Show Up: Which Conference Sponsorship Package I'd Buy",
+    metaTitle: "Which Conference Sponsorship to Buy",
+    description:
+      "Buy the package your team can actually work. In Year One at a new show, I'd buy passes and a hosted dinner for the accounts you already know. Buy the booth in Year Two, if you're committing to three years, and add a speaking session only when you have someone who can teach the room something true.",
+    metaDescription:
+      "Booth, speaking session, hosted dinner or logo package? How I'd choose a B2B conference sponsorship by who has to work it and whether you're coming back.",
+    date: "2026-10-30",
+    readingMinutes: 5,
+    keywords: [
+      "conference sponsorship package",
+      "B2B conference sponsorship",
+      "trade show booth vs hosted dinner",
+      "conference speaking session sponsorship",
+      "B2B event marketer San Francisco",
+    ],
+    faqs: [
+      {
+        question: "Which conference sponsorship package should a B2B company buy?",
+        answer:
+          "Buy the package your team can work. At a show you're attending for the first time, buy passes and host a dinner for accounts you already know. Buy a booth in the second year if you plan to return for three, and add a speaking session only when you have a speaker with something true to teach.",
+      },
+      {
+        question: "Is a hosted dinner better than a conference booth?",
+        answer:
+          "Per dollar, a hosted dinner usually wins once you can name the guests, because it rides on a trip the team is already taking. It can't introduce you to strangers, though. A booth on the expo floor can, and it gets stronger each year you return to the same show.",
+      },
+      {
+        question: "Is the speaking session in a sponsorship tier worth it?",
+        answer:
+          "Only when you have a speaker who will teach rather than pitch. A talk can reach buyers who never walk the expo floor, but it costs weeks of a senior person's time and needs someone looking after the speaker before they go on.",
+      },
+      {
+        question: "Should I buy a logo or lanyard sponsorship?",
+        answer:
+          "Rarely. It is the only line on the prospectus that nobody has to staff, which is why it starts so few conversations. If the same money would cover a customer dinner, buy the dinner.",
+      },
+    ],
+  },
+  {
     slug: "event-agency-vs-in-house",
     title: "Who Keeps the Receipts: Event Agency or In-House Hire for B2B Events",
     metaTitle: "Event Agency vs. In-House for B2B Events",

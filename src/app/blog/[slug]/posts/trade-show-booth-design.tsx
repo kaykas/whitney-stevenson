@@ -183,7 +183,12 @@ export function tradeShowBoothDesignPost() {
         Year Three, built into a structure sturdy enough to ship and load in
         that many times, with one small piece we can swap out (for us it was
         the demo). Design the first year as the first of three, and give
-        the floor time to get to know you.
+        the floor time to get to know you. If you can&rsquo;t promise the
+        second and third, I&rsquo;d buy a different{" "}
+        <Link href="/blog/conference-sponsorship-package">
+          line on the sponsorship prospectus
+        </Link>{" "}
+        this year.
       </p>
 
       <h2>The Demo Laptop</h2>
