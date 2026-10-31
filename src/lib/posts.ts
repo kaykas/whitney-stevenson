@@ -32,6 +32,46 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "trade-show-giveaways",
+    title: "The Good Stuff Goes in the Mail: What I'd Hand Out at a B2B Trade Show Booth",
+    metaTitle: "B2B Trade Show Giveaways That Work",
+    description:
+      "Put out something cheap and generous for everyone in the aisle, like a bowl of good mints, and never scan a badge for it. Save the real swag budget for the buyers who stayed and told your rep something specific, and mail it the week after the show with a note that remembers what they said.",
+    metaDescription:
+      "Candy bowl, tote, raffle or a mailed gift? How I'd split a B2B trade show giveaway budget between the aisle and the buyers who stopped to talk.",
+    date: "2026-10-31",
+    readingMinutes: 5,
+    keywords: [
+      "trade show giveaways",
+      "B2B trade show swag",
+      "trade show giveaways that generate leads",
+      "trade show raffle badge scans",
+      "B2B event marketer San Francisco",
+    ],
+    faqs: [
+      {
+        question: "What are the best giveaways for a B2B trade show booth?",
+        answer:
+          "Split the budget in two. Keep something cheap and generous in the aisle, like good candy or mints, and don't scan badges for it. Spend the real money on gifts mailed after the show to buyers who had a real conversation with your team, chosen from what they told your rep.",
+      },
+      {
+        question: "Should you scan badges in exchange for trade show swag?",
+        answer:
+          "No. Every scan traded for a free item lands on the same list as the buyers who asked real questions, and the rep following up can't tell them apart. If you do scan for swag, tag those scans so nobody counts them as pipeline.",
+      },
+      {
+        question: "Are trade show raffles worth it?",
+        answer:
+          "Only when raw scan count is the number you have to report. A raffle fills the list fast, but mostly with people who wanted the prize, so tag every raffle scan separately from booth conversations.",
+      },
+      {
+        question: "Is a tote bag a good trade show giveaway?",
+        answer:
+          "It works at big expo halls where attendees collect paper, and it carries your logo around the hall for an afternoon. It also competes with every other tote on the floor, so it rarely starts a conversation.",
+      },
+    ],
+  },
+  {
     slug: "conference-sponsorship-package",
     title: "Who Has to Show Up: Which Conference Sponsorship Package I'd Buy",
     metaTitle: "Which Conference Sponsorship to Buy",

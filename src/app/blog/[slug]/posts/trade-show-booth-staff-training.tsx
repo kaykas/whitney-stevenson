@@ -111,8 +111,9 @@ export function boothStaffTrainingPost() {
         The best follow-up email starts with something the buyer said at the
         booth. The worst one starts with &ldquo;Great meeting you at
         RSA!&rdquo; and a calendar link, and lands in the inbox of someone who
-        only stopped for the swag. Give your staff a quick tag for those
-        scans, too. The rep working down the list on Wednesday will thank
+        only stopped for the swag (I have{" "}
+        <Link href="/blog/trade-show-giveaways">opinions about the swag</Link>
+        , too). Give your staff a quick tag for those scans. The rep working down the list on Wednesday will thank
         you, and so will whoever has to defend the trade show budget in
         January.
       </p>
