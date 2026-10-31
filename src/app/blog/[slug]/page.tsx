@@ -33,8 +33,10 @@ import { clientHolidayPartyPost } from "./posts/client-holiday-party";
 import { b2bEventCalendarPost } from "./posts/b2b-event-calendar";
 import { eventAgencyVsInHousePost } from "./posts/event-agency-vs-in-house";
 import { conferenceSponsorshipPackagePost } from "./posts/conference-sponsorship-package";
+import { tradeShowGiveawaysPost } from "./posts/trade-show-giveaways";
 
 const POST_BODIES: Record<string, () => React.ReactNode> = {
+  "trade-show-giveaways": tradeShowGiveawaysPost,
   "conference-sponsorship-package": conferenceSponsorshipPackagePost,
   "event-agency-vs-in-house": eventAgencyVsInHousePost,
   "b2b-event-calendar": b2bEventCalendarPost,
