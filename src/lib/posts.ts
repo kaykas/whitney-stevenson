@@ -32,6 +32,46 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "free-event-no-shows",
+    title: "Forty Percent Stay Home: How I Plan for No-Shows at a Free B2B Event",
+    metaTitle: "Planning for Free B2B Event No-Shows",
+    description:
+      "Guarantee the venue for the people who will actually come, which is always fewer than the RSVP count. For a free evening event, I'd order food for about two thirds of registrations, keep a waitlist, and have the rep who invited each guest send a short personal note two days out. Reminder emails help on webinars and do little for a dinner.",
+    metaDescription:
+      "Overbook, waitlist, rep's note or deposit? How I plan for no-shows at a free B2B event, and why I set the venue guarantee below the RSVP count.",
+    date: "2026-11-01",
+    readingMinutes: 5,
+    keywords: [
+      "free event no-shows",
+      "reduce event no-show rate",
+      "B2B event attendance rate",
+      "event overbooking RSVP",
+      "B2B event marketer San Francisco",
+    ],
+    faqs: [
+      {
+        question: "What is a typical no-show rate for a free B2B event?",
+        answer:
+          "Guides on the topic put it above 40% for free in-person events, against 3 to 5% for paid ones, and half or more of webinar registrants never attend. Track your own show rate on every event, because after three events your number beats any published one.",
+      },
+      {
+        question: "How much should you overbook a free event?",
+        answer:
+          "For a free evening event with an invite list you built yourself, guarantee food for about two thirds of RSVPs and pick a room that still looks full at that number. Adjust the ratio once you have show rates from your own past events.",
+      },
+      {
+        question: "Do reminder emails reduce event no-shows?",
+        answer:
+          "They matter most for webinars and large open-registration events, where a morning-of email with the join link is the whole job. For a small dinner or roundtable, a two-line personal note from the rep who invited the guest does far more.",
+      },
+      {
+        question: "Should you charge a deposit for a free B2B event?",
+        answer:
+          "Usually not for customers. A small fee works on strangers at workshops and multi-day programs, but on an invite to your own customers it signals that you expected them to flake.",
+      },
+    ],
+  },
+  {
     slug: "trade-show-giveaways",
     title: "The Good Stuff Goes in the Mail: What I'd Hand Out at a B2B Trade Show Booth",
     metaTitle: "B2B Trade Show Giveaways That Work",
