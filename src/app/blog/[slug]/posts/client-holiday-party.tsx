@@ -69,7 +69,10 @@ export function clientHolidayPartyPost() {
         the right answer is a warm hello and a chair, every time, and I agree
         with the venue ahead of time on what a couple of extra covers will
         cost. A holiday party gets more of those surprises, so the cushion
-        should be bigger.
+        should be bigger. The opposite surprise is the guest who said yes in
+        October and stays home, and I{" "}
+        <Link href="/blog/free-event-no-shows">plan for no-shows</Link> on
+        the same order.
       </p>
 
       <h2>Spend More on the First Ten Minutes Than on the Band</h2>
