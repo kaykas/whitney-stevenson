@@ -41,6 +41,7 @@ export type ArticleInput = {
 
 export function articleSchema(a: ArticleInput) {
   const url = `${ORIGIN}${a.path}`;
+  const imgUrl = `${ORIGIN}${a.image ?? DEFAULT_IMAGE}`;
   return {
     "@type": a.type ?? "Article",
     headline: a.headline,
@@ -49,7 +50,15 @@ export function articleSchema(a: ArticleInput) {
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
     datePublished: a.datePublished,
     dateModified: a.dateModified ?? a.datePublished,
-    image: `${ORIGIN}${a.image ?? DEFAULT_IMAGE}`,
+    image: {
+      "@type": "ImageObject",
+      url: imgUrl,
+      contentUrl: imgUrl,
+      width: 800,
+      height: 800,
+      caption: a.headline,
+      creditText: "Whitney Stevenson",
+    },
     author: AUTHOR,
     publisher: PUBLISHER,
     inLanguage: "en-US",

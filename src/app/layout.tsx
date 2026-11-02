@@ -45,7 +45,14 @@ export const metadata: Metadata = {
     // "Open Graph URL not matching canonical".
     url: `${SITE_URL}/`,
     siteName: "Whitney Stevenson",
-    images: [{ url: "/photos/whitney-hero.jpeg", width: 800, height: 800 }],
+    images: [
+      {
+        url: "/photos/whitney-hero.jpeg",
+        width: 800,
+        height: 800,
+        alt: "Whitney Stevenson — B2B Event Marketing & Hospitality Leader, San Francisco",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",

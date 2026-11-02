@@ -48,7 +48,15 @@ const SCHEMA = {
   description:
     "B2B event marketing operator with 10+ years across tech and entertainment. Built Illumio's first LATAM channel partnership; co-founded the women's club at Presidio Golf; produced PepsiCo Tostitos at Super Bowl 2026; anchored Arxan at three RSA Conferences.",
   url: "https://www.whitneystevenson.com",
-  image: "https://www.whitneystevenson.com/photos/whitney-hero.jpeg",
+  image: {
+    "@type": "ImageObject",
+    url: "https://www.whitneystevenson.com/photos/whitney-hero.jpeg",
+    contentUrl: "https://www.whitneystevenson.com/photos/whitney-hero.jpeg",
+    width: 800,
+    height: 800,
+    caption: "Whitney Stevenson — B2B Event Marketing & Hospitality Leader, San Francisco",
+    creditText: "Whitney Stevenson",
+  },
   address: {
     "@type": "PostalAddress",
     addressLocality: "San Francisco",
