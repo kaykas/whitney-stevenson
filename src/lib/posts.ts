@@ -32,6 +32,46 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "event-venue-contract-clauses",
+    title: "Page Nine: The Venue Contract Clauses I'd Fight For, and the One I'd Let Go",
+    metaTitle: "Venue Contract Clauses to Negotiate",
+    description:
+      "Negotiate the food and beverage minimum and the attrition clause first, because together they decide what you pay when fewer people come than you promised. Then ask for a cancellation schedule that steps down by date and works both ways. Exclusive in-house AV is the clause I'd usually let the venue win, if their crew knows the room.",
+    metaDescription:
+      "F&B minimum, attrition, cancellation, in-house AV or access hours? Which event venue contract clauses I'd negotiate before signing, and which I'd let go.",
+    date: "2026-11-02",
+    readingMinutes: 5,
+    keywords: [
+      "event venue contract clauses",
+      "negotiate venue contract",
+      "food and beverage minimum",
+      "event attrition clause",
+      "B2B event marketer San Francisco",
+    ],
+    faqs: [
+      {
+        question: "Which venue contract clauses should you negotiate first?",
+        answer:
+          "Start with the food and beverage minimum and the attrition clause, because both decide what you pay when fewer people come than you promised. Next is the cancellation schedule. Exclusive in-house AV and force majeure matter less to negotiate yourself.",
+      },
+      {
+        question: "What is an attrition clause in an event venue contract?",
+        answer:
+          "It sets how far your headcount can fall from the contracted number before you pay for empty seats. Ask for a low starting guarantee you can raise later, and for the latest final guarantee deadline the kitchen will give you.",
+      },
+      {
+        question: "Can you negotiate a food and beverage minimum?",
+        answer:
+          "Often, yes. Ask for a minimum you can hit at your realistic headcount, put in writing that you owe only the difference if you fall short, and ask whether the bar tab or the room rental can count toward it.",
+      },
+      {
+        question: "Should you accept a venue's exclusive in-house AV?",
+        answer:
+          "Usually. It costs more, but the venue's crew knows the room. Get the fee for bringing an outside AV vendor in writing before you sign, along with a named technician for the day.",
+      },
+    ],
+  },
+  {
     slug: "free-event-no-shows",
     title: "Forty Percent Stay Home: How I Plan for No-Shows at a Free B2B Event",
     metaTitle: "Planning for Free B2B Event No-Shows",
