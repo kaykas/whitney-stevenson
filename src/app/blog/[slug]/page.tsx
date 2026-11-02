@@ -35,8 +35,10 @@ import { eventAgencyVsInHousePost } from "./posts/event-agency-vs-in-house";
 import { conferenceSponsorshipPackagePost } from "./posts/conference-sponsorship-package";
 import { tradeShowGiveawaysPost } from "./posts/trade-show-giveaways";
 import { freeEventNoShowsPost } from "./posts/free-event-no-shows";
+import { eventVenueContractClausesPost } from "./posts/event-venue-contract-clauses";
 
 const POST_BODIES: Record<string, () => React.ReactNode> = {
+  "event-venue-contract-clauses": eventVenueContractClausesPost,
   "free-event-no-shows": freeEventNoShowsPost,
   "trade-show-giveaways": tradeShowGiveawaysPost,
   "conference-sponsorship-package": conferenceSponsorshipPackagePost,
