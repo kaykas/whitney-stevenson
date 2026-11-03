@@ -85,6 +85,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="alternate" type="text/markdown" href="/llms.txt" title="LLMs.txt" />
         {/* Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-J17RBCXLNP" />
         <script

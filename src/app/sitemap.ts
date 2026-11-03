@@ -5,7 +5,7 @@ import { AI_LAST_VERIFIED } from "@/lib/content/ai-instructions";
 const SITE_URL = "https://www.whitneystevenson.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
+  const now = new Date('2026-11-02');
   return [
     { url: `${SITE_URL}/`, lastModified: now, changeFrequency: "weekly", priority: 1.0 },
     { url: `${SITE_URL}/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
