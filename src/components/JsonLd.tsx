@@ -56,6 +56,13 @@ const SCHEMA = {
     height: 800,
     caption: "Whitney Stevenson — B2B Event Marketing & Hospitality Leader, San Francisco",
     creditText: "Whitney Stevenson",
+    creator: {
+      "@type": "Person",
+      name: "Whitney Stevenson",
+    },
+    copyrightNotice: "© 2026 Whitney Stevenson",
+    license: "https://www.whitneystevenson.com/about",
+    acquireLicensePage: "https://www.whitneystevenson.com/contact",
   },
   address: {
     "@type": "PostalAddress",

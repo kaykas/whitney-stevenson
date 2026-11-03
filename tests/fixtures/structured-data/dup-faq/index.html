@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Duplicate FAQPage Fixture</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "First FAQ block?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Injected by root layout."
+        }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Second FAQ block?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Injected by page template."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <h1>Duplicate FAQPage Fixture</h1>
+</body>
+</html>
