@@ -61,8 +61,8 @@ const SCHEMA = {
       name: "Whitney Stevenson",
     },
     copyrightNotice: "© 2026 Whitney Stevenson",
-    license: "https://www.whitneystevenson.com/about",
-    acquireLicensePage: "https://www.whitneystevenson.com/contact",
+    license: "https://www.whitneystevenson.com/#about",
+    acquireLicensePage: "https://www.whitneystevenson.com/#contact",
   },
   address: {
     "@type": "PostalAddress",

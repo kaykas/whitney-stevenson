@@ -34,7 +34,7 @@ export default function Image() {
           </div>
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderTop: '1px solid rgba(255,255,255,0.14)', paddingTop: '24px', fontSize: 20, color: '#94a3b8' }}>
-          <div>https://whitneystevenson.com</div>
+          <div>https://www.whitneystevenson.com</div>
           <div>Verified Architecture & Research</div>
         </div>
       </div>
