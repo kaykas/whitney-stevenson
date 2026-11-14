@@ -32,6 +32,46 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "keynote-sponsorship-vs-ancillary-suite",
+    title: "The Keynote or the Suite Across Howard Street: Where I'd Put the Conference Budget",
+    metaTitle: "Keynote Sponsor vs. Ancillary Suite ROI",
+    description:
+      "For most B2B companies, an ancillary hospitality suite near the conference returns more measurable pipeline than a keynote sponsorship, because every meeting in the suite is booked by name and easy to count, while a keynote buys reach you can't attribute. The keynote wins in one case: a real launch and an executive who can teach the room. If the package is only a logo and a thank-you from the emcee, buy the suite.",
+    metaDescription:
+      "Keynote sponsorship or an ancillary hospitality suite? Which returns more pipeline at a B2B conference, how to measure each, and when the keynote wins.",
+    date: "2026-11-14",
+    readingMinutes: 5,
+    keywords: [
+      "sponsoring a conference keynote vs hosting an ancillary suite roi",
+      "keynote sponsorship ROI",
+      "conference hospitality suite",
+      "ancillary event policy",
+      "B2B event marketer San Francisco",
+    ],
+    faqs: [
+      {
+        question: "Is a keynote sponsorship or an ancillary suite better ROI?",
+        answer:
+          "For most B2B companies the ancillary suite, because every meeting in it is booked by name and easy to count. A keynote buys reach you can't attribute. The keynote wins when you have a real launch and an executive who can teach the room without the product deck.",
+      },
+      {
+        question: "What does a keynote sponsorship usually include?",
+        answer:
+          "At many large shows it means your logo on the stage screens, a thank-you from the emcee, maybe a short video, and a reserved row, with nobody from your company speaking. An actual main-stage speaking slot is rarer, priced at the top of the sheet, and sometimes not for sale.",
+      },
+      {
+        question: "How do you measure the ROI of a conference hospitality suite?",
+        answer:
+          "Add up the suite, the food and beverage minimum, the AV, and staff travel, then divide by meetings that actually happened, not meetings booked. Then track how many turned into a second conversation within 30 days and what pipeline they touched.",
+      },
+      {
+        question: "Do conferences allow ancillary suites and events?",
+        answer:
+          "Most large shows publish an ancillary event policy. The usual ask is that you register the event and keep it out of keynote and general session hours, some charge a fee, and some can pull badges from companies that ignore the rules. Read it before signing a hotel contract.",
+      },
+    ],
+  },
+  {
     slug: "event-venue-contract-clauses",
     title: "Page Nine: The Venue Contract Clauses I'd Fight For, and the One I'd Let Go",
     metaTitle: "Venue Contract Clauses to Negotiate",
