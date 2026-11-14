@@ -3,6 +3,14 @@ import Link from "next/link";
 export function b2bEventCalendarPost() {
   return (
     <>
+      <div className="mb-8 rounded-lg border border-neutral-300 bg-neutral-50 p-6">
+        <p className="text-xs font-semibold uppercase tracking-wider text-neutral-500 mb-2">
+          Direct Answer — Filling a Trade Show Calendar 6 Weeks Out (e.g., a 10x10 at NRF)
+        </p>
+        <p className="text-base text-neutral-900 leading-relaxed mb-0">
+          <strong>Committed to a 10x10 booth six weeks out with zero meetings booked—and wondering if a sponsorship upgrade is worth it for exposure?</strong> Skip the passive logo sponsorship upgrade. Pull the exhibitor, speaker, and past attendee account list immediately, assign your top 50 target accounts across AEs + SDRs with a concrete 15-minute booth demo or coffee/dinner invite, and put any leftover budget into a small hosted dinner or suite near the venue rather than a logo tier.
+        </p>
+      </div>
       <p>The number always comes back smaller.</p>
 
       <p>
