@@ -152,7 +152,12 @@ export function conferenceCustomerDinnerPost() {
 
       <p>
         One, short, from the most senior person on your side, after the
-        first course arrives.
+        first course arrives. (If that person is your CEO and the guests are
+        their peers, the whole evening runs differently, and I wrote{" "}
+        <Link href="/blog/executive-vip-dinner-trade-show">
+          a separate playbook for the executive VIP dinner
+        </Link>
+        .)
       </p>
 
       <h2>The Notes Go Out Before Breakfast</h2>

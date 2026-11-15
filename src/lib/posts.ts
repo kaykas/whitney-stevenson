@@ -32,6 +32,46 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "executive-vip-dinner-trade-show",
+    title: "Twelve Chairs on the Second Night: My Executive VIP Dinner Playbook for Tier-1 Trade Shows",
+    metaTitle: "Executive VIP Dinner at a Trade Show",
+    description:
+      "Host the executive VIP dinner on the second night of a tier-1 show like RSA Conference or Dreamforce, in a private dining room for 10 to 14 guests a short walk from the convention center, with one of your executives at the table for every three or four guests. Book the room as soon as the show dates are public, and send the invitations from your executive's own inbox. The pitch stays at the booth.",
+    metaDescription:
+      "How to host an executive VIP dinner alongside RSA, Dreamforce or Black Hat: which night, how many guests, which format, and how to brief your host.",
+    date: "2026-11-15",
+    readingMinutes: 6,
+    keywords: [
+      "executive vip dinner hosting playbook alongside tier-1 trade shows",
+      "executive dinner during a trade show",
+      "VIP dinner at RSA Conference",
+      "private dining room for a conference dinner",
+      "B2B event marketer San Francisco",
+    ],
+    faqs: [
+      {
+        question: "Which night of a trade show is best for an executive VIP dinner?",
+        answer:
+          "The second night, almost every time. The first night belongs to opening receptions and tired travelers, and the last night belongs to the airport. The exception is a show where your executive is speaking, when the dinner goes on the night of the talk.",
+      },
+      {
+        question: "How many guests should an executive VIP dinner have?",
+        answer:
+          "About twelve, at one table in a private dining room, so a single conversation can travel the whole table. Above about fourteen the table splits into two dinners. Plan one of your own executives for every three or four guests.",
+      },
+      {
+        question: "When should you book a private dining room for a dinner during a big conference?",
+        answer:
+          "As soon as the show dates are public, before the guest list exists, because the good rooms near the convention center go months ahead during shows like RSA Conference and Dreamforce. Invitations go out six to eight weeks before the show, from your executive's own inbox.",
+      },
+      {
+        question: "Should there be a product presentation at an executive VIP dinner?",
+        answer:
+          "No. The executive host welcomes everyone in under two minutes, says why these particular people are at the table, and then asks questions and listens. Anyone who wants the pitch knows where the booth is.",
+      },
+    ],
+  },
+  {
     slug: "keynote-sponsorship-vs-ancillary-suite",
     title: "The Keynote or the Suite Across Howard Street: Where I'd Put the Conference Budget",
     metaTitle: "Keynote Sponsor vs. Ancillary Suite ROI",
