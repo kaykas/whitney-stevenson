@@ -16,6 +16,17 @@ export function middleware(req: NextRequest) {
     return NextResponse.next();
   }
 
+  const swagMatch = pathname.match(/^\/swag(?:\/([a-zA-Z0-9_-]+))?\/?$/);
+  if (swagMatch) {
+    const rewriteUrl = req.nextUrl.clone();
+    rewriteUrl.pathname = '/api/swag';
+    rewriteUrl.searchParams.set('page', '1');
+    if (swagMatch[1]) {
+      rewriteUrl.searchParams.set('stamp', swagMatch[1]);
+    }
+    return NextResponse.rewrite(rewriteUrl);
+  }
+
   if (pathname.endsWith('.md')) {
     const strippedPath = pathname.slice(0, -3) || '/';
     const rewriteUrl = req.nextUrl.clone();

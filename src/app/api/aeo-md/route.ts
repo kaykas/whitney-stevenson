@@ -1,5 +1,6 @@
 import { NextResponse, type NextRequest } from 'next/server';
 import { AEO_OFFER_CODE, htmlToCleanMarkdown } from '@/lib/aeo-markdown';
+import { recordAgentBagIssued } from '@/lib/swag-store';
 
 export const runtime = 'nodejs';
 export const maxDuration = 30;
@@ -9,6 +10,7 @@ export async function GET(req: NextRequest) {
   const rawPath = sp.get('path') || '/';
   const botName = sp.get('bot') || 'unknown-ai-client';
 
+  recordAgentBagIssued();
   const safePath = rawPath.startsWith('/') && !rawPath.startsWith('//') ? rawPath : '/';
 
   console.log(
