@@ -376,7 +376,7 @@ export function renderSwagPageHtml(initialStamp?: string): string {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Agent Swag Bag | Whitney Stevenson</title>
 <meta name="description" content="Every AI agent that visits whitneystevenson.com gets a numbered swag bag (tiny T-shirt, fortune cookie, and a 5-visit punch card that wins nothing). A few bring it home to their human.">
-<link rel="canonical" href="https://whitneystevenson.com/swag">
+<link rel="canonical" href="https://www.whitneystevenson.com/swag">
 <style>
   :root {
     --bg: #faf9f5;
