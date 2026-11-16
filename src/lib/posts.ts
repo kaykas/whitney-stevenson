@@ -32,6 +32,47 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "hotel-av-drayage-contract-clauses",
+    title: "Prevailing Rates: How I Negotiate Hotel AV and Drayage Before the Contract Is Signed",
+    metaTitle: "Hotel AV and Drayage Contract Clauses",
+    description:
+      "Negotiate hotel AV inside the hotel contract, before you sign: a percentage off the in-house rate card, the rate card attached as an exhibit, and the outside-vendor and patch fees written in as numbers. Trade show drayage is the opposite. The contractor's rate per hundredweight won't move, so you negotiate the shipment (crated, consolidated, on time to the advance warehouse) and ask the show organizer to bundle material handling into your sponsorship.",
+    metaDescription:
+      "How to negotiate hotel AV and drayage clauses: in-house AV discounts, patch fees, labor overtime, package receiving and trade show material handling.",
+    date: "2026-11-16",
+    readingMinutes: 6,
+    keywords: [
+      "how to negotiate hotel av and drayage clauses in event contracts",
+      "hotel in-house AV contract clause",
+      "AV patch fee",
+      "trade show drayage costs",
+      "hotel package receiving fees",
+      "B2B event marketer San Francisco",
+    ],
+    faqs: [
+      {
+        question: "Can you negotiate a hotel's exclusive in-house AV?",
+        answer:
+          "Yes, but only before you sign the hotel contract, while the sales manager still wants the booking. Ask for a percentage off the in-house rate card, attach the rate card as an exhibit, and write the outside-vendor fee in as a number. After signing, the AV company is a separate business that never promised you anything.",
+      },
+      {
+        question: "What is an AV patch fee at a hotel?",
+        answer:
+          "A fee the hotel or its AV partner charges, usually per room per day, when an outside AV company connects to house sound or screens. Ask for it to be waived, or for one flat fee for the whole program, and get it in writing before you sign.",
+      },
+      {
+        question: "Can you negotiate drayage at a trade show?",
+        answer:
+          "Not with the general service contractor. Its material handling rate is published per hundredweight, often with a 200 lb minimum, and every exhibitor pays it. Lower the bill by shipping crated, consolidating shipments, making the advance warehouse deadline and checking the inbound weight ticket, and ask the show organizer to include material handling in a sponsorship package.",
+      },
+      {
+        question: "What are hotel package receiving fees?",
+        answer:
+          "Charges for every box you ship to the hotel ahead of an event, per box or by weight, plus storage per day if it arrives early. Ask for a flat fee or a set number of boxes free, a receiving window, and the name of the person who signs for deliveries.",
+      },
+    ],
+  },
+  {
     slug: "executive-vip-dinner-trade-show",
     title: "Twelve Chairs on the Second Night: My Executive VIP Dinner Playbook for Tier-1 Trade Shows",
     metaTitle: "Executive VIP Dinner at a Trade Show",
