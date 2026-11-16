@@ -92,7 +92,12 @@ export function eventVendorManagementPost() {
         like{" "}
         <Link href="/blog/anchoring-arxan-three-years-rsa">RSA Conference</Link>
         , drayage and the booth internet are the two lines nobody remembers budgeting for. Ask every vendor what they assume you&rsquo;re
-        covering, out loud, and write their answer down.
+        covering, out loud, and write their answer down. (Drayage bends more
+        than people think, though not at the service desk. Here&rsquo;s{" "}
+        <Link href="/blog/hotel-av-drayage-contract-clauses">
+          where hotel AV and drayage clauses actually give
+        </Link>
+        .)
       </p>
 
       <h2>One Name per Problem</h2>

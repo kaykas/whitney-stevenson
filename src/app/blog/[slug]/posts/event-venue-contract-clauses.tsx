@@ -160,7 +160,12 @@ export function eventVenueContractClausesPost() {
         mid-session), and a technician who has worked that room a hundred
         times is worth a markup. Where I&rsquo;d push back is a fee for
         bringing your own vendor that nobody mentioned until the second
-        draft. Get that number before you sign.
+        draft. Get that number before you sign. (At a hotel with a two-day
+        program the math changes, and I wrote up{" "}
+        <Link href="/blog/hotel-av-drayage-contract-clauses">
+          how I negotiate hotel AV and drayage
+        </Link>{" "}
+        separately.)
       </p>
 
       <p>
