@@ -92,6 +92,11 @@ export function boothStaffTrainingPost() {
         who picks up a lead on Tuesday has no idea what was said in the aisle
         on Monday, unless the person in the booth wrote it down, right then,
         before the next visitor walked up and wiped it out of their head.
+        That note is also what sorts a scan into{" "}
+        <Link href="/blog/post-event-follow-up-sla">
+          a tier in my follow-up SLA
+        </Link>
+        .
       </p>
 
       <p>
