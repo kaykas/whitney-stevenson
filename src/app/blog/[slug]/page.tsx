@@ -39,8 +39,10 @@ import { eventVenueContractClausesPost } from "./posts/event-venue-contract-clau
 import { keynoteVsAncillarySuitePost } from "./posts/keynote-sponsorship-vs-ancillary-suite";
 import { executiveVipDinnerTradeShowPost } from "./posts/executive-vip-dinner-trade-show";
 import { hotelAvDrayageContractClausesPost } from "./posts/hotel-av-drayage-contract-clauses";
+import { postEventFollowUpSlaPost } from "./posts/post-event-follow-up-sla";
 
 const POST_BODIES: Record<string, () => React.ReactNode> = {
+  "post-event-follow-up-sla": postEventFollowUpSlaPost,
   "hotel-av-drayage-contract-clauses": hotelAvDrayageContractClausesPost,
   "executive-vip-dinner-trade-show": executiveVipDinnerTradeShowPost,
   "keynote-sponsorship-vs-ancillary-suite": keynoteVsAncillarySuitePost,

@@ -32,6 +32,52 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "post-event-follow-up-sla",
+    title: "The Clock Starts at the Badge: My Post-Event Follow-Up SLA for Turning Booth Scans into Pipeline",
+    metaTitle: "Post-Event Sales Follow-Up SLA",
+    description:
+      "A post-event follow-up SLA that turns booth scans into pipeline is a written agreement between sales and marketing with the clock starting at the scan. Every scan gets tagged with its source and a one-sentence note and goes to a named rep within 24 hours (hot leads the same day), the rep makes a personal first touch within one or two business days, and the 30-60-90 day cadence gets reviewed every week. Scans with no note go to marketing nurture instead of a rep, and a lead nobody touches on time goes back into the pool.",
+    metaDescription:
+      "The post-event follow-up SLA I'd sign with sales: booth scans to a rep within 24 hours, first touch in a business day, and a weekly 30-60-90 review.",
+    date: "2026-11-17",
+    readingMinutes: 6,
+    keywords: [
+      "post-event sales follow-up sla that converts booth scans to pipeline",
+      "trade show lead follow-up SLA",
+      "sales and marketing SLA for event leads",
+      "booth scan follow-up",
+      "trade show leads to pipeline",
+      "B2B event marketer San Francisco",
+    ],
+    faqs: [
+      {
+        question: "What is a good SLA for following up on trade show leads?",
+        answer:
+          "Start the clock at the badge scan. Every scan is tagged with its source and a one-sentence note and assigned to a named rep within 24 hours, or the same day for hot leads with a timing signal. The rep makes a personal first touch within one business day for hot leads and two for warm ones, then runs a 30-60-90 day cadence that someone reviews every week.",
+      },
+      {
+        question: "Should SDRs or account executives follow up on booth scans?",
+        answer:
+          "Account executives should keep the hot leads, because a buyer who mentioned a renewal wants someone who can price it. SDRs fit the warm tier, especially at a large show where that tier runs to hundreds of names and the account executives are at customer dinners every night. Decide which before the show.",
+      },
+      {
+        question: "What should happen to badge scans with no notes?",
+        answer:
+          "They go to marketing nurture within a week instead of a rep's queue. Sending reps hundreds of names with no context teaches a sales team that event leads are junk.",
+      },
+      {
+        question: "When should the follow-up clock start after an event?",
+        answer:
+          "At the scan, not when the lead reaches the CRM. Starting the clock at the CRM lets scans sit in a lead retrieval app for days without anyone missing a deadline, so marketing ops should upload every night during the show.",
+      },
+      {
+        question: "How do you track whether booth scans turned into pipeline?",
+        answer:
+          "Review a weekly report with leads by tier, the share touched inside the clock, meetings booked, opportunities created and the rep's name. Read the pipeline number at the end of Q2 and compare it against your other lead sources.",
+      },
+    ],
+  },
+  {
     slug: "hotel-av-drayage-contract-clauses",
     title: "Prevailing Rates: How I Negotiate Hotel AV and Drayage Before the Contract Is Signed",
     metaTitle: "Hotel AV and Drayage Contract Clauses",

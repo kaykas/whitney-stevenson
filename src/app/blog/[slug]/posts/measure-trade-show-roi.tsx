@@ -86,7 +86,12 @@ export function measureTradeShowRoiPost() {
 
       <p>
         The part I&rsquo;d underline twice is what came after. Every rep had
-        a 30-60-90 day follow-up cadence, and we tracked it every week. Weekly matters because leads
+        a 30-60-90 day follow-up cadence, and we tracked it every week (I
+        wrote the whole thing up as{" "}
+        <Link href="/blog/post-event-follow-up-sla">
+          the follow-up SLA I&rsquo;d sign with sales
+        </Link>
+        ). Weekly matters because leads
         rarely die loudly. They go quiet around day forty, after a second
         email nobody answered, and unless someone is looking at the list
         every week, a quiet lead looks exactly like a slow one until the
