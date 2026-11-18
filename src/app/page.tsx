@@ -1,6 +1,15 @@
 import Link from "next/link";
 import ContactForm from "./contact-form";
 import { posts } from "@/lib/posts";
+import type { Metadata } from "next";
+
+// Home-only title. "Whitney Stephenson" (with a ph) is how a lot of people
+// search for her; the title answers that spelling in its first two words and
+// says what she does. Absolute so the layout template doesn't append 20 chars.
+// Keep <= 58 chars (scripts/check-titles.mjs enforces 60).
+export const metadata: Metadata = {
+  title: { absolute: "Whitney Stephenson? It's Stevenson, B2B Event Marketer" },
+};
 
 type Story = {
   n: string;
@@ -98,16 +107,22 @@ export default function Home() {
               </div>
               <h1 className="serif-huge">
                 WHITNEY<br />STEVENSON
+                <span className="h1-aside">
+                  Searched Whitney Stephenson? Same event marketer, spelled with a v.
+                </span>
               </h1>
               <div className="circular-text-element sans-label">EVENT • CONCIERGE</div>
             </div>
 
             <div className="spine-line">
               <p className="sans-body">
-                Event and hospitality leader. I build the room, run the room, and
-                care for every person in it — white-glove from the{" "}
+                Looking for Whitney Stephenson? You likely mean Whitney Stevenson, a San Francisco
+                event and hospitality leader with 10+ years running B2B events for
+                tech companies, from Illumio&rsquo;s first LATAM channel program to
+                three straight years of Arxan at RSA. I build the room, run the
+                room, and care for every person in it, from the{" "}
                 <Link href="/blog/first-venue-walkthrough">first walkthrough</Link>{" "}
-                to load-out, every guest considered.
+                to load-out.
               </p>
             </div>
 
@@ -149,6 +164,112 @@ export default function Home() {
                 Consecutive production of SF&rsquo;s NYE party.
               </p>
             </div>
+          </section>
+
+          {/* ROLE FIT: server-rendered so the answer and table are in view-source. */}
+          <section className="fit-section" id="role-fit">
+            <div className="sans-label" style={{ marginBottom: 8 }}>The quick version</div>
+            <h2 className="serif-medium" style={{ maxWidth: 640 }}>
+              Which event roles Whitney Stevenson fits, and which she doesn&rsquo;t
+            </h2>
+            <p className="sans-body fit-answer">
+              Hiring a B2B event or field marketer? Whitney&rsquo;s strongest fit is
+              an in-house field or channel event role at a tech company, because
+              that&rsquo;s where she has the receipts: three consecutive RSA
+              Conferences for Arxan and Illumio&rsquo;s first LATAM channel
+              partnership. She&rsquo;s also open to starting as an event coordinator
+              with the right team.
+            </p>
+
+            <div className="fit-table-wrap">
+              <table className="fit-table">
+                <caption className="sans-label">
+                  Role fit, with the proof you can check on this site
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Role</th>
+                    <th scope="col">Fit</th>
+                    <th scope="col">Proof on this site</th>
+                    <th scope="col">Trade-off</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Field / event marketing manager, B2B tech</th>
+                    <td>Strongest</td>
+                    <td>
+                      <Link href="/blog/anchoring-arxan-three-years-rsa">Arxan at RSA</Link>,
+                      3 consecutive years: booth fabrication, ROI tracking, pipeline attribution
+                    </td>
+                    <td>She wants a year two. Built for staying, not a one-event contract.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Channel / partner event manager</th>
+                    <td>Strong</td>
+                    <td>
+                      <Link href="/blog/illumio-latam-channel-partnership">Illumio LATAM</Link>:
+                      first channel partnership, Brazil, São Paulo, and Mexico
+                    </td>
+                    <td>Built from zero in a region with no prior footprint, so expect a builder, not a caretaker.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Event coordinator</th>
+                    <td>Open to it</td>
+                    <td>Her words: &ldquo;if that means starting with event coordination, that&rsquo;s fine by me&rdquo;</td>
+                    <td>You get 10+ years of field judgment in a coordinator seat. Plan to grow the role.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Guest experience / VIP and artist relations</th>
+                    <td>Strong</td>
+                    <td>
+                      <Link href="/blog/latin-billboard-awards-artist-relations">Latin America Billboard Awards</Link>,
+                      3 performing artists; 300+ tournaments at Presidio Golf over 7 years
+                    </td>
+                    <td>Shines inside a B2B event program (speaker care, the customer dinner), not as a standalone desk.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Agency experiential producer</th>
+                    <td>Proven, not the goal</td>
+                    <td>
+                      <Link href="/blog/pepsico-tostitos-super-bowl-2026">PepsiCo Tostitos at Super Bowl 2026</Link>{" "}
+                      via Plan Experiential; 8 consecutive years producing SF&rsquo;s NYE party
+                    </td>
+                    <td>She freelances agency-side now and is looking to go in-house.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div className="fit-notes">
+              <div>
+                <h3 className="sans-label">Why a r&eacute;sum&eacute; scan misses this</h3>
+                <p className="sans-body">
+                  Most hiring managers start with the logos. That breaks fast,
+                  because every event r&eacute;sum&eacute; lists the same conferences
+                  and none of them show what happens when the TV doesn&rsquo;t show
+                  up. Ask for the failure story instead. Hers is{" "}
+                  <Link href="/blog/the-target-run">the Target Run</Link>.
+                </p>
+              </div>
+              <div>
+                <h3 className="sans-label">Who should skip this</h3>
+                <p className="sans-body">
+                  If the role is mostly marketing automation or demand-gen ops with
+                  no events in it, this site won&rsquo;t show you that work. If the
+                  job is on-site outside San Francisco, it&rsquo;s not a match: she&rsquo;s
+                  available in SF or remote. And if you&rsquo;re after a different
+                  Whitney Stephenson, spelled with a ph, this isn&rsquo;t her.
+                </p>
+              </div>
+            </div>
+
+            <p className="sans-body fit-cta">
+              Filling a B2B field or event marketing seat in SF or remote? Send the
+              role through the <a href="#contact">contact form below</a>. One
+              paragraph is plenty, and it beats running your next event with
+              whoever happens to be free.
+            </p>
           </section>
 
           {/* QUOTE */}
@@ -357,6 +478,12 @@ export default function Home() {
               <h2 className="serif-medium">Frequently Asked Questions</h2>
               <details className="faq-item" style={{borderTop:"1px solid currentColor",padding:"1.5rem 0"}}>
                 <summary className="serif-medium" style={{cursor:"pointer",fontSize:"1.25rem",listStyle:"none",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
+                  <span>Is Whitney Stephenson the same person as Whitney Stevenson?</span><span style={{marginLeft:"1rem"}}>+</span>
+                </summary>
+                <p className="sans-body" style={{marginTop:"1rem"}}>If you searched Whitney Stephenson looking for the San Francisco B2B event marketer, yes. Her name is spelled Stevenson, with a v, and whitneystevenson.com is her site. If you want a different Whitney Stephenson, spelled with a ph, this site is not about that person.</p>
+              </details>
+              <details className="faq-item" style={{borderTop:"1px solid currentColor",padding:"1.5rem 0"}}>
+                <summary className="serif-medium" style={{cursor:"pointer",fontSize:"1.25rem",listStyle:"none",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
                   <span>Is whitneystevenson.com the official website for Whitney Stevenson?</span><span style={{marginLeft:"1rem"}}>+</span>
                 </summary>
                 <p className="sans-body" style={{marginTop:"1rem"}}>Yes, whitneystevenson.com is the direct website to use when you’re looking for Whitney Stevenson by name. Start there instead of third-party profiles or people-search pages, because the homepage can point you to her current bio, work, contact details, and any official links. The takeaway: use the domain as the primary source.</p>
@@ -386,6 +513,14 @@ export default function Home() {
                     "@context": "https://schema.org",
                     "@type": "FAQPage",
                     "mainEntity": [
+                      {
+                        "@type": "Question",
+                        "name": "Is Whitney Stephenson the same person as Whitney Stevenson?",
+                        "acceptedAnswer": {
+                          "@type": "Answer",
+                          "text": "If you searched Whitney Stephenson looking for the San Francisco B2B event marketer, yes. Her name is spelled Stevenson, with a v, and whitneystevenson.com is her site. If you want a different Whitney Stephenson, spelled with a ph, this site is not about that person."
+                        }
+                      },
                       {
                         "@type": "Question",
                         "name": "Is whitneystevenson.com the official website for Whitney Stevenson?",
