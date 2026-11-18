@@ -40,8 +40,10 @@ import { keynoteVsAncillarySuitePost } from "./posts/keynote-sponsorship-vs-anci
 import { executiveVipDinnerTradeShowPost } from "./posts/executive-vip-dinner-trade-show";
 import { hotelAvDrayageContractClausesPost } from "./posts/hotel-av-drayage-contract-clauses";
 import { postEventFollowUpSlaPost } from "./posts/post-event-follow-up-sla";
+import { calculatingTradeShowRoiPost } from "./posts/calculating-trade-show-roi";
 
 const POST_BODIES: Record<string, () => React.ReactNode> = {
+  "calculating-trade-show-roi": calculatingTradeShowRoiPost,
   "post-event-follow-up-sla": postEventFollowUpSlaPost,
   "hotel-av-drayage-contract-clauses": hotelAvDrayageContractClausesPost,
   "executive-vip-dinner-trade-show": executiveVipDinnerTradeShowPost,
