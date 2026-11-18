@@ -604,3 +604,43 @@ input::placeholder, textarea::placeholder {
   .ambient-gradient { width: 100vw; }
   .dark-section::before, .dark-section::after { display: none; }
 }
+
+/* H1 spelling aside: keeps the "Whitney Stephenson" search spelling in the
+   single H1 without competing with the name. */
+.h1-aside {
+  display: block;
+  margin-top: 18px;
+  font-family: var(--font-sans, sans-serif);
+  font-size: 0.85rem;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dark);
+  opacity: 0.75;
+}
+
+/* ROLE FIT */
+.fit-section { padding: 60px 40px; border-top: var(--border-width) solid var(--grid-line); }
+.fit-answer { max-width: 680px; margin-top: 16px; font-size: 16px; }
+.fit-table-wrap { overflow-x: auto; margin-top: 32px; }
+.fit-table { width: 100%; border-collapse: collapse; min-width: 640px; }
+.fit-table caption { text-align: left; padding-bottom: 12px; }
+.fit-table th, .fit-table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 14px 16px 14px 0;
+  border-bottom: 1px solid var(--grid-line);
+  font-size: 14px;
+  line-height: 1.5;
+}
+.fit-table thead th { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.7; }
+.fit-table tbody th { font-weight: 600; color: var(--accent-orange); }
+.fit-table a { text-decoration: underline; }
+.fit-notes { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px; }
+.fit-notes h3 { margin-bottom: 8px; }
+.fit-notes a, .fit-cta a { text-decoration: underline; }
+.fit-cta { margin-top: 40px; max-width: 680px; font-size: 16px; }
+@media (max-width: 768px) {
+  .fit-section { padding: 40px 20px; }
+  .fit-notes { grid-template-columns: 1fr; }
+}
