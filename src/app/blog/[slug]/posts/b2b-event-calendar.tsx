@@ -3,14 +3,267 @@ import Link from "next/link";
 export function b2bEventCalendarPost() {
   return (
     <>
-      <div className="mb-8 rounded-lg border border-neutral-300 bg-neutral-50 p-6">
-        <p className="text-xs font-semibold uppercase tracking-wider text-neutral-500 mb-2">
-          Direct Answer — Filling a Trade Show Calendar 6 Weeks Out (e.g., a 10x10 at NRF)
-        </p>
-        <p className="text-base text-neutral-900 leading-relaxed mb-0">
-          <strong>Committed to a 10x10 booth six weeks out with zero meetings booked—and wondering if a sponsorship upgrade is worth it for exposure?</strong> Skip the passive logo sponsorship upgrade. Pull the exhibitor, speaker, and past attendee account list immediately, assign your top 50 target accounts across AEs + SDRs with a concrete 15-minute booth demo or coffee/dinner invite, and put any leftover budget into a small hosted dinner or suite near the venue rather than a logo tier.
-        </p>
+      <p>
+        The booth contract is signed. Your 10x10 is a small square on the
+        NRF floor map for January, and when you open the sales team&rsquo;s
+        calendars for show week, there&rsquo;s nothing on them. Then somebody
+        in the Monday meeting forwards the sponsorship sheet and asks whether
+        you should buy the upgrade, so that at least people see you.
+      </p>
+
+      <p>
+        A disclosure first: I&rsquo;ve never worked NRF. My show was RSA
+        Conference, where I ran{" "}
+        <Link href="/blog/anchoring-arxan-three-years-rsa">
+          Arxan&rsquo;s presence for three consecutive years
+        </Link>
+        , on a floor of forty thousand people with a vendor hall that took 25
+        minutes to cross, wedged between Palo Alto Networks and CrowdStrike,
+        who both outspent us every year. The buyers are different. The
+        problem of a small booth on a giant floor is the same, and so is the
+        answer.
+      </p>
+
+      <h2>Why the Upgrade and the Email Blast Don&rsquo;t Fill a Calendar</h2>
+
+      <p>
+        What most teams try first is exposure. Buy the upgrade, put
+        &ldquo;Visit us at booth #&rdquo; in the email signature, send one
+        marketing email to the whole database, and hope the floor does the
+        rest.
+      </p>
+
+      <p>
+        It breaks for two reasons. A logo can&rsquo;t book a meeting, and on
+        a floor that size a small booth gets a few seconds of a passing
+        stranger&rsquo;s attention, if that. And the email comes from a
+        marketing address with a registration link, which is exactly the kind
+        a senior buyer files next to the badge-scan follow-ups. When I plan an{" "}
+        <Link href="/blog/executive-vip-dinner-trade-show">
+          executive dinner during a big show
+        </Link>
+        , the invitations go out six to eight weeks before the show, from the
+        executive&rsquo;s own inbox, because that&rsquo;s before most
+        calendars for that week fill. Six weeks out, you&rsquo;re at the late
+        edge of that window. Not past it.
+      </p>
+
+      <p>
+        What works is a short, named list worked by the people who own the
+        accounts, with a specific ask and a specific time. The booth stops
+        being the thing you&rsquo;re promoting and becomes the place the
+        meeting happens.
+      </p>
+
+      <h2>The Six-Week Plan I&rsquo;d Run</h2>
+
+      <p>
+        This assumes the show starts at the end of week six and that the
+        booth holds one real conversation at a time, two at a squeeze. A
+        10x10 is 100 square feet, so it does.
+      </p>
+
+      <div className="post-table-wrap">
+        <table className="post-table">
+          <caption>
+            Six-week plan to fill a sales team&rsquo;s meeting calendar for a
+            10x10 trade show booth: the week, the work, who owns it, and what
+            done looks like
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Week</th>
+              <th scope="col">The work</th>
+              <th scope="col">Owner</th>
+              <th scope="col">Done looks like</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Week 1 (six weeks out)</th>
+              <td>
+                Build the list: 40 to 50 accounts you know will be in New
+                York, from open deals, current customers, and anyone who has
+                said they&rsquo;re going. Split it by rep.
+              </td>
+              <td>Event lead with the sales manager</td>
+              <td>Every account has one named rep next to it</td>
+            </tr>
+            <tr>
+              <th scope="row">Week 1 to 2</th>
+              <td>
+                Each rep invites their own accounts from their own inbox:
+                a fixed 20-minute slot at the booth, or a coffee nearby,
+                with one line only that rep could write.
+              </td>
+              <td>Each rep</td>
+              <td>Every invite sent, no marketing template in sight</td>
+            </tr>
+            <tr>
+              <th scope="row">Week 2</th>
+              <td>
+                Book one small hosted dinner for the second night of the
+                show, and send those invites from your most senior attendee.
+              </td>
+              <td>Event lead</td>
+              <td>Room signed, food and beverage minimum read</td>
+            </tr>
+            <tr>
+              <th scope="row">Week 4</th>
+              <td>
+                One follow-up to anyone who hasn&rsquo;t answered, offering
+                two specific times.
+              </td>
+              <td>Each rep</td>
+              <td>A shared sheet of booth slots by hour</td>
+            </tr>
+            <tr>
+              <th scope="row">Week 5</th>
+              <td>
+                Booth briefing: who&rsquo;s meeting whom and when, and who
+                can hold a 90-second technical conversation without a card.
+              </td>
+              <td>Event lead</td>
+              <td>Every booked guest has a named host on the schedule</td>
+            </tr>
+            <tr>
+              <th scope="row">Show week</th>
+              <td>
+                Every lead goes to a rep within 24 hours of the scan, with a
+                one-sentence note.
+              </td>
+              <td>Booth team and marketing ops</td>
+              <td>Nightly upload from the hotel, not one upload from home</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+
+      <p>
+        The show-week row is the one I&rsquo;d fight for hardest. At Arxan
+        every lead went to a rep within 24 hours of being scanned and was
+        tagged in the CRM as RSA-sourced, and that tag is what let me prove
+        the booth produced pipeline when leadership asked in Year Two. The
+        whole handoff is in my{" "}
+        <Link href="/blog/post-event-follow-up-sla">
+          post-event follow-up SLA
+        </Link>
+        .
+      </p>
+
+      <h2>Is the Sponsorship Upgrade Worth It Just for the Exposure?</h2>
+
+      <p>
+        Not when the problem is an empty meeting calendar. Here&rsquo;s how
+        I&rsquo;d compare the upgrade with the other places the same money
+        could go. Prices swing a lot by show and city, so treat the cost
+        column as a rough tier and get real numbers from the prospectus and
+        the restaurant.
+      </p>
+
+      <div className="post-table-wrap">
+        <table className="post-table">
+          <caption>
+            Where to spend six weeks before a trade show when the sales team
+            has zero meetings booked: sponsorship upgrade, rep outreach,
+            hosted dinner, or walk-up traffic
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Option</th>
+              <th scope="col">Best for</th>
+              <th scope="col">Rough cost</th>
+              <th scope="col">Books meetings?</th>
+              <th scope="col">Key trade-off</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Sponsorship upgrade for exposure</th>
+              <td>
+                A brand the room has never heard of, coming back next year
+              </td>
+              <td>Whatever the next tier on the sheet costs</td>
+              <td>No. It makes people recognize you, not meet you</td>
+              <td>Reach you can&rsquo;t tie to pipeline in June</td>
+            </tr>
+            <tr>
+              <th scope="row">Named-account outreach from reps</th>
+              <td>Any team with accounts it already knows will attend</td>
+              <td>Rep time, about six weeks of it</td>
+              <td>Yes, and every one is countable</td>
+              <td>Only reaches people you already know</td>
+            </tr>
+            <tr>
+              <th scope="row">One small hosted dinner, second night</th>
+              <td>
+                Customers you want to thank and prospects you want them to
+                meet
+              </td>
+              <td>
+                The restaurant&rsquo;s minimum; guides put it at $3,500 to
+                $8,000 for five to twelve senior buyers
+              </td>
+              <td>Yes, and the guests stay for three hours</td>
+              <td>Fragile if the invites go out late</td>
+            </tr>
+            <tr>
+              <th scope="row">Walk-up floor traffic</th>
+              <td>Meeting strangers, which only the floor can do</td>
+              <td>Already paid for with the booth</td>
+              <td>Rarely in advance; mostly scans</td>
+              <td>Volume of names, few of them ready to talk</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Where Each Option Fits, and Where It Doesn&rsquo;t</h2>
+
+      <ul>
+        <li>
+          <strong>The upgrade</strong> fits a launch, or a brand that plans
+          to be at NRF three years running and needs the room to learn its
+          name. It doesn&rsquo;t fit a team six weeks out with zero
+          meetings, because it fixes awareness and the problem is the
+          calendar.
+        </li>
+        <li>
+          <strong>Rep outreach</strong> fits almost everyone. It
+          doesn&rsquo;t fit a company with no real accounts in that market
+          yet, and there I&rsquo;d concede the floor, and maybe even the
+          upgrade, wins.
+        </li>
+        <li>
+          <strong>The dinner</strong> fits a short list of senior people you
+          already know will be in town. I host on the second night almost
+          every time, because guests have walked the floor once and
+          haven&rsquo;t started checking flight status. I&rsquo;m biased,
+          too. There&rsquo;s a reason{" "}
+          <Link href="/blog/event-concierge-b2b-hospitality">
+            &ldquo;Concierge&rdquo; is in my title
+          </Link>
+          .
+        </li>
+      </ul>
+
+      <p>
+        <strong>Who should skip this plan:</strong> a team whose reps
+        won&rsquo;t send their own invites. If the outreach has to come from
+        a marketing address, you&rsquo;ll get the email blast with extra
+        steps. Fix the ownership question first, then the calendar. And if
+        this is a Year One show nobody on the team has walked, with no plan
+        to come back, I&rsquo;d ask the harder question in the rest of this
+        Field Note: should that row be on the calendar at all? The fuller
+        comparison of what each{" "}
+        <Link href="/blog/conference-sponsorship-package">
+          conference sponsorship package
+        </Link>{" "}
+        buys is its own Field Note.
+      </p>
+
+      <h2>How You Ended Up Here: the Calendar</h2>
+
       <p>The number always comes back smaller.</p>
 
       <p>
@@ -182,12 +435,13 @@ export function b2bEventCalendarPost() {
       </p>
 
       <p>
-        If you&rsquo;re the one holding next year&rsquo;s calendar and
-        finance just sent back a smaller number,{" "}
-        <Link href="/#contact">let&rsquo;s talk</Link>! I&rsquo;m looking for
-        an in-house team to plan years with, and I&rsquo;ll bring a column
-        that says which year each of your events is in before I ask which
-        ones you love.
+        If you&rsquo;re the one holding next year&rsquo;s calendar (or an
+        NRF booth with an empty meeting sheet and six weeks on the clock),{" "}
+        <Link href="/#contact">let&rsquo;s talk</Link>! Every week that list
+        sits unworked is a week of your buyers&rsquo; calendars filling up
+        with someone else. I&rsquo;m looking for an in-house team to plan
+        years with, and I&rsquo;ll bring a column that says which year each
+        of your events is in before I ask which ones you love.
       </p>
     </>
   );
