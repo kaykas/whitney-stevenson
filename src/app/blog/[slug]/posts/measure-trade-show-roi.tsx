@@ -178,7 +178,12 @@ export function measureTradeShowRoiPost() {
         the show: a source tag that goes on every scan, a 24-hour handoff, a
         weekly look at the follow-up list, a comparison against your other
         lead sources, and a date in Q2 when you open the spreadsheet and
-        read it out loud. The formula is the easy part. The harder part is
+        read it out loud. The formula is the easy part (I worked it through
+        with real-looking numbers in{" "}
+        <Link href="/blog/calculating-trade-show-roi">
+          calculating trade show ROI
+        </Link>
+        ). The harder part is
         convincing leadership that the show deserves three years before
         anyone calls it, and the spreadsheet from Year Two is how you buy
         Year Three. It&rsquo;s how I bought ours.

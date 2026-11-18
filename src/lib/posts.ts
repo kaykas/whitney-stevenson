@@ -32,6 +32,52 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "calculating-trade-show-roi",
+    title: "Which Number Goes on the Slide: Calculating Trade Show ROI, With the Math Shown",
+    metaTitle: "Calculating Trade Show ROI, Worked Out",
+    description:
+      "Calculate trade show ROI as closed revenue minus total show cost, divided by total show cost, and count drayage, AV, scanners and every hotel night in that cost. Closed-won revenue takes six to twelve months to arrive, so the number I put in front of finance first is pipeline-to-cost at the end of Q2, set next to the same ratio for our other lead sources. On the show floor, I measure effectiveness by the note rate, the share of badge scans with a real note, because booth staff training moves that number more than the booth does.",
+    metaDescription:
+      "How to calculate trade show ROI with a worked example: the full cost basis, pipeline-to-cost by Q2, closed-won ROI later, and the note rate on the floor.",
+    date: "2026-11-18",
+    readingMinutes: 7,
+    keywords: [
+      "trade show ROI",
+      "calculating trade show ROI",
+      "how to measure trade show ROI",
+      "how to measure trade show effectiveness",
+      "trade show booth staff training",
+      "B2B event marketer San Francisco",
+    ],
+    faqs: [
+      {
+        question: "How do you calculate trade show ROI?",
+        answer:
+          "Subtract the total cost of the show from the revenue it produced, then divide by the total cost. The cost has to include booth space, the build, drayage, the venue's AV, internet and electrical, scanners, giveaways and every flight and hotel night for the booth team. In the worked example, $320,000 closed against $120,000 in cost is a 167% ROI on revenue, or about 87% at a 70% gross margin.",
+      },
+      {
+        question: "What is the best metric for trade show ROI?",
+        answer:
+          "For the budget meeting, pipeline-to-cost: show-sourced pipeline divided by total cost, read at the end of Q2 for a spring show and set next to the same ratio for your other lead sources. Closed-won ROI is more accurate but arrives six to twelve months out, usually after next year's booth deposit is due.",
+      },
+      {
+        question: "How do you measure trade show effectiveness during the show?",
+        answer:
+          "Check the note rate at the end of each day: the share of badge scans with a written note from a real conversation, person by person. It is the only number you can read on the show floor and still fix on the show floor.",
+      },
+      {
+        question: "How does booth staff training affect trade show ROI?",
+        answer:
+          "It changes how many scans a rep can follow up on with something specific. In the worked example, the same $120,000 booth with 90 noted scans instead of 210 hands sales 120 fewer real conversations, which shows up months later as a worse pipeline-to-cost ratio.",
+      },
+      {
+        question: "Should cost per lead be used to judge a trade show?",
+        answer:
+          "Not on its own. Cost per badge scan rewards whichever booth has the best giveaway, because a swag stop counts the same as a buyer. Cost per opportunity and pipeline-to-cost tell you far more.",
+      },
+    ],
+  },
+  {
     slug: "post-event-follow-up-sla",
     title: "The Clock Starts at the Badge: My Post-Event Follow-Up SLA for Turning Booth Scans into Pipeline",
     metaTitle: "Post-Event Sales Follow-Up SLA",

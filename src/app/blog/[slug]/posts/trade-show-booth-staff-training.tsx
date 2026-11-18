@@ -96,6 +96,10 @@ export function boothStaffTrainingPost() {
         <Link href="/blog/post-event-follow-up-sla">
           a tier in my follow-up SLA
         </Link>
+        , and the share of scans with a note is{" "}
+        <Link href="/blog/calculating-trade-show-roi">
+          the floor number I check every night
+        </Link>
         .
       </p>
 
