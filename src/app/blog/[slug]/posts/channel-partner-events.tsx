@@ -115,7 +115,13 @@ export function channelPartnerEventsPost() {
         Arxan&rsquo;s booth to read cleanly from 30 feet with one anchor
         message, and I&rsquo;d hold a regional booth to that same 30 feet,
         because a tired booth in S&atilde;o Paulo tells every partner walking
-        by exactly where they rank.
+        by exactly where they rank. The people on that stand matter as much
+        as the graphics, and when the partner&rsquo;s reps share it with
+        yours, they need{" "}
+        <Link href="/blog/exhibition-stand-staff-training">
+          their own briefing and a lead agreement
+        </Link>{" "}
+        before the show.
       </p>
 
       <h2>Seat the Roundtable Like a Customer Dinner</h2>

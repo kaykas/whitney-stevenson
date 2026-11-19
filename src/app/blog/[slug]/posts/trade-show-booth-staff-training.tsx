@@ -147,6 +147,16 @@ export function boothStaffTrainingPost() {
         in the aisle.
       </p>
 
+      <p>
+        All of this assumes the people in the booth report to you. When half
+        of them work for a partner or an agency, I split the briefing up, and
+        I wrote that version as{" "}
+        <Link href="/blog/exhibition-stand-staff-training">
+          exhibition stand staff training for mixed crews
+        </Link>
+        .
+      </p>
+
       <h2>Snacks</h2>
 
       <p>

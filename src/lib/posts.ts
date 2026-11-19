@@ -32,6 +32,47 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "exhibition-stand-staff-training",
+    title: "Half the Stand Doesn't Work for You: Exhibition Stand Staff Training for Mixed Crews",
+    metaTitle: "Exhibition Stand Staff Training",
+    description:
+      "Train exhibition stand staff by who signs their paycheck: your own reps, a partner's reps, agency staff and the visiting executive each get a different briefing, from 20 minutes down to two. Everyone shares one rule, a one-sentence note after every real conversation. I run the training on the stand during build, because the footprint is half the lesson.",
+    metaDescription:
+      "Exhibition stand staff training for mixed crews: separate briefings for your reps, partner reps and agency staff, one shared note rule, run on the stand.",
+    date: "2026-11-19",
+    readingMinutes: 6,
+    keywords: [
+      "exhibition stand staff training",
+      "exhibition stand staffing",
+      "co-marketed trade show booth",
+      "agency booth staff",
+      "trade show booth staff training",
+      "B2B event marketer San Francisco",
+    ],
+    faqs: [
+      {
+        question: "How should you train exhibition stand staff?",
+        answer:
+          "Train them by group. Your own reps get the full briefing the night before, about 20 minutes. A partner's reps get 10 minutes on site plus a lead agreement signed weeks before. Agency staff get one hand-off sentence and the name of the person they hand to. The visiting executive gets two names to meet.",
+      },
+      {
+        question: "Who owns the leads on a co-marketed exhibition stand?",
+        answer:
+          "Whoever the written agreement says, and that agreement should be signed before the show. Rent the scanners in one company's name and send the partner a copy of every scan before dinner, each night of the show, then hold both sides to the same 24-hour follow-up clock.",
+      },
+      {
+        question: "Should agency staff answer technical questions on a B2B stand?",
+        answer:
+          "No. Agency staff are better than most sales teams at stopping people in the aisle. When a visitor asks the second, technical question, they should hand off with one memorized line and the real name of the rep on shift.",
+      },
+      {
+        question: "Where should exhibition stand training happen?",
+        answer:
+          "On the stand, during build, after the graphics are up. A shell scheme stand at a European show is often 3 by 3 meters, and three people standing in it already look like a queue, so staff need to see the footprint to learn where to stand.",
+      },
+    ],
+  },
+  {
     slug: "calculating-trade-show-roi",
     title: "Which Number Goes on the Slide: Calculating Trade Show ROI, With the Math Shown",
     metaTitle: "Calculating Trade Show ROI, Worked Out",
