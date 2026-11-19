@@ -570,14 +570,16 @@ export const posts: Post[] = [
   {
     slug: "trade-show-booth-design",
     title: "Next to Palo Alto Networks and CrowdStrike: How I Design a Trade Show Booth",
-    metaTitle: "Trade Show Booth Design Tips",
+    metaTitle: "Design a Trade Show Booth: 30-Foot Test",
     description:
-      "For three years at RSA Conference, Arxan's booth sat between two neighbors who outspent us every year. The booth design guides are right about the three-second rule, a short message and an open front. They design one booth for one show, though. I design for the neighbors I drew, for the staff on the front edge, and for Year Three.",
+      "To design a trade show booth that holds its own next to bigger budgets, build three things: one anchor message a stranger can read from 30 feet, a front edge left open for staff instead of a counter, and a structure you'll still want in Year Three. That's how I ran Arxan's booth at RSA Conference for three years between Palo Alto Networks and CrowdStrike, and Year Three brought the highest pipeline contribution of the three.",
     metaDescription:
-      "Trade show booth design from three years at RSA next to bigger budgets: one message readable from 30 feet, room for staff, and a booth built for Year Three.",
+      "How to design a trade show booth next to bigger budgets: one message readable from 30 feet, room for staff, and a booth built for Year Three at RSA.",
     date: "2026-10-22",
-    readingMinutes: 6,
+    readingMinutes: 8,
     keywords: [
+      "design a tradeshow booth",
+      "how to design a trade show booth",
       "trade show booth design",
       "trade show booth design tips",
       "small trade show booth design",
@@ -585,6 +587,16 @@ export const posts: Post[] = [
       "B2B event marketer San Francisco",
     ],
     faqs: [
+      {
+        question: "How do you design a trade show booth?",
+        answer:
+          "Start with the floor plan, not the rendering: find out who your neighbors are and where the freight door is. Then build three things. One anchor message that a stranger can read from 30 feet, a front edge kept clear for staff in the corners, and a structure sturdy enough to ship back for Year Three with one swappable piece.",
+      },
+      {
+        question: "Who should skip the build-for-Year-Three approach?",
+        answer:
+          "Anyone doing a one-time show, a launch where the message will be wrong by next year, or a team that can't commit to the same show for three years. If you can't promise the second and third year, I'd spend that money on a different line of the sponsorship prospectus.",
+      },
       {
         question: "How should a smaller vendor design a booth next to bigger competitors?",
         answer:
