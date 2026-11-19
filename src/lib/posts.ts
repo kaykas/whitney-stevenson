@@ -914,14 +914,14 @@ export const posts: Post[] = [
   },
   {
     slug: "measure-trade-show-roi",
-    title: "The Spreadsheet That Bought Year Three: How I Measure Trade Show ROI",
-    metaTitle: "How to Measure Trade Show ROI",
+    title: "How I Measure Trade Show ROI: The Spreadsheet That Bought Year Three",
+    metaTitle: "Trade Show ROI: How to Measure It",
     description:
-      "Going into our second year at RSA Conference, Arxan's leadership asked me to prove the booth produced revenue. The ROI guides cover the formula, the costs and the CRM tags. They all measure one show at a time, and I think a big annual show deserves three years before anyone calls it.",
+      "Trade show ROI is the revenue a show sourced, minus everything it cost, divided by what it cost. That number only persuades a budget meeting next to your other lead sources, so tag every badge scan, get each lead to a rep within 24 hours, and judge a big annual show over three years. At Arxan's RSA booth, Year Three brought the highest pipeline contribution of the three.",
     metaDescription:
       "How to measure trade show ROI from three years running Arxan's RSA booth: source tags, a 24-hour handoff, weekly follow-up and a three-year view.",
     date: "2026-10-09",
-    readingMinutes: 6,
+    readingMinutes: 8,
     keywords: [
       "how to measure trade show ROI",
       "trade show ROI",
@@ -933,7 +933,12 @@ export const posts: Post[] = [
       {
         question: "How do you measure trade show ROI?",
         answer:
-          "Agree on the bookkeeping before the show. Tag every badge scan in the CRM with the show as its source, get every lead to a rep within 24 hours, track a 30-60-90 day follow-up cadence every week, and compare the show's leads against your other lead sources. At Arxan that let us point to specific RSA-sourced opportunities, their dollar value and their conversion rates by the end of Q2.",
+          "Use the formula, revenue minus investment divided by investment, but agree on the bookkeeping before the show. Tag every badge scan in the CRM with the show as its source, get every lead to a rep within 24 hours, track a 30-60-90 day follow-up cadence every week, and compare the show's leads against your other lead sources. At Arxan that let us point to specific RSA-sourced opportunities, their dollar value and their conversion rates by the end of Q2.",
+      },
+      {
+        question: "Who should skip the three-year view of trade show ROI?",
+        answer:
+          "Anyone doing a one-time show, or a team that can't commit budget to the same show three years running. Measure that show on its own and compare it to your other lead sources. And if the sales team won't take leads within 24 hours or log a note on each one, fix the handoff first, because no ROI method survives empty CRM records.",
       },
       {
         question: "What should you compare trade show leads against?",
