@@ -20,6 +20,16 @@
  * description on purpose, edit it and run `npm run meta:baseline`, then commit
  * both.
  *
+ * Also checks SERP pixel width (ERRORS.md 2026-11-19, SEOmator
+ * content-description-pixel-width): SEOmator fails a description wider than
+ * ~920px even when it is under 160 chars, because capitals and wide letters
+ * cost more than "i" or ".". `estimateWidth` is a per-character-class model fitted
+ * to SEOmator's reported widths for every route on this site (41 samples); it
+ * reads 9-21px WIDER than SEOmator, so passing here means passing there. Every
+ * route must fit, except the published routes listed in PIXEL_GRANDFATHERED,
+ * which were already wider when the check landed. That list may only shrink:
+ * new posts must fit, and a listed route that now fits fails until you remove it.
+ *
  * Runs as `postbuild`, so a regression fails `npm run build` instead of
  * surfacing weeks later in Ahrefs. Standalone: `npm run check:meta`.
  */
@@ -33,6 +43,73 @@ const UPDATE = process.argv.includes("--update");
 
 const MAX_LENGTH = 160; // Ahrefs warns above this
 const MIN_LENGTH = 70; // Ahrefs warns below this ("Meta description too short")
+const MAX_PIXELS = 920; // SEOmator content-description-pixel-width "good" threshold
+
+/**
+ * Published routes whose descriptions this estimator put over 920px on
+ * 2026-11-19 (the estimate runs slightly wide, so a few sit just under
+ * SEOmator's own line).
+ * Rewriting them all at once would set off 39 Ahrefs "Meta description
+ * changed" notices, so they are shortened gradually: fix a route, run
+ * `npm run meta:baseline`, and delete it from this list. Never add to it.
+ */
+const PIXEL_GRANDFATHERED = new Set([
+  "/ai-instructions",
+  "/blog",
+  "/blog/anchoring-arxan-three-years-rsa",
+  "/blog/b2b-client-golf-outing",
+  "/blog/b2b-event-calendar",
+  "/blog/brand-activation-budget",
+  "/blog/breakout-speaker-care",
+  "/blog/calculating-trade-show-roi",
+  "/blog/channel-partner-events",
+  "/blog/client-holiday-party",
+  "/blog/conference-customer-dinner",
+  "/blog/conference-sponsorship-package",
+  "/blog/eight-years-sf-nye-party",
+  "/blog/event-agency-vs-in-house",
+  "/blog/event-load-out",
+  "/blog/event-marketing-interview-questions",
+  "/blog/event-post-mortem",
+  "/blog/event-run-of-show-cut-list",
+  "/blog/event-vendor-management",
+  "/blog/event-venue-contract-clauses",
+  "/blog/executive-vip-dinner-trade-show",
+  "/blog/exhibition-stand-staff-training",
+  "/blog/first-venue-walkthrough",
+  "/blog/free-event-no-shows",
+  "/blog/freelance-to-in-house",
+  "/blog/hotel-av-drayage-contract-clauses",
+  "/blog/illumio-latam-channel-partnership",
+  "/blog/keynote-sponsorship-vs-ancillary-suite",
+  "/blog/latin-billboard-awards-artist-relations",
+  "/blog/measure-trade-show-roi",
+  "/blog/pepsico-tostitos-super-bowl-2026",
+  "/blog/plan-brand-activation",
+  "/blog/post-event-follow-up-sla",
+  "/blog/presidio-golf-300-tournaments",
+  "/blog/sunglasses-shops-and-bodywork",
+  "/blog/the-target-run",
+  "/blog/trade-show-booth-design",
+  "/blog/trade-show-booth-staff-training",
+  "/blog/trade-show-giveaways",
+]);
+
+/** Estimated SERP width in px (Arial-ish, ~14px). Conservative vs SEOmator. */
+function estimateWidth(text) {
+  let px = 0;
+  for (const c of text) {
+    if (c === " ") px += 4.1;
+    else if (/[.,:;!'\u2019]/.test(c)) px += 4.6;
+    else if (/[IMW]/.test(c)) px += 10.7;
+    else if (/[A-Z]/.test(c)) px += 9.5;
+    else if (/[0-9]/.test(c)) px += 7.4;
+    else if (/[a-z\u00C0-\u017F]/.test(c)) px += 7.6;
+    else if (/[\u2014\u2013&+%$#@*]/.test(c)) px += 9;
+    else px += 8.1;
+  }
+  return Math.round(px);
+}
 
 // React error boundaries — rendered client-side on a crash, never crawled.
 const NOT_CRAWLABLE = new Set(["_global-error.html", "_error.html"]);
@@ -108,7 +185,19 @@ for (const file of pages) {
     failures.push(`${route}: description is only ${length} chars, min ${MIN_LENGTH}`);
   }
 
-  console.log(`  ${route.padEnd(42)} ${String(length).padStart(3)} chars`);
+  const px = estimateWidth(description);
+  if (px > MAX_PIXELS && !PIXEL_GRANDFATHERED.has(route)) {
+    failures.push(
+      `${route}: description is ~${px}px wide, max ${MAX_PIXELS}px (SEOmator content-description-pixel-width)`,
+    );
+  } else if (px <= MAX_PIXELS && PIXEL_GRANDFATHERED.has(route)) {
+    failures.push(`${route}: now fits (~${px}px), remove it from PIXEL_GRANDFATHERED`);
+  }
+
+  console.log(
+    `  ${route.padEnd(42)} ${String(length).padStart(3)} chars ${String(px).padStart(5)}px` +
+      (px > MAX_PIXELS ? " (grandfathered)" : ""),
+  );
 }
 
 const baseline = existsSync(BASELINE) ? JSON.parse(readFileSync(BASELINE, "utf8")) : {};

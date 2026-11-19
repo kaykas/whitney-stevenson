@@ -1,10 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import { useId, useState } from "react";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState<string>("");
+  // Each control gets a real <label for> (ERRORS.md 2026-11-19, SEOmator
+  // a11y-form-labels): placeholder text alone is not an accessible name.
+  // The labels are visually hidden so the placeholder-only look is unchanged.
+  const id = useId();
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -53,13 +57,16 @@ export default function ContactForm() {
   return (
     <form className="form-container" onSubmit={onSubmit}>
       <div className="input-group">
-        <input type="text" name="name" placeholder="Name" required />
+        <label htmlFor={`${id}-name`} className="sr-only">Name</label>
+        <input id={`${id}-name`} type="text" name="name" placeholder="Name" autoComplete="name" required />
       </div>
       <div className="input-group">
-        <input type="email" name="email" placeholder="Email" required />
+        <label htmlFor={`${id}-email`} className="sr-only">Email</label>
+        <input id={`${id}-email`} type="email" name="email" placeholder="Email" autoComplete="email" required />
       </div>
       <div className="input-group">
-        <textarea name="message" placeholder="Message" required />
+        <label htmlFor={`${id}-message`} className="sr-only">Message</label>
+        <textarea id={`${id}-message`} name="message" placeholder="Message" required />
       </div>
       {status === "error" && (
         <p className="form-error">{errorMsg || "Something went wrong. Please try again."}</p>

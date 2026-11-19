@@ -13,14 +13,22 @@
  * used to list the latest five posts, so each new post changed the word count
  * of every page ("Word count changed").
  *
+ * Also asserts no sitemap URL is an orphan (ERRORS.md 2026-11-19, SEOmator
+ * crawl-sitemap-orphan-urls). SEOmator's default crawl stops at 10 pages, so
+ * "linked from some page" is not enough: every <loc> in the prerendered
+ * sitemap must be linked from a HUB page (`/` or `/blog`), which any shallow
+ * crawl reaches first, and must resolve to a prerendered route.
+ *
  * Runs as `postbuild`. Standalone: `npm run check:incoming`.
  */
-import { readdirSync, readFileSync, statSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
 import { join, relative, sep } from "node:path";
 
 const APP_DIR = join(process.cwd(), ".next", "server", "app");
 const SITE_HOST = "www.whitneystevenson.com";
 const MIN_SOURCES = 2;
+const HUBS = ["/", "/blog"];
+const SITEMAP = join(APP_DIR, "sitemap.xml.body");
 
 // React error boundaries — rendered client-side on a crash, never crawled.
 const NOT_CRAWLABLE = new Set(["_global-error.html", "_error.html", "_not-found.html"]);
@@ -91,6 +99,29 @@ for (const [route, from] of [...sources].sort()) {
       `${route}: linked from ${from.size} page(s) [${[...from].join(", ")}], need ${MIN_SOURCES}`,
     );
   }
+}
+
+// Sitemap orphans: every <loc> must be a real route linked from a hub page.
+if (!existsSync(SITEMAP)) {
+  failures.push("no prerendered sitemap at .next/server/app/sitemap.xml.body");
+} else {
+  const hubTargets = new Set();
+  for (const hub of HUBS) {
+    const file = pages.find((f) => routeOf(f) === hub);
+    if (!file) failures.push(`hub ${hub} was not prerendered`);
+    else internalTargets(readFileSync(file, "utf8")).forEach((t) => hubTargets.add(t));
+  }
+  const locs = [...readFileSync(SITEMAP, "utf8").matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
+  for (const loc of locs) {
+    const url = new URL(loc);
+    const path = url.pathname.replace(/\/$/, "") || "/";
+    if (url.host !== SITE_HOST) failures.push(`sitemap: ${loc} is not on ${SITE_HOST}`);
+    else if (!routes.has(path)) failures.push(`sitemap: ${path} has no prerendered page`);
+    else if (!HUBS.includes(path) && !hubTargets.has(path)) {
+      failures.push(`sitemap: ${path} is not linked from ${HUBS.join(" or ")} (orphan in a shallow crawl)`);
+    }
+  }
+  console.log(`\n  sitemap: ${locs.length} URLs, all checked against hub links from ${HUBS.join(", ")}`);
 }
 
 const distinctFooters = new Set(footers.values());
