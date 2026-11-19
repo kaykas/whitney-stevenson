@@ -441,22 +441,35 @@ export const posts: Post[] = [
   },
   {
     slug: "b2b-event-calendar",
-    title: "Cut the New Thing First: How I Build a B2B Event Calendar",
-    metaTitle: "How to Build a B2B Event Calendar",
+    title: "Cut the New Thing First: How I Build a B2B Event Calendar, and How I'd Fill a 10x10 at NRF Six Weeks Out",
+    metaTitle: "B2B Event Calendar: Fill a 10x10 at NRF",
     description:
-      "The events budget always comes back smaller than the plan, and then somebody has to pick which rows come off the calendar. The strategy guides cover goals, formats and follow-up. None of them say what to cut. I label every event with its year, cut the new thing first, and keep the small rooms longest.",
+      "Committed to a 10x10 at NRF in January with zero meetings booked? Six weeks out, the realistic way to fill the calendar is a named-account push: 40 to 50 accounts you know will be in New York, an invite from each rep's own inbox this week, and a fixed 20-minute slot at the booth. I'd skip a sponsorship upgrade bought just for the exposure, because a logo can't book a meeting, and put that money into one small hosted dinner on the second night instead. The rest is how I build a B2B event calendar so you're not here next year: label every event with its year, cut the new thing first, and keep the small rooms longest.",
     metaDescription:
-      "How I build a B2B event calendar and what I cut first when the budget shrinks: label each event by its year, shrink the big show, keep the small rooms.",
+      "A 10x10 at NRF and zero meetings six weeks out? Work a named-account list, skip the exposure-only upgrade, and build a calendar that avoids it next year.",
     date: "2026-10-28",
-    readingMinutes: 6,
+    readingMinutes: 10,
     keywords: [
       "B2B event calendar",
       "B2B event marketing strategy",
       "event marketing budget cuts",
       "annual event marketing plan",
+      "10x10 booth at NRF",
+      "fill trade show meetings six weeks out",
+      "is a trade show sponsorship upgrade worth it",
       "B2B event marketer San Francisco",
     ],
     faqs: [
+      {
+        question: "We have a 10x10 at NRF in January and zero meetings booked. How do we fill the calendar six weeks out?",
+        answer:
+          "Work a named list, not the whole show. Pick 40 to 50 accounts you know will be in New York, have each rep invite their own accounts from their own inbox this week with a fixed 20-minute slot at the booth or a coffee nearby, and follow up once in week four. Six weeks out is right at the edge, because the invitations that land usually go out six to eight weeks before a show, before buyers' calendars for that week fill.",
+      },
+      {
+        question: "Is a trade show sponsorship upgrade worth it just for the exposure?",
+        answer:
+          "Not when the problem is an empty meeting calendar. A logo on a lanyard or a banner can't book a meeting, and you can't tie it to pipeline in June. I'd put the same money into one small hosted dinner on the second night of the show. The upgrade can make sense for a brand the room has never heard of that is coming back next year.",
+      },
       {
         question: "What should you cut first from a B2B event calendar when the budget shrinks?",
         answer:
