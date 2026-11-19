@@ -1,0 +1,32 @@
+name: de-ai & visual eyebrow gate
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'app/**'
+      - 'src/app/**'
+      - 'components/**'
+      - 'src/components/**'
+      - 'content/**'
+      - 'posts/**'
+      - 'public/llms*.txt'
+      - 'public/ai/**'
+      - '.loop/de-ai-gate/**'
+      - '.github/workflows/de-ai-gate.yml'
+
+jobs:
+  de-ai-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run De-AI & Visual Anti-Eyebrow Gate
+        run: node .loop/de-ai-gate/check.mjs
+        env:
+          DE_AI_BASE_REF: origin/${{ github.base_ref || 'main' }}

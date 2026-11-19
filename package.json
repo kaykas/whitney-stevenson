@@ -19,7 +19,8 @@
     "check:incoming": "node scripts/check-incoming-links.mjs",
     "check:article": "node scripts/check-article-schema.mjs",
     "check:org": "node scripts/check-organization-schema.mjs",
-    "meta:baseline": "node scripts/check-meta-descriptions.mjs --update"
+    "meta:baseline": "node scripts/check-meta-descriptions.mjs --update",
+    "test:de-ai": "node .loop/de-ai-gate/check.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.8.0",
