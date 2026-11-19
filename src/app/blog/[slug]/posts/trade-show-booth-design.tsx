@@ -3,6 +3,15 @@ import Link from "next/link";
 export function tradeShowBoothDesignPost() {
   return (
     <>
+      <p>
+        The floor plan PDF just landed. You find your booth number, circle
+        it, and then look at the two numbers on either side of it. Both
+        belong to companies with bigger budgets than yours, and someone on
+        your team is already asking whether the back wall can be taller.
+        That&rsquo;s the moment most people start to design a trade show
+        booth, and it&rsquo;s the moment to slow down.
+      </p>
+
       <p>You don&rsquo;t pick your neighbors.</p>
 
       <p>
@@ -27,6 +36,90 @@ export function tradeShowBoothDesignPost() {
         two more times. Those two problems decided everything about the
         booths I built.
       </p>
+
+      <h2>Why the bigger-booth fix breaks</h2>
+
+      <p>
+        What most teams try first is to close the gap with size: a taller
+        wall, more screens, more copy explaining the product. It breaks for
+        three reasons I watched play out on the RSA floor. A passerby gives
+        your back wall about 0.6 seconds, so extra copy is never read. Extra
+        structure eats the front edge where your staff need to stand. And a
+        booth built to win one year gets rebuilt the next, so the floor never
+        gets to recognize you.
+      </p>
+
+      <p>
+        What worked instead was a sequence, and I run it in this order.
+        Check the neighbors and the loading dock before anyone opens a
+        design file. Cut the wall to one message that passes a 30-foot
+        test. Then lay out the carpet around where people will stand, and
+        build the structure to come back twice with one piece you can swap.
+      </p>
+
+      <table className="post-table">
+        <caption>
+          Trade show booth design choices compared: who each one fits, what
+          it looks like on the floor, where it breaks, and what Arxan did at
+          RSA Conference
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Design choice</th>
+            <th scope="col">Best for</th>
+            <th scope="col">On the floor</th>
+            <th scope="col">Where it breaks</th>
+            <th scope="col">Arxan at RSA (3 years)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Out-build the neighbors (taller wall, more screens)</th>
+            <td>The biggest budget on the aisle</td>
+            <td>Loud, busy, lots of copy</td>
+            <td>
+              Next to bigger spenders it reads as trying, and the copy gets
+              0.6 seconds
+            </td>
+            <td>Skipped it</td>
+          </tr>
+          <tr>
+            <th scope="row">Calm booth, one anchor message</th>
+            <td>A smaller vendor between loud neighbors</td>
+            <td>One line, readable from 30 feet, no clutter</td>
+            <td>
+              Fails if the one line is vague. Test it on someone who
+              hasn&rsquo;t seen the rendering
+            </td>
+            <td>Our core design all three years</td>
+          </tr>
+          <tr>
+            <th scope="row">Counter or demo table at the aisle</th>
+            <td>Self-serve product demos</td>
+            <td>Staff behind a counter</td>
+            <td>
+              Puts your team behind a wall and makes the booth look like a
+              private party
+            </td>
+            <td>
+              Demo set a step back, staff in the front corners
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Brand-new booth every year</th>
+            <td>A one-time show or a message that changes</td>
+            <td>Fresh look each year</td>
+            <td>
+              Throws away recognition just as it starts paying off, and
+              reopens the design budget every January
+            </td>
+            <td>
+              Kept the structure, swapped the demo. Year Three had the
+              highest pipeline contribution of the three
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
       <h2>Design for the Neighbors You Drew</h2>
 
@@ -191,6 +284,24 @@ export function tradeShowBoothDesignPost() {
         this year.
       </p>
 
+      <h2>Where each approach fits, and who should skip it</h2>
+
+      <p>
+        The calm, one-message booth fits a smaller vendor on an aisle with
+        louder neighbors, selling to buyers who have seen every version of
+        trying. If you are the biggest budget on the aisle, you have more
+        room to build big, and the guides written by exhibit builders will
+        serve you fine.
+      </p>
+
+      <p>
+        Skip the build-for-Year-Three advice if this is a one-time show, if
+        it&rsquo;s a launch whose message will be wrong by next year, or if
+        nobody can commit budget to the same show for three years. In that
+        case a reusable structure is money spent on a future you
+        haven&rsquo;t bought, and a cheaper one-off build is the right call.
+      </p>
+
       <h2>The Demo Laptop</h2>
 
       <p>
@@ -205,10 +316,12 @@ export function tradeShowBoothDesignPost() {
       </p>
 
       <p>
-        If your team has a big show coming up and a booth that&rsquo;s
-        starting to grow screens,{" "}
-        <Link href="/#contact">let&rsquo;s talk</Link>! I&rsquo;ll want to
-        know who your neighbors are before I look at the rendering.
+        If you run events for a B2B company with a big annual show coming
+        up and a booth that&rsquo;s starting to grow screens,{" "}
+        <Link href="/#contact">let&rsquo;s talk</Link>! Every week the
+        rendering sits unreviewed is a week closer to a freight-door
+        surprise. I&rsquo;ll want to know who your neighbors are before I
+        look at it.
       </p>
     </>
   );
