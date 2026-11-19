@@ -3,6 +3,15 @@ import Link from "next/link";
 export function eventAgencyVsInHousePost() {
   return (
     <>
+      <p>
+        You have two things open on your screen this week. One is an
+        agency&rsquo;s statement of work for next year&rsquo;s events. The
+        other is a headcount request for an event marketer that finance wants
+        justified by Friday. Both cost real money, and you&rsquo;re trying to
+        work out whether it&rsquo;s worth hiring an experiential marketing
+        agency instead of running events in-house at all.
+      </p>
+
       <p>I&rsquo;ve been the agency.</p>
 
       <p>
@@ -110,6 +119,36 @@ export function eventAgencyVsInHousePost() {
         </table>
       </div>
 
+      <h2>Why the Usual Rule Breaks, and What I&rsquo;d Count Instead</h2>
+
+      <p>
+        <strong>What most teams try first:</strong> sizing the decision by
+        the event. Big guest list, complicated build, unfamiliar city? Call
+        an agency. Small room? Do it yourselves. That&rsquo;s the 150 and 250
+        guest rule in practice.
+      </p>
+
+      <p>
+        <strong>Why it breaks in B2B:</strong> guest count measures how hard
+        build week is. It says nothing about what happens after it. At a B2B
+        trade show the deals from the floor close months later, and at Arxan
+        it was the ninety days after each RSA Conference that told us which
+        parts of the booth had earned their keep. An agency that hands back
+        the radio at load-out is gone for all ninety. So Year Two&rsquo;s
+        brief gets written from the recap deck, by someone who wasn&rsquo;t
+        on the floor, and the agency&rsquo;s new account team relearns your
+        product from it.
+      </p>
+
+      <p>
+        <strong>What I&rsquo;d count instead:</strong> the rows on next
+        year&rsquo;s calendar that also happened last year. Repeat rows need
+        an owner who stays, because they only improve if someone carries the
+        lessons forward. One-off rows can go to whoever builds best that
+        month. Then that owner hires the agency for the weeks that need a
+        crew, instead of the agency being the plan for the whole year.
+      </p>
+
       <h2>Where Each Option Fits (and Where It Doesn&rsquo;t)</h2>
 
       <p>
@@ -150,6 +189,31 @@ export function eventAgencyVsInHousePost() {
         year, hiring an agency or a freelance crew for the weeks that need
         more hands than the building has.
       </p>
+
+      <h2>Who Should Skip the In-House Hire</h2>
+
+      <p>
+        I&rsquo;d tell you not to hire someone like me if any of these sound
+        like your calendar:
+      </p>
+
+      <ul>
+        <li>
+          <strong>One event a year, nothing else.</strong> You&rsquo;d be
+          paying a salary for eleven quiet months. Book the agency.
+        </li>
+        <li>
+          <strong>A consumer moment on a public site.</strong> Permits,
+          pier operations and a fabricator on call on a site like Pier 39
+          are an agency&rsquo;s daily work and nobody&rsquo;s side project.
+        </li>
+        <li>
+          <strong>Nobody inside will work the leads.</strong> If sales
+          won&rsquo;t follow up on badge scans, an in-house marketer
+          can&rsquo;t fix that alone, and you&rsquo;ll be paying for receipts
+          no one reads. Fix the follow-up first.
+        </li>
+      </ul>
 
       <h2>What the In-House Seat Actually Buys</h2>
 

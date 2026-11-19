@@ -447,15 +447,17 @@ export const posts: Post[] = [
   },
   {
     slug: "event-agency-vs-in-house",
-    title: "Who Keeps the Receipts: Event Agency or In-House Hire for B2B Events",
-    metaTitle: "Event Agency vs. In-House for B2B Events",
+    title: "Is It Worth Hiring an Experiential Marketing Agency Instead of Running Events In-House?",
+    metaTitle: "Experiential Agency vs. In-House Events",
     description:
-      "Hire an agency for the one-off that has to be enormous, like a Super Bowl activation. Hire a freelance producer when someone inside already owns the follow-up. If most of your events repeat every year, hire the in-house marketer, because the agency hands back the radio at load-out and Year Two gets built by whoever is still in the building.",
+      "Is it worth hiring an experiential marketing agency instead of running events in-house? Yes, for a one-off that has to be enormous, like a Super Bowl activation on a public pier, because the agency keeps fabricators and venue contacts on call all year. No, if most of your B2B events repeat every year: hire an in-house event marketer who brings in an agency for build weeks, because the agency hands back the radio at load-out and Year Two gets built by whoever is still in the building.",
     metaDescription:
-      "Agency, freelance producer or in-house event marketer? Agencies win the one-off. If your B2B events repeat every year, hire someone who stays past load-out.",
+      "Is an experiential agency worth it over running events in-house? Yes for a one-off. If your B2B events repeat yearly, hire in-house and rent the agency.",
     date: "2026-10-29",
-    readingMinutes: 6,
+    readingMinutes: 7,
     keywords: [
+      "is it worth hiring an experiential marketing agency",
+      "experiential marketing agency vs in-house",
       "event agency vs in-house",
       "hire an event agency or event marketer",
       "in-house event marketing team",
@@ -463,6 +465,11 @@ export const posts: Post[] = [
       "B2B event marketer San Francisco",
     ],
     faqs: [
+      {
+        question: "Is it worth hiring an experiential marketing agency instead of running events in-house?",
+        answer:
+          "For a one-off that has to be enormous, yes. An agency keeps the lead carpenter, the permit runner and the venue operations contact in its phone, and a company that does one giant activation has no reason to keep them on payroll. If most of your events repeat every year, it usually isn't, because the agency leaves at load-out and the follow-up, the post-mortem and Year Two's plan leave with it.",
+      },
       {
         question: "Should a B2B company hire an event agency or an in-house event marketer?",
         answer:
