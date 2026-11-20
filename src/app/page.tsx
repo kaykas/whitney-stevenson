@@ -201,6 +201,7 @@ export default function Home() {
                     <td>
                       <Link href="/blog/anchoring-arxan-three-years-rsa">Arxan at RSA</Link>,
                       3 consecutive years: booth fabrication,{" "}
+                      <Link href="/blog/trade-show-booth-staff-training">booth staff training</Link>,{" "}
                       <Link href="/blog/measure-trade-show-roi">trade show ROI</Link> tracking, pipeline attribution
                     </td>
                     <td>She wants a year two. Built for staying, not a one-event contract.</td>

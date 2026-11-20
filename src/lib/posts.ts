@@ -1046,14 +1046,14 @@ export const posts: Post[] = [
   },
   {
     slug: "trade-show-booth-staff-training",
-    title: "What I Tell the Booth Team the Night Before a Trade Show",
+    title: "Booth Staff Training: What I Tell the Team the Night Before a Trade Show",
     metaTitle: "Trade Show Booth Staff Training Tips",
     description:
-      "Three years running Arxan's booth at RSA Conference, between Palo Alto Networks and CrowdStrike, taught me what to say in the briefing before doors open. The usual training guides cover body language and pitches. They skip the twenty seconds after the badge scan, which is where the follow-up lives or dies.",
+      "Good booth staff training fits in one briefing the night before doors open: where to stand, a 90-second conversation each person can hold without a card, one sentence in the notes field after every badge scan, and one named person who handles anything broken. Body language and pitch practice matter, but the note after the scan is what the rep needs to follow up within 24 hours. I ran this briefing for Arxan's booth at RSA Conference three years in a row.",
     metaDescription:
       "Trade show booth staff training from three years running Arxan's RSA booth: where to stand, the second question, and the note after every scan.",
     date: "2026-10-05",
-    readingMinutes: 5,
+    readingMinutes: 8,
     keywords: [
       "trade show booth staff training",
       "booth staffing tips",
@@ -1076,6 +1076,11 @@ export const posts: Post[] = [
         question: "How did Whitney Stevenson track trade show leads at RSA Conference?",
         answer:
           "At Arxan we tagged every scan in the CRM as RSA-sourced, got every lead to a rep within 24 hours, and tracked a 30-60-90 day follow-up cadence every single week. That spreadsheet is what bought us Year Three.",
+      },
+      {
+        question: "Who should skip a one-night booth staff training briefing?",
+        answer:
+          "Anyone whose booth is staffed by people who have never held a conversation about the product. One briefing can't teach that. Run product sessions in the weeks before the show, and keep the night-before briefing for where to stand, the notes field and who fixes what.",
       },
     ],
   },

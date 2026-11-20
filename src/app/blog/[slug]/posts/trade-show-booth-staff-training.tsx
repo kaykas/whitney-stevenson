@@ -3,6 +3,14 @@ import Link from "next/link";
 export function boothStaffTrainingPost() {
   return (
     <>
+      <p>
+        It&rsquo;s the night before the show. The booth is built, the
+        scanners are charging on a hotel desk, and half the team flew in this
+        afternoon. Someone from sales asks what they&rsquo;re supposed to do
+        tomorrow besides scan badges. Whatever you say in the next twenty
+        minutes is your booth staff training, whether you planned it or not.
+      </p>
+
       <p>Every booth has a night before.</p>
 
       <p>
@@ -28,6 +36,114 @@ export function boothStaffTrainingPost() {
         I think that&rsquo;s where more trade show budget quietly leaks out
         than anywhere else on the floor.
       </p>
+
+      <h2>Why the usual booth staff training misses the follow-up</h2>
+
+      <p>
+        What most teams try first is a training deck: roles, body language, a
+        30-second pitch, and a target number of scans. It breaks in practice
+        because the scan count turns into the goal. Staff race to beep
+        badges, the notes field stays empty, and on Wednesday the rep
+        working the list has a name, a title and a company and no idea what
+        anyone said. The follow-up email starts cold, and the show looks
+        worse in the budget meeting than it was on the floor.
+      </p>
+
+      <p>
+        What works for me is one short briefing the night before doors open,
+        built around five things: where to stand, a 90-second conversation
+        each person can hold without a card, a hand-off to a colleague for
+        the second question, one sentence in the notes field after every real
+        conversation, and one named person who handles anything broken. At
+        Arxan every scan was tagged in the CRM as RSA-sourced and went to a
+        rep within 24 hours, and the note is what made that 24-hour handoff
+        worth anything.
+      </p>
+
+      <div className="post-table-wrap">
+        <table className="post-table">
+          <caption>
+            Booth staff training approaches compared: what each covers, when
+            it happens, who it suits and where it falls short
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Approach</th>
+              <th scope="col">What it covers</th>
+              <th scope="col">When</th>
+              <th scope="col">Best for</th>
+              <th scope="col">Where it falls short</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Hand out shirts and scanners</th>
+              <td>Nothing beyond the logo and the badge reader</td>
+              <td>Morning of the show</td>
+              <td>No one</td>
+              <td>
+                Staff cluster behind the demo table and the notes field stays
+                empty
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Standard training deck</th>
+              <td>
+                Roles, cross-training for breaks, body language, a 30-second
+                pitch, qualifying visitors
+              </td>
+              <td>Days or weeks before</td>
+              <td>First-time booth staff who need the basics</td>
+              <td>
+                Stops at the badge scan, so the rep gets a name and no
+                context
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Product sessions</th>
+              <td>
+                Enough product depth to answer the second question a
+                technical buyer asks
+              </td>
+              <td>Weeks before</td>
+              <td>
+                Staff who can&rsquo;t yet hold a 90-second technical
+                conversation
+              </td>
+              <td>
+                Covers the product, not the floor: where to stand, the notes,
+                who fixes what
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">My night-before briefing</th>
+              <td>
+                Where to stand, the 90-second bar, hand-offs, one note per
+                scan, one owner for broken things, lunch shifts
+              </td>
+              <td>The night before doors open</td>
+              <td>
+                A team that knows the product and reports to the person
+                running the booth
+              </td>
+              <td>
+                Can&rsquo;t teach the product in one evening, and assumes
+                everyone in the booth reports to you
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Split briefing for mixed crews</th>
+              <td>
+                The same briefing, divided between your staff and partner or
+                agency staff
+              </td>
+              <td>The night before, in two parts</td>
+              <td>Booths where half the crew works for someone else</td>
+              <td>More coordination, and you don&rsquo;t control everyone&rsquo;s notes</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
       <h2>The Aisle Is a Sidewalk</h2>
 
@@ -174,18 +290,40 @@ export function boothStaffTrainingPost() {
         relieved.
       </p>
 
-      <h2>The Takeaway</h2>
+      <h2>Where each approach fits, and who should skip my briefing</h2>
 
       <p>
-        The booth is the part everybody photographs. The briefing, and
-        whatever your staff type into the notes field between conversations,
-        decide whether the show earns its spot on next year&rsquo;s calendar.
-        I did this on the most crowded floor in cybersecurity, three years in
-        a row, next to neighbors with much bigger budgets, and Arxan&rsquo;s
-        pipeline contribution from RSA grew every one of those years. If your
-        team has a show coming up and you&rsquo;d like someone who cares
-        about the notes field as much as the carpet,{" "}
-        <Link href="/#contact">let&rsquo;s talk</Link>. I&rsquo;ll bring
+        A standard training deck is a fine start for people who have never
+        worked a booth. Product
+        sessions win whenever the crew can&rsquo;t hold a technical
+        conversation yet, and no briefing of mine fixes that in one evening.
+        The night-before briefing fits a team that already knows the product
+        and needs to agree on the floor: where to stand, where the notes go,
+        and who fixes what.
+      </p>
+
+      <p>
+        Skip my version if your booth is staffed by new hires meeting the
+        product for the first time, or if no one in sales will pick up leads
+        within 24 hours. In the first case, run product sessions first. In
+        the second, fix the handoff, because a perfect note in the CRM
+        doesn&rsquo;t help if nobody reads it until the following month.
+      </p>
+
+      <h2>The scanner count I care about least</h2>
+
+      <p>
+        I ran this briefing on the most crowded floor in cybersecurity, three
+        years in a row, next to neighbors with much bigger budgets, and
+        Arxan&rsquo;s pipeline contribution from RSA grew every one of those
+        years.
+      </p>
+
+      <p>
+        If you&rsquo;re the field marketing manager with a show coming up and
+        a booth crew you haven&rsquo;t briefed yet,{" "}
+        <Link href="/#contact">let&rsquo;s talk</Link>! Every scan without a
+        note is a cold email on Wednesday. I&rsquo;ll bring the briefing, and
         snacks for the booth.
       </p>
     </>
