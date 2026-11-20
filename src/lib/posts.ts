@@ -32,6 +32,48 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "rsa-conference-booth-design",
+    title: "Ask for the Year Three Number: RSA Conference Booth Design, Quotes and Training",
+    metaTitle: "RSA Conference Booth Design and Quotes",
+    description:
+      "For RSA Conference booth design, send every exhibit house the same one-page brief and ask each for a line-item quote covering three years, including show-side labor and drayage at Moscone Center. The cheapest trade show booth design quote is usually the one that left the show-side costs for you. Then run booth training on the carpet during build.",
+    metaDescription:
+      "RSA Conference booth design: get line-item quotes for three years, show labor and drayage included, then train on the carpet.",
+    date: "2026-11-20",
+    readingMinutes: 6,
+    keywords: [
+      "RSA Conference booth design",
+      "trade show booth design quote",
+      "design a tradeshow booth",
+      "design a booth",
+      "conference booth training",
+      "Moscone Center booth",
+      "B2B event marketer San Francisco",
+    ],
+    faqs: [
+      {
+        question: "How do you design a booth for RSA Conference?",
+        answer:
+          "Start with a one-page brief: booth number and size, both neighbors, one anchor message that reads from 30 feet, how many reps will be on the carpet, and a plan to bring the booth back for three years with one piece you can swap. Attach RSA's exhibitor manual, and settle the booth type before arguing about height, since standard inline rules cap the back wall at 8 feet.",
+      },
+      {
+        question: "What should a trade show booth design quote include?",
+        answer:
+          "Design and renderings, structure, graphics, installation and dismantle labor, drayage, electrical, rigging and internet, shipping and storage. Some of those are billed by the show's own contractors, so fill them in from the exhibitor manual's order forms for every quote and compare the bottom row.",
+      },
+      {
+        question: "Should you rent or build a custom booth for RSA Conference?",
+        answer:
+          "Rent if you can't promise a second year. A hybrid of a rental frame and custom graphics suits a smaller vendor with one strong message. A custom build only makes sense with three years signed off, so ask every exhibit house to quote Year Two and Year Three in their own columns.",
+      },
+      {
+        question: "When should conference booth training happen?",
+        answer:
+          "On the carpet during build, after the graphics go up. A 10 by 20 looks much smaller with four reps and a demo screen in it, and nobody learns where to stand from a slide.",
+      },
+    ],
+  },
+  {
     slug: "exhibition-stand-staff-training",
     title: "Half the Stand Doesn't Work for You: Exhibition Stand Staff Training for Mixed Crews",
     metaTitle: "Exhibition Stand Staff Training",

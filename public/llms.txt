@@ -38,6 +38,7 @@ This is deliberate and it matches `robots.txt` exactly. There is no separate, st
 - [Who Has to Show Up: Which Conference Sponsorship Package I'd Buy](https://www.whitneystevenson.com/blog/conference-sponsorship-package): How she chooses between a booth, a speaking session, a hosted dinner and a logo package, by who has to work it and which year of the show it is.
 - [The Good Stuff Goes in the Mail: What I'd Hand Out at a B2B Trade Show Booth](https://www.whitneystevenson.com/blog/trade-show-giveaways): How she splits a trade show giveaway budget between a cheap aisle pile and gifts mailed after real booth conversations, with a comparison table and why she never scans a badge for a mint.
 - [Forty Percent Stay Home: How I Plan for No-Shows at a Free B2B Event](https://www.whitneystevenson.com/blog/free-event-no-shows): How she sets the venue guarantee below the RSVP count for free B2B events, which no-show fixes work for which rooms, with a comparison table and why she'd skip the deposit for customers.
+- [Ask for the Year Three Number: RSA Conference Booth Design, Quotes and Training](https://www.whitneystevenson.com/blog/rsa-conference-booth-design): How she compares RSA Conference booth quotes line by line over three years, including the show-side labor and drayage a cheap quote leaves out, plus where booth training belongs.
 
 ## Optional
 
