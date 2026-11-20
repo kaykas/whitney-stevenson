@@ -243,7 +243,11 @@ export function tradeShowBoothDesignPost() {
         <Link href="/blog/measure-trade-show-roi">
           how I measure trade show ROI
         </Link>
-        .
+        . For RSA specifically, I wrote up{" "}
+        <Link href="/blog/rsa-conference-booth-design">
+          how I compare RSA Conference booth quotes over three years
+        </Link>
+        , line by line.
       </p>
 
       <h2>Build the Booth You&rsquo;ll Want in Year Three</h2>

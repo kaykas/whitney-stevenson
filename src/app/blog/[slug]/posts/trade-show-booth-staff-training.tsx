@@ -273,6 +273,15 @@ export function boothStaffTrainingPost() {
         .
       </p>
 
+      <p>
+        The brief and the booth quote that come months before this briefing
+        are in{" "}
+        <Link href="/blog/rsa-conference-booth-design">
+          my notes on RSA Conference booth design
+        </Link>
+        .
+      </p>
+
       <h2>Snacks</h2>
 
       <p>

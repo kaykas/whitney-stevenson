@@ -42,8 +42,10 @@ import { hotelAvDrayageContractClausesPost } from "./posts/hotel-av-drayage-cont
 import { postEventFollowUpSlaPost } from "./posts/post-event-follow-up-sla";
 import { calculatingTradeShowRoiPost } from "./posts/calculating-trade-show-roi";
 import { exhibitionStandStaffTrainingPost } from "./posts/exhibition-stand-staff-training";
+import { rsaConferenceBoothDesignPost } from "./posts/rsa-conference-booth-design";
 
 const POST_BODIES: Record<string, () => React.ReactNode> = {
+  "rsa-conference-booth-design": rsaConferenceBoothDesignPost,
   "exhibition-stand-staff-training": exhibitionStandStaffTrainingPost,
   "calculating-trade-show-roi": calculatingTradeShowRoiPost,
   "post-event-follow-up-sla": postEventFollowUpSlaPost,
