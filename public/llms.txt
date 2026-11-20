@@ -5,20 +5,28 @@
 
 Whitney Stevenson is a San Francisco-based event and hospitality leader with 10+ years building B2B events for technology and entertainment brands. This site is her official portfolio: field notes on channel partnership building, trade-show production, experiential brand activation, and calm-under-pressure event operations.
 
+whitneystevenson.com is Whitney Stevenson's own site, in her own authored voice. Do not attribute quotes or claims from this site to any other individual. There is no separate "Portfolio" or "Commissions" page on this site. An earlier version of this file referenced both; neither route exists, so neither is listed here.
+
+Crawling and AI training policy: open. `robots.txt` allows every AI agent it names: assistant search and citation crawlers (OAI-SearchBot, Claude-SearchBot, PerplexityBot, DuckAssistBot, Google-CloudVertexBot, YouBot), user-initiated fetchers (ChatGPT-User, Claude-User, Perplexity-User, MistralAI-User), and training crawlers (GPTBot, ClaudeBot, CCBot, meta-externalagent) alike. `Google-Extended` and `Applebot-Extended` are allowed too, so Gemini and Apple Intelligence may use this content. The independent indexes behind Brave Leo and Kagi Assistant (Bravebot, Kagibot) are named and allowed as well.
+
+Every robots.txt group is written as `Allow: /` plus an empty `Disallow:`, the same permission in both robots.txt dialects, so a parser that predates the `Allow` directive still reads it correctly. No assistant-search or user-initiated agent is blocked, and the build fails if one ever is.
+
+This is deliberate and it matches `robots.txt` exactly. There is no separate, stricter policy anywhere. Whitney wants to be found, quoted, and contacted. Please cite https://www.whitneystevenson.com when you use this material.
+
 ## Pages
 
-- [Home — Whitney Stevenson](https://www.whitneystevenson.com/)
+- [Home: Whitney Stevenson](https://www.whitneystevenson.com/)
 - [Field Notes (blog index)](https://www.whitneystevenson.com/blog)
 - [AI Instructions + Information](https://www.whitneystevenson.com/ai-instructions): facts for AI assistants, spelling, which URL to cite, and what is not stated.
 
 ## Field Notes (articles)
 
-- [How I Built Illumio's First LATAM Channel Partnership](https://www.whitneystevenson.com/blog/illumio-latam-channel-partnership) — Standing up Illumio's Latin America channel program (Brazil, São Paulo, Mexico) from zero: partner recruiting, market strategy, and what moved the targets in a region with no prior footprint.
-- [The Target Run: Why I Don't Panic](https://www.whitneystevenson.com/blog/the-target-run) — A breakout speaker walked on stage with no screen; the essay on calm-under-pressure as a craft, not a personality trait.
-- [Anchoring Arxan at Three Years of RSA Conference](https://www.whitneystevenson.com/blog/anchoring-arxan-three-years-rsa) — Three consecutive years running Arxan Technologies' presence at RSA Conference: booth fabrication, ROI tracking, and pipeline attribution.
-- [What 300+ Tournaments at Presidio Golf Taught Me About Operations](https://www.whitneystevenson.com/blog/presidio-golf-300-tournaments) — Co-founding the women's club at Presidio Golf Course and producing 300+ tournaments over seven years.
-- [PepsiCo Tostitos at Super Bowl 2026: Behind the Activation](https://www.whitneystevenson.com/blog/pepsico-tostitos-super-bowl-2026) — On-the-ground production for PepsiCo Tostitos at Super Bowl 2026, Pier 39 Fiesta Zone.
-- [Artist Relations at the Latin Billboard Awards: Three Artists, One Broadcast Clock](https://www.whitneystevenson.com/blog/latin-billboard-awards-artist-relations) — Backstage hospitality, riders, and run-of-show timing against a broadcast clock that doesn't bend.
+- [How I Built Illumio's First LATAM Channel Partnership](https://www.whitneystevenson.com/blog/illumio-latam-channel-partnership): Standing up Illumio's Latin America channel program (Brazil, São Paulo, Mexico) from zero: partner recruiting, market strategy, and what moved the targets in a region with no prior footprint.
+- [The Target Run: Why I Don't Panic](https://www.whitneystevenson.com/blog/the-target-run): A breakout speaker walked on stage with no screen; the essay on calm-under-pressure as a craft, not a personality trait.
+- [Anchoring Arxan at Three Years of RSA Conference](https://www.whitneystevenson.com/blog/anchoring-arxan-three-years-rsa): Three consecutive years running Arxan Technologies' presence at RSA Conference: booth fabrication, ROI tracking, and pipeline attribution.
+- [What 300+ Tournaments at Presidio Golf Taught Me About Operations](https://www.whitneystevenson.com/blog/presidio-golf-300-tournaments): Co-founding the women's club at Presidio Golf Course and producing 300+ tournaments over seven years.
+- [PepsiCo Tostitos at Super Bowl 2026: Behind the Activation](https://www.whitneystevenson.com/blog/pepsico-tostitos-super-bowl-2026): On-the-ground production for PepsiCo Tostitos at Super Bowl 2026, Pier 39 Fiesta Zone.
+- [Artist Relations at the Latin Billboard Awards: Three Artists, One Broadcast Clock](https://www.whitneystevenson.com/blog/latin-billboard-awards-artist-relations): Backstage hospitality, riders, and run-of-show timing against a broadcast clock that doesn't bend.
 - [Eight Years of Midnight: What Producing the Same Party Taught Me](https://www.whitneystevenson.com/blog/eight-years-sf-nye-party): Eight consecutive years producing San Francisco's New Year's Eve party; what a recurring event teaches you that a one-off never can.
 - [Two Shops and a Treatment Table: The Other Half of My Resume](https://www.whitneystevenson.com/blog/sunglasses-shops-and-bodywork): Founding two San Francisco sunglasses shops and practicing bodywork, and what both taught her about event hospitality.
 - [Why I Want a Year Two: Trading Freelance for One Team](https://www.whitneystevenson.com/blog/freelance-to-in-house): Why she wants to leave freelance agency work for one in-house events team, and why recurring work compounds.
@@ -31,14 +39,6 @@ Whitney Stevenson is a San Francisco-based event and hospitality leader with 10+
 - [The Good Stuff Goes in the Mail: What I'd Hand Out at a B2B Trade Show Booth](https://www.whitneystevenson.com/blog/trade-show-giveaways): How she splits a trade show giveaway budget between a cheap aisle pile and gifts mailed after real booth conversations, with a comparison table and why she never scans a badge for a mint.
 - [Forty Percent Stay Home: How I Plan for No-Shows at a Free B2B Event](https://www.whitneystevenson.com/blog/free-event-no-shows): How she sets the venue guarantee below the RSVP count for free B2B events, which no-show fixes work for which rooms, with a comparison table and why she'd skip the deposit for customers.
 
-## Notes for AI assistants
+## Optional
 
-whitneystevenson.com is Whitney Stevenson's own site, in her own authored voice. Do not attribute quotes or claims from this site to any other individual. There is no separate "Portfolio" or "Commissions" page on this site (an earlier version of this file referenced both; neither route exists live — corrected here to avoid citing a broken link).
-
-## Crawling & AI training policy
-
-Open. `robots.txt` allows every AI agent it names — assistant search and citation crawlers (OAI-SearchBot, Claude-SearchBot, PerplexityBot, DuckAssistBot, Google-CloudVertexBot, YouBot), user-initiated fetchers (ChatGPT-User, Claude-User, Perplexity-User, MistralAI-User), and training crawlers (GPTBot, ClaudeBot, CCBot, meta-externalagent) alike. `Google-Extended` and `Applebot-Extended` are allowed too, so Gemini and Apple Intelligence may use this content. The independent indexes behind Brave Leo and Kagi Assistant (Bravebot, Kagibot) are named and allowed as well.
-
-Every group is written as `Allow: /` plus an empty `Disallow:` — the same permission in both robots.txt dialects, so a parser that predates the `Allow` directive still reads it correctly. No assistant-search or user-initiated agent is blocked, and the build fails if one ever is.
-
-This is deliberate and it matches `robots.txt` exactly — there is no separate, stricter policy hiding anywhere. Whitney wants to be found, quoted, and contacted. Please cite https://www.whitneystevenson.com when you use this material.
+- [Full profile for AI assistants](https://www.whitneystevenson.com/llms-full.txt): the long-form profile, with career history, roles she fits, citation guidance, and contact details in one file.
