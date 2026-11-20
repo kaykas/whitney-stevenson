@@ -17,6 +17,8 @@ type Story = {
   title: string;
   body: string;
   image?: string;
+  /** Alt text for `image`; required whenever `image` is set. */
+  imageAlt?: string;
   /** Slug of the Field Note that tells this story in full, when one exists. */
   slug?: string;
 };
@@ -29,6 +31,7 @@ const stories: Story[] = [
     slug: "illumio-latam-channel-partnership",
     body: "Built Illumio's first-ever LATAM channel partnership from the ground up. Stood up the program across Brazil, São Paulo, and Mexico — partner recruitment, market strategy, and engagement that landed the targets in a region with no prior footprint.",
     image: "/whitney/photos/illumio-golf-booth.jpg",
+    imageAlt: "Illumio sponsor table on a golf course fairway, with an orange Illumio tablecloth and branded caps",
   },
   {
     n: "02",
@@ -37,6 +40,7 @@ const stories: Story[] = [
     slug: "anchoring-arxan-three-years-rsa",
     body: "Three consecutive years anchoring presence at RSA Conference. Booth fabrication, ROI tracking, and pipeline attribution in a hyper-competitive cybersecurity landscape.",
     image: "/whitney/photos/rsa-year-three.jpeg",
+    imageAlt: "RSA Conference expo floor under the giant RSA sign, Year Three",
   },
   {
     n: "03",
@@ -45,6 +49,7 @@ const stories: Story[] = [
     slug: "pepsico-tostitos-super-bowl-2026",
     body: "On-the-ground production for PepsiCo Tostitos at Super Bowl 2026. High-stakes, massive-scale brand activation requiring flawless execution under pressure.",
     image: "/whitney/photos/tostitos-fiesta-zone.jpeg",
+    imageAlt: "Tostitos Fiesta Zone at Pier 39 with a branded delivery robot greeting visitors",
   },
   {
     n: "04",
@@ -59,6 +64,7 @@ const stories: Story[] = [
     slug: "presidio-golf-300-tournaments",
     body: "Co-founded the women's club at the West Coast's second-oldest course. 300+ tournaments executed across seven years — every detail of every day, owned end-to-end.",
     image: "/whitney/photos/presidio-merch-medallion.jpg",
+    imageAlt: "Navy tournament caps and a Presidio Golf Course bag-tag medallion",
   },
   {
     n: "06",
@@ -67,6 +73,7 @@ const stories: Story[] = [
     slug: "sunglasses-shops-and-bodywork",
     body: "Founder of an entrepreneurial sunglasses venture — two San Francisco locations. Alongside the business, a practicing bodyworker — Facial Release and Access Consciousness — bringing the same precision and care to one-on-one work.",
     image: "/whitney/photos/sunglasses-retail-portrait.jpg",
+    imageAlt: "Whitney smiling beside a San Francisco polarized sunglasses display in a retail shop",
   },
 ];
 
@@ -128,9 +135,13 @@ export default function Home() {
 
             <div className="hero-image-container">
               <div className="hero-date">10+</div>
-              <div
+              <img
                 className="hero-image"
-                style={{ backgroundImage: "url('/photos/whitney-hero.jpeg')" }}
+                src="/photos/whitney-hero.jpeg"
+                alt="Whitney Stevenson in a red top and name badge, smiling at an event work table"
+                width={800}
+                height={800}
+                fetchPriority="high"
               />
               <div
                 className="oval-badge"
@@ -308,10 +319,12 @@ export default function Home() {
               <article className="story-card" key={s.n}>
                 <span className="story-number">{s.n}</span>
                 {s.image && (
-                  <div
+                  <img
                     className="story-image"
-                    style={{ backgroundImage: `url('${s.image}')` }}
-                    aria-hidden="true"
+                    src={s.image}
+                    alt={s.imageAlt ?? ""}
+                    loading="lazy"
+                    decoding="async"
                   />
                 )}
                 <div className="sans-label" style={{ marginBottom: 6, opacity: 0.7 }}>{s.tag}</div>
@@ -346,34 +359,42 @@ export default function Home() {
             </div>
             <div className="field-strip-grid">
               <div className="field-photo">
-                <div
+                <img
                   className="img"
-                  style={{ backgroundImage: "url('/whitney/photos/alpha-engineering-swag.jpeg')" }}
-                  aria-hidden="true"
+                  src="/whitney/photos/alpha-engineering-swag.jpeg"
+                  alt="Alpha AI Engineering branded table stacked with backpacks, socks, pens and beanies before doors open"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="caption sans-label">Booth setup · pre-doors</div>
               </div>
               <div className="field-photo">
-                <div
+                <img
                   className="img"
-                  style={{ backgroundImage: "url('/whitney/photos/golf-event-cannon.jpg')" }}
-                  aria-hidden="true"
+                  src="/whitney/photos/golf-event-cannon.jpg"
+                  alt="Whitney on a golf course tee box shouldering a long ball-launcher cannon at a golf event"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="caption sans-label">Activation rig · golf event</div>
               </div>
               <div className="field-photo">
-                <div
+                <img
                   className="img"
-                  style={{ backgroundImage: "url('/whitney/photos/nike-golf-cart.jpg')" }}
-                  aria-hidden="true"
+                  src="/whitney/photos/nike-golf-cart.jpg"
+                  alt="Whitney in a black Nike polo and sunglasses, smiling from a golf cart between holes"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="caption sans-label">Course day · between holes</div>
               </div>
               <div className="field-photo">
-                <div
+                <img
                   className="img"
-                  style={{ backgroundImage: "url('/whitney/photos/cap-denim-bluesky.jpg')" }}
-                  aria-hidden="true"
+                  src="/whitney/photos/cap-denim-bluesky.jpg"
+                  alt="Whitney in a trucker cap and denim jacket, smiling against a clear blue sky"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="caption sans-label">Off-the-clock</div>
               </div>

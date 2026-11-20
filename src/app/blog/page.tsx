@@ -79,10 +79,12 @@ export default function BlogIndex() {
               <article className="story-card" key={p.slug}>
                 <span className="story-number">→</span>
                 {p.hero && (
-                  <div
+                  <img
                     className="story-image"
-                    style={{ backgroundImage: `url('${p.hero}')` }}
-                    aria-hidden="true"
+                    src={p.hero}
+                    alt={p.heroAlt ?? ""}
+                    loading="lazy"
+                    decoding="async"
                   />
                 )}
                 <div className="sans-label" style={{ marginBottom: 6, opacity: 0.7 }}>
