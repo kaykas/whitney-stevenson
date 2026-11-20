@@ -190,9 +190,11 @@ section {
   width: 100%;
   max-width: 400px;
   aspect-ratio: 4/5;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  object-position: center;
   background-color: var(--text-dark);
-  background-size: cover;
-  background-position: center;
   filter: grayscale(20%) contrast(110%);
   border-radius: 28px;
   box-shadow: 0 20px 60px -20px rgba(45, 27, 61, 0.35);
@@ -283,8 +285,10 @@ section {
 .story-image {
   width: 100%;
   aspect-ratio: 4/3;
-  background-size: cover;
-  background-position: center;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  object-position: center;
   background-color: rgba(107, 33, 168, 0.08);
   border-radius: 18px;
   margin-bottom: 8px;
@@ -316,8 +320,10 @@ section {
 .field-photo .img {
   width: 100%;
   aspect-ratio: 3/4;
-  background-size: cover;
-  background-position: center;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  object-position: center;
   border-radius: 22px;
   filter: saturate(105%);
   box-shadow: 0 12px 30px -12px rgba(45, 27, 61, 0.25);
@@ -342,8 +348,10 @@ section {
 .post-hero {
   width: 100%;
   aspect-ratio: 16/9;
-  background-size: cover;
-  background-position: center;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  object-position: center;
   border-radius: 28px;
   box-shadow: 0 20px 60px -20px rgba(45, 27, 61, 0.35);
   margin-bottom: 50px;
@@ -427,8 +435,9 @@ section {
   width: 96px;
   height: 96px;
   border-radius: 18px;
-  background-size: cover;
-  background-position: center;
+  display: block;
+  object-fit: cover;
+  object-position: center;
   filter: grayscale(15%) contrast(108%);
   box-shadow: 0 10px 24px -10px rgba(45, 27, 61, 0.3);
 }

@@ -169,10 +169,11 @@ export default async function PostPage({
               {post.description}
             </p>
             {post.hero && (
-              <div
+              <img
                 className="post-hero"
-                style={{ backgroundImage: `url('${post.hero}')` }}
-                aria-hidden="true"
+                src={post.hero}
+                alt={post.heroAlt ?? ""}
+                fetchPriority="high"
               />
             )}
             <div className="post-body">
@@ -203,10 +204,14 @@ export default async function PostPage({
             )}
             <div className="post-footer">
               <div className="post-author">
-                <div
+                <img
                   className="post-author-img"
-                  style={{ backgroundImage: "url('/photos/whitney-hero.jpeg')" }}
-                  aria-hidden="true"
+                  src="/photos/whitney-hero.jpeg"
+                  alt="Whitney Stevenson, author portrait"
+                  width={96}
+                  height={96}
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div>
                   <div className="sans-label" style={{ marginBottom: 6 }}>

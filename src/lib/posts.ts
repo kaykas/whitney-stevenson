@@ -22,6 +22,13 @@ export type Post = {
   keywords: string[];
   hero?: string;
   /**
+   * Alt text for `hero`. Required whenever `hero` is set: the hero renders as a
+   * real <img> (not a CSS background) so search engines can index it, and an
+   * indexable image needs a description of what is actually in the photo.
+   * Enforced by scripts/check-background-images.mjs.
+   */
+  heroAlt?: string;
+  /**
    * Optional FAQ for the post. Rendered as a visible section under the body
    * AND as FAQPage JSON-LD from this same array, so the structured data can
    * never drift from what a reader sees. Answers are plain text, drawn only
@@ -1471,6 +1478,8 @@ export const posts: Post[] = [
       "channel marketing Latin America",
     ],
     hero: "/whitney/photos/illumio-golf-booth.jpg",
+    heroAlt:
+      "Illumio sponsor table on a golf course fairway, with an orange Illumio tablecloth, branded caps and a Zero Trust Segmentation banner",
     faqs: [
       {
         question: "What did Illumio have in Latin America when Whitney Stevenson started?",
@@ -1561,6 +1570,8 @@ export const posts: Post[] = [
       "Arxan Technologies events",
     ],
     hero: "/whitney/photos/rsa-year-three.jpeg",
+    heroAlt:
+      "Two attendees on the RSA Conference expo floor under the giant RSA sign, captioned Survived Year 3 at RSA",
     faqs: [
       {
         question: "How did Whitney Stevenson run Arxan's presence at RSA Conference?",
@@ -1602,6 +1613,8 @@ export const posts: Post[] = [
       "white-glove event operations",
     ],
     hero: "/whitney/photos/presidio-merch-medallion.jpg",
+    heroAlt:
+      "Navy tournament caps embroidered The City in gold, with a Presidio Golf Course bag-tag medallion showing the Golden Gate Bridge",
     faqs: [
       {
         question: "What did Whitney Stevenson do at Presidio Golf Course?",
@@ -1648,6 +1661,8 @@ export const posts: Post[] = [
       "high-pressure event execution",
     ],
     hero: "/whitney/photos/tostitos-fiesta-zone.jpeg",
+    heroAlt:
+      "Tostitos Fiesta Zone at Pier 39 in San Francisco, with a branded Serve Robotics delivery robot greeting visitors on the boardwalk",
     faqs: [
       {
         question: "What was the Tostitos Fiesta Zone at Super Bowl 2026?",
