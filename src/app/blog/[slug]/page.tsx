@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FEED_ALTERNATE_TYPES } from "@/lib/feed";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { posts, getPost, getOlderPosts } from "@/lib/posts";
@@ -105,13 +106,14 @@ export async function generateMetadata({
     title: post.metaTitle,
     description: post.metaDescription,
     keywords: post.keywords,
-    alternates: { canonical: `/blog/${post.slug}` },
+    alternates: { canonical: `/blog/${post.slug}`, ...FEED_ALTERNATE_TYPES },
     openGraph: {
       title: post.metaTitle,
       description: post.metaDescription,
       type: "article",
       url: `https://www.whitneystevenson.com/blog/${post.slug}`,
       publishedTime: post.date,
+      modifiedTime: post.date,
       // Always emit og:image — posts without a hero photo fall back to the
       // site default, otherwise Ahrefs flags the URL as
       // "Open Graph tags incomplete".

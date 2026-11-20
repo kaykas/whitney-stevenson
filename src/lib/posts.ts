@@ -1693,7 +1693,7 @@ export function getPost(slug: string): Post | undefined {
 }
 
 /** Newest first. Same-day posts keep their order in `posts`. */
-function byDateDesc(): Post[] {
+export function byDateDesc(): Post[] {
   return [...posts].sort((a, b) => b.date.localeCompare(a.date));
 }
 
