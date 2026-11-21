@@ -1,4 +1,5 @@
 // Shared facts for the AI discovery endpoints (/.well-known/ai.txt,
+// /.well-known/agent-card.json,
 // /ai/summary.json, /ai/faq.json). Like ai-instructions.ts, every value here
 // restates something already published on the site. The FAQ endpoint renders
 // from `aiFaqs`, the same array behind the /ai-instructions FAQPage JSON-LD, so
@@ -8,6 +9,7 @@ import { SITE_ORIGIN } from "@/lib/bot-policy";
 
 export const AI_DISCOVERY_PATHS = {
   aiTxt: "/.well-known/ai.txt",
+  agentCard: "/.well-known/agent-card.json",
   summary: "/ai/summary.json",
   faq: "/ai/faq.json",
   llms: "/llms.txt",

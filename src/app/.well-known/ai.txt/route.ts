@@ -23,6 +23,7 @@ export function GET() {
     "",
     "# Discovery",
     `Summary: ${abs(P.summary)}`,
+    `Agent-Card: ${abs(P.agentCard)}`,
     `FAQ: ${abs(P.faq)}`,
     `LLMs: ${abs(P.llms)}`,
     `LLMs-Full: ${abs(P.llmsFull)}`,

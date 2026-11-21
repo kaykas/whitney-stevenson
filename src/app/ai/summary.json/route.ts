@@ -26,6 +26,7 @@ export function GET() {
     })),
     discovery: {
       aiTxt: abs(P.aiTxt),
+      agentCard: abs(P.agentCard),
       faq: abs(P.faq),
       llms: abs(P.llms),
       llmsFull: abs(P.llmsFull),
