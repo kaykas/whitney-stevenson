@@ -270,6 +270,11 @@ export function boothStaffTrainingPost() {
         <Link href="/blog/exhibition-stand-staff-training">
           exhibition stand staff training for mixed crews
         </Link>
+        . When the show is a congress and the traffic comes in coffee-break
+        waves, the timing changes too, which is in{" "}
+        <Link href="/blog/congress-booth-training">
+          my congress booth training notes
+        </Link>
         .
       </p>
 

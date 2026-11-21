@@ -174,7 +174,10 @@ export function exhibitionStandStaffTrainingPost() {
         prefab package, three walls and a fascia board with your name on it)
         is often 3 by 3 meters, nine square meters total, and three people
         standing in it already look like a queue. You can&rsquo;t teach
-        anybody where to stand on a slide.
+        anybody where to stand on a slide. If the show is a congress, where
+        delegates sit in sessions and flood the hall at coffee breaks, I add
+        the program grid to that walk-through, and I wrote that up as{" "}
+        <Link href="/blog/congress-booth-training">congress booth training</Link>.
       </p>
 
       <h2>Where Each Option Fits (and Where It Doesn&rsquo;t)</h2>

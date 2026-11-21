@@ -39,6 +39,47 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "congress-booth-training",
+    title: "Circle the Coffee Breaks: Congress Booth Training for Crews Used to Trade Shows",
+    metaTitle: "Congress Booth Training for Exhibitors",
+    description:
+      "Build congress booth training around the printed program. Delegates spend most of the day in sessions and flood the exhibition hall at coffee breaks and lunch, so I'd train the whole crew on the stand during build, put everyone on the floor for every break, and give them one opener: which session did you just come out of? At a medical congress, your medical-legal team writes what the crew may say.",
+    metaDescription:
+      "Congress booth training: staff to the program's coffee breaks, train on the stand during build, and use one opener.",
+    date: "2026-11-21",
+    readingMinutes: 6,
+    keywords: [
+      "congress booth training",
+      "medical congress booth staff",
+      "congress exhibition stand",
+      "conference booth training",
+      "trade show booth staff training",
+      "B2B event marketer San Francisco",
+    ],
+    faqs: [
+      {
+        question: "How is congress booth training different from trade show booth training?",
+        answer:
+          "Congress traffic arrives in waves. Delegates are in sessions most of the day and flood the exhibition hall at coffee breaks and lunch, so the training is built around the printed program grid: the full crew at the front edge for every break, two people holding the stand during sessions.",
+      },
+      {
+        question: "What should booth staff say first at a congress?",
+        answer:
+          "Ask which session the delegate just came out of. It gets a real answer fast, and it tells the crew who to hand the visitor to, such as the rep who sat in that session or the most senior technical person if the visitor presented in it.",
+      },
+      {
+        question: "Who writes the booth script at a medical congress?",
+        answer:
+          "If you sell drugs or devices, your medical-legal team does. Industry codes like the PhRMA Code in the U.S. and EFPIA's in Europe restrict what a company can hand a healthcare professional, so the booth training covers the redirect line and where the medical information desk is.",
+      },
+      {
+        question: "When should congress booth training happen?",
+        answer:
+          "On the stand during build, after the graphics go up, with the program grid in hand. For a crew new to congress traffic, add a ten-minute coffee break drill during the first session block on day one.",
+      },
+    ],
+  },
+  {
     slug: "rsa-conference-booth-design",
     title: "Ask for the Year Three Number: RSA Conference Booth Design, Quotes and Training",
     metaTitle: "RSA Conference Booth Design and Quotes",
