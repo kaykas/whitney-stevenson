@@ -9,6 +9,11 @@
  * the sitewide Person on `/` to reference at least one Organization, so the
  * nodes can't silently disappear.
  *
+ * SEOmator schema-organization (ERRORS.md 2026-11-21): `/` must also carry at
+ * least one TOP-LEVEL Organization node (a block root or a direct @graph
+ * entry) with an absolute https `logo`, and every logo or sameAs present on
+ * any Organization must be an absolute https URL.
+ *
  * Reads the PRERENDERED HTML, same as the other postbuild checks.
  * Standalone: `npm run check:org`.
  */
@@ -58,10 +63,16 @@ const files = walk(APP_DIR).filter(
 const failures = [];
 let orgCount = 0;
 let homeOrgs = 0;
+let homeTopLevelWithLogo = 0;
+const isHttps = (v) => typeof v === "string" && /^https:\/\/[^\s]+$/.test(v);
+const topLevel = (block) => [].concat(block).flatMap((b) => (b && b["@graph"] ? b["@graph"] : [b]));
 
 for (const file of files) {
   const route = routeOf(file);
   for (const block of jsonLd(readFileSync(file, "utf8"))) {
+    if (route === "/") {
+      homeTopLevelWithLogo += topLevel(block).filter((n) => n && isOrg(n) && isHttps(n.logo)).length;
+    }
     for (const node of nodes(block)) {
       if (!isOrg(node)) continue;
       orgCount++;
@@ -70,10 +81,17 @@ for (const file of files) {
       if (!node.name) failures.push(`${label} missing "name"`);
       if (!/^https:\/\/[^\s]+$/.test(node.url ?? "")) failures.push(`${label} missing absolute https "url"`);
       if (!node.description) failures.push(`${label} missing "description"`);
+      if (node.logo !== undefined && !isHttps(node.logo)) failures.push(`${label} "logo" is not an absolute https URL`);
+      for (const s of [].concat(node.sameAs ?? [])) {
+        if (!isHttps(s)) failures.push(`${label} sameAs "${s}" is not an absolute https URL`);
+      }
     }
   }
 }
 
+if (homeTopLevelWithLogo === 0) {
+  failures.push(`/: no top-level Organization node with an https "logo" (SEOmator schema-organization)`);
+}
 if (homeOrgs === 0) failures.push(`/: no Organization nodes found (Person worksFor/alumniOf/memberOf dropped?)`);
 
 if (failures.length) {
