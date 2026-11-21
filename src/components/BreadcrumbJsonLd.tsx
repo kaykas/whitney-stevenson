@@ -17,6 +17,8 @@ export default function BreadcrumbJsonLd({ items }: { items: Crumb[] }) {
   const schema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
+    // Same `<route url>#breadcrumb` id that the route's WebPage.breadcrumb points at.
+    "@id": `${ORIGIN}${items[items.length - 1].path}#breadcrumb`,
     itemListElement: items.map((c, i) => ({
       "@type": "ListItem",
       position: i + 1,

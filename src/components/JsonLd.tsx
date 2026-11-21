@@ -43,6 +43,8 @@ const ORGS = {
 const SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Person",
+  // Referenced by the homepage WebPage.mainEntity (src/lib/schema.ts PERSON_ID).
+  "@id": "https://www.whitneystevenson.com/#person",
   name: "Whitney Stevenson",
   jobTitle: "Event & Hospitality Leader",
   description:

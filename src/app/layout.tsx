@@ -102,28 +102,9 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
           rel="stylesheet"
         />
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(
-                {
-                    "@context": "https://schema.org",
-                    "@type": "WebPage",
-                    "speakable": {
-                      "@type": "SpeakableSpecification",
-                      "cssSelector": [
-                        "h1",
-                        "h2",
-                        ".speakable",
-                        "[data-speakable]"
-                      ]
-                    },
-                    "url": "https://www.whitneystevenson.com/"
-                }
-              ),
-            }}
-          />
-</head>
+        {/* No WebPage JSON-LD here: it is page-specific (name, url), so each
+            route renders its own via webPageSchema(). ERRORS.md 2026-11-21. */}
+      </head>
       <body>
         {children}
         <SiteFooter />

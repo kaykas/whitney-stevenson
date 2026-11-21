@@ -3,7 +3,7 @@ import { FEED_ALTERNATE_TYPES } from "@/lib/feed";
 import type { Metadata } from "next";
 import { posts } from "@/lib/posts";
 import BreadcrumbJsonLd, { HOME_CRUMB, FIELD_NOTES_CRUMB } from "@/components/BreadcrumbJsonLd";
-import { articleSchema, withContext } from "@/lib/schema";
+import { articleSchema, webPageSchema, withContext } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Field Notes",
@@ -20,8 +20,19 @@ export const metadata: Metadata = {
 
 // Blog JSON-LD: one BlogPosting per card, built by the same helper as the
 // post pages, so the index describes its articles as Article-family schema.
+const WEBPAGE_SCHEMA = withContext(
+  webPageSchema({
+    name: "Field Notes",
+    path: "/blog",
+    description: metadata.description ?? undefined,
+    breadcrumb: true,
+    mainEntityId: "https://www.whitneystevenson.com/blog#blog",
+  }),
+);
+
 const BLOG_SCHEMA = withContext({
   "@type": "Blog",
+  "@id": "https://www.whitneystevenson.com/blog#blog",
   name: "Field Notes",
   url: "https://www.whitneystevenson.com/blog",
   author: { "@type": "Person", name: "Whitney Stevenson", url: "https://www.whitneystevenson.com" },
@@ -101,6 +112,10 @@ export default function BlogIndex() {
         </main>
       </div>
       <BreadcrumbJsonLd items={[HOME_CRUMB, FIELD_NOTES_CRUMB]} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBPAGE_SCHEMA) }} // static data only
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(BLOG_SCHEMA) }} // static data only

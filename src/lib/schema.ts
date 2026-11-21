@@ -44,10 +44,11 @@ export function articleSchema(a: ArticleInput) {
   const imgUrl = `${ORIGIN}${a.image ?? DEFAULT_IMAGE}`;
   return {
     "@type": a.type ?? "Article",
+    "@id": `${url}#article`,
     headline: a.headline,
     description: a.description,
     url,
-    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    mainEntityOfPage: { "@type": "WebPage", "@id": url, name: a.headline },
     datePublished: a.datePublished,
     dateModified: a.dateModified ?? a.datePublished,
     image: {
@@ -70,6 +71,44 @@ export function articleSchema(a: ArticleInput) {
     publisher: PUBLISHER,
     inLanguage: "en-US",
     ...(a.keywords?.length ? { keywords: a.keywords.join(", ") } : {}),
+  };
+}
+
+// Per-route WebPage node carrying the speakable selectors. It used to be one
+// hardcoded block in layout.tsx with no `name` and `url: "/"`, so every route
+// claimed to be the homepage and SEOmator failed schema-required-fields
+// ("WebPage: missing name") on all of them. Each route now renders its own.
+// Guarded by scripts/check-webpage-schema.mjs. See ERRORS.md (2026-11-21).
+export type WebPageInput = {
+  /** Visible page name, usually the page title or the post's <h1>. */
+  name: string;
+  /** Site-relative path; "/" for the homepage. */
+  path: string;
+  description?: string;
+  /** Route also renders <BreadcrumbJsonLd>; links to its `#breadcrumb` id. */
+  breadcrumb?: boolean;
+  /** `@id` of the node the page is about (article, blog, or the Person). */
+  mainEntityId?: string;
+};
+
+/** Sitewide Person id, owned by the Person block in src/components/JsonLd.tsx. */
+export const PERSON_ID = `${ORIGIN}/#person`;
+
+export function webPageSchema(p: WebPageInput) {
+  const url = p.path === "/" ? `${ORIGIN}/` : `${ORIGIN}${p.path}`;
+  return {
+    "@type": "WebPage",
+    "@id": url,
+    url,
+    name: p.name,
+    ...(p.description ? { description: p.description } : {}),
+    ...(p.breadcrumb ? { breadcrumb: { "@id": `${url}#breadcrumb` } } : {}),
+    ...(p.mainEntityId ? { mainEntity: { "@id": p.mainEntityId } } : {}),
+    inLanguage: "en-US",
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["h1", "h2", ".speakable", "[data-speakable]"],
+    },
   };
 }
 
