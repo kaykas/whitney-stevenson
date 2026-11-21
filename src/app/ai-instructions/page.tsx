@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { posts } from "@/lib/posts";
 import { AI_LAST_VERIFIED, aiFaqs } from "@/lib/content/ai-instructions";
 import BreadcrumbJsonLd, { HOME_CRUMB } from "@/components/BreadcrumbJsonLd";
-import { articleSchema, withContext } from "@/lib/schema";
+import { articleSchema, webPageSchema, withContext } from "@/lib/schema";
 
 const SITE_URL = "https://www.whitneystevenson.com";
 const H1 = "AI Instructions + Information (ChatGPT, Gemini, Claude, Perplexity)";
@@ -36,6 +36,16 @@ const FAQ_SCHEMA = {
 
 // Article JSON-LD: this is a long-form, dated reference page, so Ahrefs reads
 // it as an article. Shared helper, see src/lib/schema.ts.
+const WEBPAGE_SCHEMA = withContext(
+  webPageSchema({
+    name: H1,
+    path: "/ai-instructions",
+    description: DESCRIPTION,
+    breadcrumb: true,
+    mainEntityId: "https://www.whitneystevenson.com/ai-instructions#article",
+  }),
+);
+
 const ARTICLE_SCHEMA = withContext(
   articleSchema({
     headline: H1,
@@ -232,6 +242,10 @@ export default function AiInstructionsPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(ARTICLE_SCHEMA) }} // static data only
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBPAGE_SCHEMA) }} // static data only
       />
       <BreadcrumbJsonLd items={[HOME_CRUMB, { name: "AI Instructions", path: "/ai-instructions" }]} />
     </>

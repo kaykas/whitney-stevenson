@@ -3,7 +3,7 @@ import { FEED_ALTERNATE_TYPES } from "@/lib/feed";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { posts, getPost, getOlderPosts } from "@/lib/posts";
-import { articleSchema, withContext } from "@/lib/schema";
+import { articleSchema, webPageSchema, withContext } from "@/lib/schema";
 import BreadcrumbJsonLd, { HOME_CRUMB, FIELD_NOTES_CRUMB } from "@/components/BreadcrumbJsonLd";
 import { illumioLatamPost } from "./posts/illumio-latam-channel-partnership";
 import { targetRunPost } from "./posts/the-target-run";
@@ -237,6 +237,22 @@ export default async function PostPage({
       </div>
       <BreadcrumbJsonLd
         items={[HOME_CRUMB, FIELD_NOTES_CRUMB, { name: post.title, path: `/blog/${post.slug}` }]}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            withContext(
+              webPageSchema({
+                name: post.title,
+                path: `/blog/${post.slug}`,
+                description: post.metaDescription,
+                breadcrumb: true,
+                mainEntityId: `https://www.whitneystevenson.com/blog/${post.slug}#article`,
+              }),
+            ),
+          ),
+        }} // static data only
       />
       {/* FAQPage JSON-LD renders from the same post.faqs array as the visible
           section above, so the markup can't describe Q&As a reader can't see.

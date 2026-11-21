@@ -2,6 +2,7 @@ import Link from "next/link";
 import ContactForm from "./contact-form";
 import { posts } from "@/lib/posts";
 import type { Metadata } from "next";
+import { PERSON_ID, webPageSchema, withContext } from "@/lib/schema";
 
 // Home-only title. "Whitney Stephenson" (with a ph) is how a lot of people
 // search for her; the title answers that spelling in its first two words and
@@ -76,6 +77,19 @@ const stories: Story[] = [
     imageAlt: "Whitney smiling beside a San Francisco polarized sunglasses display in a retail shop",
   },
 ];
+
+// Homepage WebPage node (name, url, speakable). Page-specific, so it lives
+// here and not in layout.tsx. ERRORS.md 2026-11-21.
+const WEBPAGE_SCHEMA = withContext(
+  webPageSchema({
+    name: "Whitney Stevenson, B2B Event Marketer",
+    path: "/",
+    // Same wording as the author description in src/lib/schema.ts.
+    description:
+      "Event & hospitality leader, San Francisco. 10+ years building B2B events for technology and entertainment.",
+    mainEntityId: PERSON_ID,
+  }),
+);
 
 export default function Home() {
   return (
@@ -526,6 +540,10 @@ export default function Home() {
             </div>
           </section>
 
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBPAGE_SCHEMA) }} // static data only
+          />
           {/* FAQPage JSON-LD mirrors the visible FAQ above. Home-only: it used to
               sit in layout.tsx and leaked onto every route. */}
                 <script
