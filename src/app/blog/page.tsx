@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FEED_ALTERNATE_TYPES } from "@/lib/feed";
 import type { Metadata } from "next";
 import { posts } from "@/lib/posts";
 import BreadcrumbJsonLd, { HOME_CRUMB, FIELD_NOTES_CRUMB } from "@/components/BreadcrumbJsonLd";
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
   title: "Field Notes",
   description:
     "Stories from the room — case studies, signature moments, and operational philosophy from 10+ years of B2B event marketing in San Francisco.",
-  alternates: { canonical: "/blog" },
+  alternates: { canonical: "/blog", ...FEED_ALTERNATE_TYPES },
   // Override the layout's openGraph.url — without this the page inherits the
   // homepage og:url, which mismatches the /blog canonical ("Open Graph URL
   // not matching canonical").

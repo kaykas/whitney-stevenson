@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FEED_ALTERNATE_TYPES } from "@/lib/feed";
 import type { Metadata } from "next";
 import { posts } from "@/lib/posts";
 import { AI_LAST_VERIFIED, aiFaqs } from "@/lib/content/ai-instructions";
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
   // layout's " | Whitney Stevenson" suffix (scripts/check-titles.mjs).
   title: "AI Instructions + Information",
   description: DESCRIPTION,
-  alternates: { canonical: "/ai-instructions" },
+  alternates: { canonical: "/ai-instructions", ...FEED_ALTERNATE_TYPES },
   openGraph: {
     url: `${SITE_URL}/ai-instructions`,
   },

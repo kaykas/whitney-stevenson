@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { FEED_ALTERNATE_TYPES } from "@/lib/feed";
 import JsonLd from "@/components/JsonLd";
 import SiteFooter from "@/components/SiteFooter";
 import "./globals.css";
@@ -37,7 +38,7 @@ export const metadata: Metadata = {
     "Whitney Stevenson",
   ],
   authors: [{ name: "Whitney Stevenson" }],
-  alternates: { canonical: "/" },
+  alternates: { canonical: "/", ...FEED_ALTERNATE_TYPES },
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,
