@@ -45,8 +45,10 @@ import { calculatingTradeShowRoiPost } from "./posts/calculating-trade-show-roi"
 import { exhibitionStandStaffTrainingPost } from "./posts/exhibition-stand-staff-training";
 import { rsaConferenceBoothDesignPost } from "./posts/rsa-conference-booth-design";
 import { congressBoothTrainingPost } from "./posts/congress-booth-training";
+import { measureTradeShowSuccessPost } from "./posts/measure-trade-show-success";
 
 const POST_BODIES: Record<string, () => React.ReactNode> = {
+  "measure-trade-show-success": measureTradeShowSuccessPost,
   "congress-booth-training": congressBoothTrainingPost,
   "rsa-conference-booth-design": rsaConferenceBoothDesignPost,
   "exhibition-stand-staff-training": exhibitionStandStaffTrainingPost,

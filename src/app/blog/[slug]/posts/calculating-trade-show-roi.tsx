@@ -306,7 +306,12 @@ export function calculatingTradeShowRoiPost() {
         <Link href="/blog/post-event-follow-up-sla">
           follow-up SLA numbers
         </Link>{" "}
-        that explain why the pipeline looks the way it does.
+        that explain why the pipeline looks the way it does. The targets for
+        all of it get set much earlier, in{" "}
+        <Link href="/blog/measure-trade-show-success">
+          the scorecard I write into the booth design brief
+        </Link>
+        .
       </p>
 
       <p>
