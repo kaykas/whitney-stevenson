@@ -115,3 +115,34 @@ export function webPageSchema(p: WebPageInput) {
 export function withContext<T extends object>(schema: T) {
   return { "@context": "https://schema.org", ...schema };
 }
+
+// Sitewide WebSite node with a SearchAction. SEOmator schema-website-search
+// flagged the site for having no WebSite schema, so answer engines and Google
+// had no declared site name or on-site search entry point. The urlTemplate
+// points at the real /search route (src/app/search/page.tsx), which filters
+// the Field Notes. Rendered once, on the homepage. Guarded by
+// scripts/check-website-schema.mjs. See ERRORS.md (2026-11-22).
+export const WEBSITE_ID = `${ORIGIN}/#website`;
+export const SEARCH_PATH = "/search";
+export const SEARCH_PARAM = "q";
+
+export function websiteSchema() {
+  return {
+    "@type": "WebSite",
+    "@id": WEBSITE_ID,
+    url: `${ORIGIN}/`,
+    name: "Whitney Stevenson",
+    description:
+      "Whitney Stevenson, B2B event marketer in San Francisco: stories, Field Notes, and how to reach her.",
+    inLanguage: "en-US",
+    publisher: { "@id": PERSON_ID },
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${ORIGIN}${SEARCH_PATH}?${SEARCH_PARAM}={search_term_string}`,
+      },
+      "query-input": "required name=search_term_string",
+    },
+  };
+}

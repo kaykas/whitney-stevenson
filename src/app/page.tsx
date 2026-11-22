@@ -2,7 +2,7 @@ import Link from "next/link";
 import ContactForm from "./contact-form";
 import { posts } from "@/lib/posts";
 import type { Metadata } from "next";
-import { PERSON_ID, webPageSchema, withContext } from "@/lib/schema";
+import { PERSON_ID, webPageSchema, websiteSchema, withContext } from "@/lib/schema";
 
 // Home-only title. "Whitney Stephenson" (with a ph) is how a lot of people
 // search for her; the title answers that spelling in its first two words and
@@ -90,6 +90,9 @@ const WEBPAGE_SCHEMA = withContext(
     mainEntityId: PERSON_ID,
   }),
 );
+
+// Sitewide WebSite + SearchAction, homepage only. ERRORS.md 2026-11-22.
+const WEBSITE_SCHEMA = withContext(websiteSchema());
 
 export default function Home() {
   return (
@@ -543,6 +546,10 @@ export default function Home() {
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBPAGE_SCHEMA) }} // static data only
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} // static data only
           />
           {/* FAQPage JSON-LD mirrors the visible FAQ above. Home-only: it used to
               sit in layout.tsx and leaked onto every route. */}
