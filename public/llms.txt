@@ -40,6 +40,7 @@ This is deliberate and it matches `robots.txt` exactly. There is no separate, st
 - [Forty Percent Stay Home: How I Plan for No-Shows at a Free B2B Event](https://www.whitneystevenson.com/blog/free-event-no-shows): How she sets the venue guarantee below the RSVP count for free B2B events, which no-show fixes work for which rooms, with a comparison table and why she'd skip the deposit for customers.
 - [Ask for the Year Three Number: RSA Conference Booth Design, Quotes and Training](https://www.whitneystevenson.com/blog/rsa-conference-booth-design): How she compares RSA Conference booth quotes line by line over three years, including the show-side labor and drayage a cheap quote leaves out, plus where booth training belongs.
 - [Circle the Coffee Breaks: Congress Booth Training for Crews Used to Trade Shows](https://www.whitneystevenson.com/blog/congress-booth-training): How she trains a booth crew for a congress, staffing to the program's coffee breaks instead of a steady trade show stream, with a one-line opener and a note on medical-legal owning the script at medical congresses.
+- [Write the Scorecard Before the Booth: How I Measure Trade Show Success](https://www.whitneystevenson.com/blog/measure-trade-show-success): How she finds the ROI of a trade show and measures success with a four-line scorecard written into the booth design brief, with a measures table and a filled-in worked example.
 
 ## Optional
 

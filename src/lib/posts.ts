@@ -39,6 +39,48 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "measure-trade-show-success",
+    title: "Write the Scorecard Before the Booth: How I Measure Trade Show Success",
+    metaTitle: "How to Measure Trade Show Success",
+    description:
+      "Find the ROI of a trade show by subtracting the show's full cost from the revenue it sourced and dividing by that cost, then read it next to your other lead sources. That number lands six to twelve months late, so I measure trade show success with a scorecard written into the booth design brief: meetings booked and held, note rate, opportunities by day 90, and pipeline-to-cost at the end of Q2.",
+    metaDescription:
+      "How to measure trade show success and find its ROI: a four-line scorecard written into the booth design brief.",
+    date: "2026-11-22",
+    readingMinutes: 7,
+    keywords: [
+      "how to measure trade show success",
+      "how do you find the roi of a trade show",
+      "measuring roi on trade shows",
+      "measure trade show success",
+      "designing a trade show booth",
+      "trade show success metrics",
+      "B2B event marketer San Francisco",
+    ],
+    faqs: [
+      {
+        question: "How do you find the ROI of a trade show?",
+        answer:
+          "Take the revenue the show sourced, subtract everything the show cost, and divide by what it cost. On a B2B show that closed-won number lands six to twelve months out, usually after next year's booth deposit is due, so it shouldn't be your only definition of success.",
+      },
+      {
+        question: "How do you measure trade show success?",
+        answer:
+          "With a scorecard written before the booth is designed, with a target on each line: meetings booked before the show and held, note rate (the share of badge scans with a written sentence from a real conversation), opportunities created by 60 to 90 days out, and pipeline-to-cost at the end of Q2 next to your other lead sources. Closed-won ROI is reported at year end as the check on whether the Q2 pipeline was honest.",
+      },
+      {
+        question: "How does designing a trade show booth affect how you measure success?",
+        answer:
+          "Each design choice should move a line on the scorecard. A seated corner off the aisle moves booked meetings, front corners clear for staff move the note rate, and one message readable from 30 feet moves opportunities by filtering who stops. A taller back wall moves none of them.",
+      },
+      {
+        question: "Should you report total badge scans as trade show success?",
+        answer:
+          "No. Total scans mostly reward whatever giveaway is on the counter and rarely say anything about buyers. Put the badge count in the appendix, and lead with pipeline-to-cost.",
+      },
+    ],
+  },
+  {
     slug: "congress-booth-training",
     title: "Circle the Coffee Breaks: Congress Booth Training for Crews Used to Trade Shows",
     metaTitle: "Congress Booth Training for Exhibitors",
