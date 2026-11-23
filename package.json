@@ -5,9 +5,10 @@
   "scripts": {
     "dev": "next dev -p 3002",
     "build": "next build",
-    "postbuild": "node scripts/check-outgoing-links.mjs && node scripts/check-meta-descriptions.mjs && node scripts/check-bot-policy.mjs && node scripts/check-titles.mjs && node scripts/check-canonical-origin.mjs && node scripts/check-og-canonical.mjs && node scripts/check-breadcrumbs.mjs && node scripts/check-faq.mjs && node scripts/check-incoming-links.mjs && node scripts/check-article-schema.mjs && node scripts/check-organization-schema.mjs && node scripts/check-llms-txt.mjs && node scripts/check-background-images.mjs && node scripts/check-feed.mjs && node scripts/check-webpage-schema.mjs",
+    "postbuild": "node scripts/check-outgoing-links.mjs && node scripts/check-meta-descriptions.mjs && node scripts/check-bot-policy.mjs && node scripts/check-titles.mjs && node scripts/check-canonical-origin.mjs && node scripts/check-og-canonical.mjs && node scripts/check-breadcrumbs.mjs && node scripts/check-faq.mjs && node scripts/check-incoming-links.mjs && node scripts/check-article-schema.mjs && node scripts/check-organization-schema.mjs && node scripts/check-llms-txt.mjs && node scripts/check-background-images.mjs && node scripts/check-feed.mjs && node scripts/check-webpage-schema.mjs && node scripts/check-website-schema.mjs",
     "start": "next start",
     "lint": "eslint",
+    "check:website": "node scripts/check-website-schema.mjs",
     "check:links": "node scripts/check-outgoing-links.mjs",
     "check:meta": "node scripts/check-meta-descriptions.mjs",
     "check:bots": "node scripts/check-bot-policy.mjs",
