@@ -5,6 +5,44 @@ export function exhibitionStandStaffTrainingPost() {
     <>
       <p>Half the stand doesn&rsquo;t work for you.</p>
 
+      <div className="post-table-wrap">
+        <table className="post-table">
+          <caption>
+            Exhibition staff training at a glance: the short version of
+            everything below
+          </caption>
+          <tbody>
+            <tr>
+              <th scope="row">Who gets trained</th>
+              <td>
+                Everyone on the carpet, split by who pays them: your reps, a
+                partner&rsquo;s reps, agency staff, the visiting executive
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">How long</th>
+              <td>About 20 minutes for your own reps, down to 2 for the executive</td>
+            </tr>
+            <tr>
+              <th scope="row">Where</th>
+              <td>On the stand during build, after the graphics go up</td>
+            </tr>
+            <tr>
+              <th scope="row">When</th>
+              <td>Before every show, including the ones the team has worked for years</td>
+            </tr>
+            <tr>
+              <th scope="row">The rule everyone shares</th>
+              <td>One sentence in the notes field after every real conversation</td>
+            </tr>
+            <tr>
+              <th scope="row">Signed before the show</th>
+              <td>A written lead agreement with any partner scanning badges</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <p>
         Most of the world says exhibition stand where Americans say trade show
         booth, and I already wrote up{" "}
@@ -162,6 +200,21 @@ export function exhibitionStandStaffTrainingPost() {
       <p>
         Hand them two names, take the scanner out of their hand, and point
         them at the aisle.
+      </p>
+
+      <h2>Train Before Every Show, Even Your Third RSA</h2>
+
+      <p>
+        Most exhibitors skip it. CEIR, the trade show industry&rsquo;s
+        research center, reported back in 2012 that only 26 percent of
+        exhibitors trained their staff for all or most of their events, and
+        the guides that cite it today are still quoting that same old number.
+        I believe it. The team that worked RSA Conference last year assumes
+        it knows the drill, and by year three at Arxan I could have recited
+        the briefing in my sleep, which is exactly why I kept giving it: the
+        booth number changed, the demo changed, and two of the reps were new.
+        Twenty minutes the night before costs less than one badge scan with
+        an empty notes field.
       </p>
 
       <h2>Train on the Carpet During Build</h2>

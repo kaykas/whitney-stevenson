@@ -175,6 +175,7 @@ export const posts: Post[] = [
     readingMinutes: 6,
     keywords: [
       "exhibition stand staff training",
+      "exhibition staff training",
       "exhibition stand staffing",
       "co-marketed trade show booth",
       "agency booth staff",
@@ -201,6 +202,11 @@ export const posts: Post[] = [
         question: "Where should exhibition stand training happen?",
         answer:
           "On the stand, during build, after the graphics are up. A shell scheme stand at a European show is often 3 by 3 meters, and three people standing in it already look like a queue, so staff need to see the footprint to learn where to stand.",
+      },
+      {
+        question: "How often should exhibition staff be trained?",
+        answer:
+          "Before every show. A 2012 CEIR report found only 26 percent of exhibitors trained staff for all or most of their events, and veterans are the ones who skip it. The booth number, the demo and some of the reps change every year, so I give the 20-minute briefing the night before, every time.",
       },
     ],
   },
