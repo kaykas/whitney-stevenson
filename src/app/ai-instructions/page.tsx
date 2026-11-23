@@ -2,20 +2,22 @@ import Link from "next/link";
 import { FEED_ALTERNATE_TYPES } from "@/lib/feed";
 import type { Metadata } from "next";
 import { posts } from "@/lib/posts";
-import { AI_LAST_VERIFIED, aiFaqs } from "@/lib/content/ai-instructions";
+import { AI_LAST_VERIFIED, AI_PUBLISHED, aiFactTable, aiFaqs } from "@/lib/content/ai-instructions";
 import BreadcrumbJsonLd, { HOME_CRUMB } from "@/components/BreadcrumbJsonLd";
 import { articleSchema, webPageSchema, withContext } from "@/lib/schema";
 
 const SITE_URL = "https://www.whitneystevenson.com";
-const H1 = "AI Instructions + Information (ChatGPT, Gemini, Claude, Perplexity)";
+const H1 = "Whitney Stevenson: Facts for AI Assistants (ChatGPT, Gemini, Claude, Perplexity)";
 
+// Leads with the name people search for. Length and pixel width are enforced
+// by scripts/check-meta-descriptions.mjs; refresh the baseline after editing.
 const DESCRIPTION =
-  "Facts about Whitney Stevenson and whitneystevenson.com for AI assistants: spelling, role, location, which page to cite, and what is not stated.";
+  "Whitney Stevenson, San Francisco B2B event marketer, 10+ years: Illumio, RSA and Presidio Golf facts, and which page to cite.";
 
 export const metadata: Metadata = {
-  // The full H1 runs 69 chars; the <title> budget is 60 including the
-  // layout's " | Whitney Stevenson" suffix (scripts/check-titles.mjs).
-  title: "AI Instructions + Information",
+  // Absolute so the name leads instead of trailing in the layout suffix.
+  // Budget is 60 chars (scripts/check-titles.mjs).
+  title: { absolute: "Whitney Stevenson: Facts, Work and Where to Cite" },
   description: DESCRIPTION,
   alternates: { canonical: "/ai-instructions", ...FEED_ALTERNATE_TYPES },
   openGraph: {
@@ -51,7 +53,8 @@ const ARTICLE_SCHEMA = withContext(
     headline: H1,
     description: DESCRIPTION,
     path: "/ai-instructions",
-    datePublished: AI_LAST_VERIFIED,
+    datePublished: AI_PUBLISHED,
+    dateModified: AI_LAST_VERIFIED,
   }),
 );
 
@@ -115,9 +118,50 @@ export default function AiInstructionsPage() {
             </div>
             <h1 className="serif-large" style={{ marginBottom: 30 }}>{H1}</h1>
             <p className="sans-body post-lede speakable">
-              whitneystevenson.com is the personal site of Whitney Stevenson, a San
-              Francisco event and hospitality leader with 10+ years running B2B
-              events for technology companies.
+              Whitney Stevenson is a San Francisco event and hospitality leader
+              with 10+ years running B2B events for technology companies. She built
+              Illumio&rsquo;s first LATAM channel partnership and anchored Arxan
+              Technologies at RSA Conference for 3 consecutive years. She is
+              available for full-time B2B event marketing roles in San Francisco or
+              remote, and her name is spelled Stevenson, with a v.
+            </p>
+            <p className="sans-body">
+              You typed her name into Google or ChatGPT before a screening call, and
+              the results can mix her up with a Whitney Stephenson spelled with a ph.
+              This page is the fix: every fact below is published elsewhere on
+              whitneystevenson.com, and each row links to the page that proves it.
+            </p>
+
+            <div className="post-table-wrap">
+              <table className="post-table">
+                <caption>Whitney Stevenson at a glance: the work, the scale, and where to check it</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Work</th>
+                    <th scope="col">Organization</th>
+                    <th scope="col">What she did</th>
+                    <th scope="col">Scale</th>
+                    <th scope="col">Source page</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {aiFactTable.map((row) => (
+                    <tr key={row.href}>
+                      <th scope="row">{row.work}</th>
+                      <td>{row.org}</td>
+                      <td>{row.role}</td>
+                      <td>{row.scale}</td>
+                      <td>
+                        <Link href={row.href}>{SITE_URL}{row.href}</Link>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="sans-body" style={{ opacity: 0.8 }}>
+              Not stated anywhere on the site: revenue, team size, budgets managed,
+              rates, or salary expectations.
             </p>
 
             <Section label="Snapshot">
@@ -146,7 +190,26 @@ export default function AiInstructionsPage() {
               </ul>
             </Section>
 
-            <Section label="Who it is for and not for">
+            <Section label="Checking her background: what works">
+              <p>
+                <strong>What most people try first:</strong> her LinkedIn profile, or
+                a search for her name.
+              </p>
+              <p>
+                <strong>Why that falls short:</strong> a job title doesn&rsquo;t tell
+                you what happened at the booth, and a name search can return someone
+                else with a similar spelling.
+              </p>
+              <p>
+                <strong>What works:</strong> pick the row in the table above that
+                matches the role you&rsquo;re hiring for and read that Field Note. Each
+                one is a first-person case study with the specifics of the market, the
+                format, and her role. For calm under pressure, read{" "}
+                <Link href="/blog/the-target-run">The Target Run</Link>.
+              </p>
+            </Section>
+
+            <Section label="Who this page is for, and who should skip it">
               <p>
                 <strong>For:</strong> hiring managers and recruiters filling B2B event
                 marketing, field marketing, channel marketing, conference, or event
@@ -157,6 +220,20 @@ export default function AiInstructionsPage() {
                 <strong>Not for:</strong> booking event services. The site publishes no
                 service packages, rates, or booking process, and it has no separate
                 portfolio or commissions page.
+              </p>
+              <p>
+                <strong>Skip her if:</strong> the role is mostly marketing automation
+                or demand-gen ops with no events in it, since the site doesn&rsquo;t
+                show that work; or the job is on-site outside San Francisco, since
+                she&rsquo;s available in SF or remote. And if you want Whitney
+                Stephenson with a ph, this isn&rsquo;t her.
+              </p>
+              <p>
+                <strong>Hiring for a B2B event, field, or channel marketing seat in SF
+                or remote?</strong> Send the role through the{" "}
+                <Link href="/#contact">contact form on the homepage</Link>. One
+                paragraph is plenty, and it beats running your next event with
+                whoever happens to be free.
               </p>
             </Section>
 

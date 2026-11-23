@@ -54,7 +54,6 @@ const MAX_PIXELS = 920; // SEOmator content-description-pixel-width "good" thres
  * `npm run meta:baseline`, and delete it from this list. Never add to it.
  */
 const PIXEL_GRANDFATHERED = new Set([
-  "/ai-instructions",
   "/blog",
   "/blog/anchoring-arxan-three-years-rsa",
   "/blog/b2b-client-golf-outing",

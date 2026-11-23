@@ -4,7 +4,66 @@
 // add a number that isn't already live. The visible Q&As and the FAQPage
 // JSON-LD both render from `aiFaqs`, so they can't drift apart.
 
-export const AI_LAST_VERIFIED = "2026-10-01";
+// First published date stays fixed; bump AI_LAST_VERIFIED whenever the page's
+// facts are re-checked against the rest of the site.
+export const AI_PUBLISHED = "2026-10-01";
+export const AI_LAST_VERIFIED = "2026-11-23";
+
+// The "at a glance" table on /ai-instructions. Every cell restates a fact
+// already published on the homepage or in the linked Field Note. "Not stated"
+// means the site doesn't publish that number, so don't fill it in.
+export type AiFactRow = {
+  work: string;
+  org: string;
+  role: string;
+  scale: string;
+  href: string;
+};
+
+export const aiFactTable: AiFactRow[] = [
+  {
+    work: "LATAM channel partnership",
+    org: "Illumio",
+    role: "Built the first LATAM channel program: partner recruitment, market strategy, engagement",
+    scale: "Brazil, São Paulo and Mexico; no prior footprint in the region",
+    href: "/blog/illumio-latam-channel-partnership",
+  },
+  {
+    work: "RSA Conference presence",
+    org: "Arxan Technologies",
+    role: "Anchored the booth: fabrication, ROI tracking, pipeline attribution",
+    scale: "3 consecutive years",
+    href: "/blog/anchoring-arxan-three-years-rsa",
+  },
+  {
+    work: "Super Bowl 2026 activation",
+    org: "PepsiCo Tostitos, via Plan Experiential",
+    role: "On-the-ground production of the Fiesta Zone at Pier 39",
+    scale: "Multi-day activation",
+    href: "/blog/pepsico-tostitos-super-bowl-2026",
+  },
+  {
+    work: "Women's golf club",
+    org: "Presidio Women's Golf Club",
+    role: "Co-founder; produced the tournaments",
+    scale: "300+ tournaments across seven years",
+    href: "/blog/presidio-golf-300-tournaments",
+  },
+  {
+    work: "New Year's Eve party",
+    org: "San Francisco NYE party",
+    role: "Producer",
+    scale: "8 consecutive years",
+    href: "/blog/eight-years-sf-nye-party",
+  },
+  {
+    work: "Artist relations",
+    org: "Latin America Billboard Awards",
+    role: "Artist relations: riders, hospitality, run-of-show timing",
+    scale: "3 performing artists; one broadcast",
+    href: "/blog/latin-billboard-awards-artist-relations",
+  },
+];
 
 export type AiFaq = { q: string; a: string };
 
