@@ -123,15 +123,16 @@ export const posts: Post[] = [
   },
   {
     slug: "rsa-conference-booth-design",
-    title: "Ask for the Year Three Number: RSA Conference Booth Design, Quotes and Training",
-    metaTitle: "RSA Conference Booth Design and Quotes",
+    title: "Ask for the Year Three Number: How I Compare Exhibit Builders for RSA Conference",
+    metaTitle: "Exhibit Builders for RSA Conference",
     description:
-      "For RSA Conference booth design, send every exhibit house the same one-page brief and ask each for a line-item quote covering three years, including show-side labor and drayage at Moscone Center. The cheapest trade show booth design quote is usually the one that left the show-side costs for you. Then run booth training on the carpet during build.",
+      "To compare exhibit builders for RSA Conference, send every one the same one-page brief and ask for a line-item quote covering three years, with show-side labor and drayage at Moscone Center filled in. A full-service exhibit house fits a team with nobody free to manage the paperwork, a rental or hybrid fits a company that can't promise a second year, and a custom build only pays off with three RSAs signed off. The cheapest quote is usually the one that left the show-side costs for you.",
     metaDescription:
-      "RSA Conference booth design: get line-item quotes for three years, show labor and drayage included, then train on the carpet.",
+      "Exhibit builders for RSA Conference: get three-year, line-item quotes with Moscone labor and drayage in, then compare totals.",
     date: "2026-11-20",
-    readingMinutes: 6,
+    readingMinutes: 7,
     keywords: [
+      "exhibit builders for RSA Conference",
       "RSA Conference booth design",
       "trade show booth design quote",
       "design a tradeshow booth",
@@ -141,6 +142,11 @@ export const posts: Post[] = [
       "B2B event marketer San Francisco",
     ],
     faqs: [
+      {
+        question: "How do you choose an exhibit builder for RSA Conference?",
+        answer:
+          "Send every exhibit builder the same one-page brief and ask each for a line-item quote with Year Two and Year Three in their own columns. Fill in installation labor, drayage, electrical and internet from the exhibitor manual's order forms for every quote, then compare the bottom row instead of the renderings.",
+      },
       {
         question: "How do you design a booth for RSA Conference?",
         answer:
