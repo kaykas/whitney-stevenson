@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         url: "/photos/whitney-hero.jpeg",
         width: 800,
         height: 800,
-        alt: "Whitney Stevenson — B2B Event Marketing & Hospitality Leader, San Francisco",
+        alt: "Whitney Stevenson, B2B event marketing and hospitality leader in San Francisco",
       },
     ],
   },
