@@ -9,8 +9,37 @@ import { PERSON_ID, webPageSchema, websiteSchema, withContext } from "@/lib/sche
 // search for her; the title answers that spelling in its first two words and
 // says what she does. Absolute so the layout template doesn't append 20 chars.
 // Keep <= 58 chars (scripts/check-titles.mjs enforces 60).
+//
+// title, og:title, twitter:title and the <h1> all carry the exact brand token
+// "Whitney Stevenson" (SEOmator geo-brand-entity-sameas). The H1 needs the
+// space before <br /> or its text reads "WHITNEYSTEVENSON".
+// Guarded by scripts/check-brand-token.mjs. See ERRORS.md (2026-11-24).
+const HOME_TITLE = "Whitney Stevenson (not Stephenson), B2B Event Marketer";
+const HOME_DESCRIPTION =
+  "San Francisco event and hospitality leader with 10+ years of B2B events: Illumio LATAM, RSA, Super Bowl, Presidio Golf.";
 export const metadata: Metadata = {
-  title: { absolute: "Whitney Stephenson? It's Stevenson, B2B Event Marketer" },
+  title: { absolute: HOME_TITLE },
+  openGraph: {
+    title: HOME_TITLE,
+    description: HOME_DESCRIPTION,
+    type: "website",
+    url: "https://www.whitneystevenson.com/",
+    siteName: "Whitney Stevenson",
+    images: [
+      {
+        url: "/photos/whitney-hero.jpeg",
+        width: 800,
+        height: 800,
+        alt: "Whitney Stevenson — B2B Event Marketing & Hospitality Leader, San Francisco",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: HOME_TITLE,
+    description: HOME_DESCRIPTION,
+    images: ["/photos/whitney-hero.jpeg"],
+  },
 };
 
 type Story = {
@@ -131,7 +160,7 @@ export default function Home() {
                 <Link href="/blog/event-concierge-b2b-hospitality">Concierge</Link>
               </div>
               <h1 className="serif-huge">
-                WHITNEY<br />STEVENSON
+                WHITNEY{" "}<br />STEVENSON
                 <span className="h1-aside">
                   Searched Whitney Stephenson? Same event marketer, spelled with a v.
                 </span>
