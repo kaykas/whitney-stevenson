@@ -12,6 +12,11 @@ const ORIGIN = "https://www.whitneystevenson.com";
 // `sameAs`. Logo and LinkedIn URLs come from each org's own homepage, checked
 // live on 2026-11-21. digital.ai answers every request with a 403, so Arxan
 // has no verified logo and gets none. See ERRORS.md (2026-11-21).
+//
+// Rendered by src/app/page.tsx only, not layout.tsx. The Person bio and org
+// descriptions appear in the homepage copy and nowhere else, so on the other
+// routes SEOmator geo-schema-drift flagged them as schema text that is not
+// on the page. Other routes link to the Person by @id. ERRORS.md (2026-11-23).
 const ORGS = {
   planExperiential: {
     "@type": "Organization",
@@ -34,7 +39,10 @@ const ORGS = {
   arxan: {
     "@type": "Organization",
     "@id": `${ORIGIN}/#org-arxan`,
-    name: "Arxan Technologies",
+    // The page says "Arxan". The full company name goes in legalName so the
+    // schema name matches visible text (SEOmator geo-schema-drift).
+    name: "Arxan",
+    legalName: "Arxan Technologies",
     url: "https://digital.ai",
     description: "Application security company, now part of Digital.ai.",
   },

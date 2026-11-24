@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ContactForm from "./contact-form";
+import JsonLd from "@/components/JsonLd";
 import { posts } from "@/lib/posts";
 import type { Metadata } from "next";
 import { PERSON_ID, webPageSchema, websiteSchema, withContext } from "@/lib/schema";
@@ -551,6 +552,9 @@ export default function Home() {
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} // static data only
           />
+          {/* Person + Organization graph, homepage only: its bio and org facts are
+              visible here and nowhere else. SEOmator geo-schema-drift. */}
+          <JsonLd />
           {/* FAQPage JSON-LD mirrors the visible FAQ above. Home-only: it used to
               sit in layout.tsx and leaked onto every route. */}
                 <script

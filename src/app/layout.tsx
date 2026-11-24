@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { FEED_ALTERNATE_TYPES } from "@/lib/feed";
-import JsonLd from "@/components/JsonLd";
 import SiteFooter from "@/components/SiteFooter";
 import "./globals.css";
 import Script from "next/script";
@@ -103,12 +102,13 @@ export default function RootLayout({
           rel="stylesheet"
         />
         {/* No WebPage JSON-LD here: it is page-specific (name, url), so each
-            route renders its own via webPageSchema(). ERRORS.md 2026-11-21. */}
+            route renders its own via webPageSchema(). ERRORS.md 2026-11-21.
+            No Person/Organization graph either: it renders on the homepage
+            only, where its facts are visible. ERRORS.md 2026-11-23. */}
       </head>
       <body>
         {children}
         <SiteFooter />
-        <JsonLd />
         <Script
           src="https://analytics.ahrefs.com/analytics.js"
           data-key="s0n8sNjaBqGtru1g6u3f1Q"

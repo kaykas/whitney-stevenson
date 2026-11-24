@@ -9,8 +9,13 @@
 const ORIGIN = "https://www.whitneystevenson.com";
 const DEFAULT_IMAGE = "/photos/whitney-hero.jpeg";
 
+// The sitewide Person graph renders only on the homepage (ERRORS.md
+// 2026-11-23), so author/publisher carry its @id to stay linked to it.
+const PERSON_REF_ID = `${ORIGIN}/#person`;
+
 const AUTHOR = {
   "@type": "Person",
+  "@id": PERSON_REF_ID,
   name: "Whitney Stevenson",
   // Mirrors the visible author block under every post.
   jobTitle: "Event & hospitality leader",
@@ -22,6 +27,7 @@ const AUTHOR = {
 
 const PUBLISHER = {
   "@type": "Person",
+  "@id": PERSON_REF_ID,
   name: "Whitney Stevenson",
   url: ORIGIN,
 };
@@ -92,7 +98,7 @@ export type WebPageInput = {
 };
 
 /** Sitewide Person id, owned by the Person block in src/components/JsonLd.tsx. */
-export const PERSON_ID = `${ORIGIN}/#person`;
+export const PERSON_ID = PERSON_REF_ID;
 
 export function webPageSchema(p: WebPageInput) {
   const url = p.path === "/" ? `${ORIGIN}/` : `${ORIGIN}${p.path}`;
