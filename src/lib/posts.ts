@@ -1346,9 +1346,11 @@ export const posts: Post[] = [
     metaDescription:
       "What an event concierge does at B2B events: guest notes and speaker care, the quiet hospitality work that moves B2B pipeline.",
     date: "2026-09-30",
-    readingMinutes: 4,
+    readingMinutes: 5,
     keywords: [
       "event concierge B2B",
+      "access to exclusive events concierge",
+      "exclusive event access for clients",
       "executive event hospitality",
       "customer dinner event planning",
       "VIP guest experience events",
@@ -1374,6 +1376,11 @@ export const posts: Post[] = [
         question: "How does an event concierge keep track of guests?",
         answer:
           "Notes. Nice helps, notes scale. Whitney writes down allergies, the name of somebody's kid, the flight that got bumped to the red-eye, and the person a guest hoped to meet but was too polite to ask for. That file grows every time she sees someone, which is a big part of why eight years of the same New Year's Eve party got warmer each December.",
+      },
+      {
+        question: "Can an event concierge get guests access to exclusive events?",
+        answer:
+          "A lifestyle concierge, through a premium card or a paid membership, can find you a seat at somebody else's sold-out event. For B2B guests, Whitney would rather build the exclusive room herself: a suite near the conference or a dinner for twelve on the second night of RSA, where the guest list is the exclusive part and your own executive is at the table.",
       },
     ],
   },
