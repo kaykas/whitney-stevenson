@@ -17,6 +17,13 @@ const ORIGIN = "https://www.whitneystevenson.com";
 // descriptions appear in the homepage copy and nowhere else, so on the other
 // routes SEOmator geo-schema-drift flagged them as schema text that is not
 // on the page. Other routes link to the Person by @id. ERRORS.md (2026-11-23).
+//
+// SEOmator geo-brand-entity-sameas wants Knowledge Graph sameAs links.
+// Wikipedia, Wikidata and Crunchbase URLs come from each company's Wikidata
+// item (Illumio Q19881127, Arxan Technologies Q4802566), checked 2026-11-24.
+// Plan Experiential and Presidio Women's Golf Club have no Wikidata item.
+// Whitney's only verified profile is LinkedIn. Don't add other profile URLs
+// for her until she confirms them. See ERRORS.md (2026-11-24).
 const ORGS = {
   planExperiential: {
     "@type": "Organization",
@@ -34,7 +41,12 @@ const ORGS = {
     url: "https://www.illumio.com",
     description: "Cybersecurity company. Whitney built its first Latin America channel partnership.",
     logo: "https://cdn.prod.website-files.com/63cdb40b25368837c04197b3/6ab1adebbb4f0bee05aefa15_32%20Illumio%20Favicon.png",
-    sameAs: ["https://www.linkedin.com/company/illumio"],
+    sameAs: [
+      "https://www.linkedin.com/company/illumio",
+      "https://en.wikipedia.org/wiki/Illumio",
+      "https://www.wikidata.org/wiki/Q19881127",
+      "https://www.crunchbase.com/organization/illumio",
+    ],
   },
   arxan: {
     "@type": "Organization",
@@ -45,6 +57,11 @@ const ORGS = {
     legalName: "Arxan Technologies",
     url: "https://digital.ai",
     description: "Application security company, now part of Digital.ai.",
+    sameAs: [
+      "https://en.wikipedia.org/wiki/Arxan_Technologies",
+      "https://www.wikidata.org/wiki/Q4802566",
+      "https://www.crunchbase.com/organization/arxan-technologies",
+    ],
   },
   presidioWomensGolf: {
     "@type": "SportsOrganization",
