@@ -16,6 +16,59 @@ export function rsaConferenceBoothDesignPost() {
         the money problem has barely started.
       </p>
 
+      <div className="post-table-wrap">
+        <table className="post-table">
+          <caption>
+            Exhibit builders for RSA Conference compared: who each fits, what
+            they handle, what you still order from the show, and the trade-off
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Builder type</th>
+              <th scope="col">Best for</th>
+              <th scope="col">What they handle</th>
+              <th scope="col">What you still order from the show</th>
+              <th scope="col">Cost over three RSAs</th>
+              <th scope="col">Key trade-off</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Full-service exhibit house</th>
+              <td>A team with nobody free to fill in order forms</td>
+              <td>Design, build, graphics, freight, storage, often their own installation crew</td>
+              <td>Usually little, but confirm drayage, electrical and internet in writing</td>
+              <td>Highest Year One, lower Years Two and Three if you own the booth</td>
+              <td>You pay for the coordination, and storage bills arrive all year</td>
+            </tr>
+            <tr>
+              <th scope="row">Rental exhibit house</th>
+              <td>A first RSA, or a budget decided every January</td>
+              <td>Rented structure and graphics per show</td>
+              <td>Often labor, drayage, electrical and internet</td>
+              <td>Low each year, full price again every year</td>
+              <td>Your booth may look like somebody else&rsquo;s from last month</td>
+            </tr>
+            <tr>
+              <th scope="row">Hybrid: rental frame, custom graphics</th>
+              <td>A smaller security vendor with one strong anchor message</td>
+              <td>Rented frame, graphics you own and can swap</td>
+              <td>Often labor, drayage, electrical and internet</td>
+              <td>Low to middle; new graphics only when the message changes</td>
+              <td>Limited shapes, so it reads a little standard</td>
+            </tr>
+            <tr>
+              <th scope="row">Show-provided turnkey package, where offered</th>
+              <td>A company still deciding whether RSA is its show</td>
+              <td>Furniture and a sign from the show</td>
+              <td>Anything beyond the package</td>
+              <td>Lowest; decide again each year</td>
+              <td>Next to big neighbors it disappears</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <p>
         I ran Arxan Technologies&rsquo; booth at RSA Conference for three
         consecutive years, wedged between Palo Alto Networks and CrowdStrike,
@@ -28,6 +81,19 @@ export function rsaConferenceBoothDesignPost() {
         . This note is the paperwork around it. RSA happens in my city, and
         I&rsquo;d rather you spend the money on the booth than on the
         surprises.
+      </p>
+
+      <h2>Why Picking an Exhibit Builder by the Renderings Breaks</h2>
+
+      <p>
+        Most teams pick the exhibit builder whose renderings look best, then
+        find out what the booth costs when the show invoices land. That breaks
+        because the rendering is the one part every builder prices the same
+        way. The money hides in the lines a rendering never shows: installation
+        hours, crated weight for drayage, outlets, and what happens to the
+        booth in Year Two. What works is the same brief to every builder, a
+        quote broken into the lines in the table below, and a column for each
+        of three years. Then you are comparing booths, not guesses.
       </p>
 
       <h2>Write the Brief Before Anyone Quotes</h2>
@@ -233,6 +299,17 @@ export function rsaConferenceBoothDesignPost() {
         the hours for it, a full-service exhibit house that handles labor,
         freight and storage end to end will beat a stretched marketing
         manager filling in order forms at midnight, and I&rsquo;d hire one.
+      </p>
+
+      <h2>Who Should Skip a Custom Exhibit Builder</h2>
+
+      <p>
+        Skip the custom build if your RSA budget gets decided again every
+        January, if you can&rsquo;t say who will be on the carpet next year,
+        or if nobody on your team can own the storage and refurbishment line
+        between shows. A booth you own is wrong the minute you skip a year. In
+        any of those cases, rent, or start with a hybrid frame and spend the
+        difference on the people standing in it.
       </p>
 
       <h2>Booth Training Happens on the Carpet</h2>
