@@ -32,6 +32,71 @@ export function eventVendorManagementPost() {
         picks up for at 11 p.m.
       </p>
 
+      <div className="post-table-wrap">
+        <table className="post-table">
+          <caption>
+            Event vendor management, stage by stage: what the standard guides
+            tell you, what I add, and the event that taught me
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Stage</th>
+              <th scope="col">What the guides say</th>
+              <th scope="col">What I add</th>
+              <th scope="col">Where I learned it</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Choosing</th>
+              <td>Check past work and look for vendors who have done your kind of event</td>
+              <td>
+                Ask who runs the crew on install day, by name, and whether
+                they&rsquo;ll be on your build or somebody else&rsquo;s that week
+              </td>
+              <td>Tostitos Fiesta Zone, Pier 39</td>
+            </tr>
+            <tr>
+              <th scope="row">Contract</th>
+              <td>Detailed scope: menu, servings, setup and teardown times</td>
+              <td>A first name and an hour next to every critical confirmation</td>
+              <td>The Target Run</td>
+            </tr>
+            <tr>
+              <th scope="row">Briefing</th>
+              <td>One channel of communication, regular check-ins</td>
+              <td>
+                Walkthrough notes (dock door, power panel, freight elevator,
+                who holds the key at 9 p.m. on a Sunday) to every vendor who
+                loads in, before anybody quotes a delivery time
+              </td>
+              <td>My first venue walkthroughs</td>
+            </tr>
+            <tr>
+              <th scope="row">Contingency</th>
+              <td>Have a backup plan</td>
+              <td>Decide in advance who owns which kind of trouble</td>
+              <td>The Target Run</td>
+            </tr>
+            <tr>
+              <th scope="row">Paying</th>
+              <td>Track invoices</td>
+              <td>Invoices and damage assessments filed within 48 hours</td>
+              <td>Handing Pier 39 back</td>
+            </tr>
+            <tr>
+              <th scope="row">Review</th>
+              <td>Rate whether each vendor met expectations</td>
+              <td>
+                In January, decide whose slice of the night grows and whose
+                shrinks, and write down the first name of whoever saved us
+              </td>
+              <td>Eight years of San Francisco&rsquo;s New Year&rsquo;s Eve party</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <h2>Hire the Person Inside the Company</h2>
 
       <p>

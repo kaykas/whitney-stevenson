@@ -866,21 +866,27 @@ export const posts: Post[] = [
   {
     slug: "event-vendor-management",
     title: "The Caterer Picks Up at 11 p.m.: How I Manage Event Vendors",
-    metaTitle: "How I Manage Event Vendors",
+    metaTitle: "Event Vendor Management, Done by Name",
     description:
-      "During Super Bowl build week a damaged panel's replacement was stuck on I-80, and what mattered was the fabricator's lead carpenter. The vendor management guides are right about scope, contracts and backup plans. They manage companies, though. I manage the person on the dock, and I work hard at being the client they pick up for.",
+      "Event vendor management is choosing, contracting, briefing and paying the caterers, AV crews, fabricators and rental houses an event runs on. Do what the guides say. Then hire the crew lead by name, write down who confirms each critical item and by when, send every vendor your walkthrough notes before they quote a delivery time, and pay within 48 hours. The rest is being the client they pick up for at 11 p.m., which I learned at Pier 39 during Super Bowl 2026 and over eight years of San Francisco's New Year's Eve party.",
     metaDescription:
-      "How I manage event vendors: hire the person on the dock, name who confirms what and by when, share walkthrough notes, and be the client they pick up for.",
+      "Event vendor management by name: hire the crew lead, set who confirms what by when, send walkthrough notes, and pay within 48 hours.",
     date: "2026-10-13",
-    readingMinutes: 6,
+    readingMinutes: 7,
     keywords: [
       "event vendor management",
       "how to manage event vendors",
+      "managing event vendors",
       "event vendor relationships",
       "working with event vendors",
       "B2B event marketer San Francisco",
     ],
     faqs: [
+      {
+        question: "What is event vendor management?",
+        answer:
+          "Choosing, contracting, briefing and paying the outside companies an event runs on: caterers, AV crews, fabricators, rental houses, security. I manage the person at each one who will be on the dock, with a named owner and a deadline for every critical confirmation.",
+      },
       {
         question: "What matters most when choosing an event vendor?",
         answer:

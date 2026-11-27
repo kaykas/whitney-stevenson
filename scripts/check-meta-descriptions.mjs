@@ -71,7 +71,6 @@ const PIXEL_GRANDFATHERED = new Set([
   "/blog/event-marketing-interview-questions",
   "/blog/event-post-mortem",
   "/blog/event-run-of-show-cut-list",
-  "/blog/event-vendor-management",
   "/blog/event-venue-contract-clauses",
   "/blog/executive-vip-dinner-trade-show",
   "/blog/exhibition-stand-staff-training",
