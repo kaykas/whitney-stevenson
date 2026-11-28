@@ -161,10 +161,10 @@ export default function Home() {
               </div>
               <h1 className="serif-huge">
                 WHITNEY{" "}<br />STEVENSON
-                <span className="h1-aside">
-                  Searched Whitney Stephenson? Same event marketer, spelled with a v.
-                </span>
               </h1>
+              <p className="h1-aside">
+                Searched Whitney Stephenson? Same event marketer, spelled with a v.
+              </p>
               <div className="circular-text-element sans-label">EVENT • CONCIERGE</div>
             </div>
 
@@ -204,21 +204,21 @@ export default function Home() {
             <div className="stat-item">
               <div className="sans-label">Experience</div>
               <div className="stat-number">10+ Yrs</div>
-              <p className="sans-body" style={{ fontSize: 11 }}>
+              <p className="sans-body">
                 Running B2B events for technology companies.
               </p>
             </div>
             <div className="stat-item">
               <div className="sans-label">Execution</div>
               <div className="stat-number">300+</div>
-              <p className="sans-body" style={{ fontSize: 11 }}>
+              <p className="sans-body">
                 Tournaments managed at Presidio Golf Course.
               </p>
             </div>
             <div className="stat-item">
               <div className="sans-label">Stamina</div>
               <div className="stat-number">8 Yrs</div>
-              <p className="sans-body" style={{ fontSize: 11 }}>
+              <p className="sans-body">
                 Consecutive production of SF&rsquo;s NYE party.
               </p>
             </div>
@@ -375,7 +375,7 @@ export default function Home() {
                     decoding="async"
                   />
                 )}
-                <div className="sans-label" style={{ marginBottom: 6, opacity: 0.7 }}>{s.tag}</div>
+                <div className="sans-label" style={{ marginBottom: 6 }}>{s.tag}</div>
                 <h3 className="serif-medium">
                   {s.slug ? <Link href={`/blog/${s.slug}`}>{s.title}</Link> : s.title}
                 </h3>

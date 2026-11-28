@@ -47,7 +47,7 @@ export default function ContactForm() {
         <h3 className="serif-medium" style={{ marginBottom: 12, fontSize: "1.5rem" }}>
           Thank you — I&apos;ll be in touch.
         </h3>
-        <p className="sans-body" style={{ fontSize: 12 }}>
+        <p className="sans-body" style={{ fontSize: 14 }}>
           Replies typically land within a couple of business days.
         </p>
       </div>
