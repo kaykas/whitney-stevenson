@@ -4,6 +4,67 @@ export function eventConciergePost() {
   return (
     <>
       <p>
+        If you want access to exclusive events for yourself, a lifestyle
+        concierge sells that, usually through a premium card perk or a paid
+        membership that finds the sold-out seat. If you want your customers to
+        feel they got into something exclusive during conference week, hire
+        an event concierge onto your own team. The exclusive thing is then a
+        room you built, with a guest list you wrote, and every meeting in it
+        can be counted.
+      </p>
+
+      <div className="post-table-wrap">
+        <table className="post-table">
+          <caption>
+            Access to exclusive events: a lifestyle concierge membership
+            compared with an in-house B2B event concierge
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Question</th>
+              <th scope="col">Lifestyle concierge membership</th>
+              <th scope="col">In-house event concierge</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Who it serves</th>
+              <td>One member, sometimes their family</td>
+              <td>Your customers and partners, plus the speakers nobody else is looking after</td>
+            </tr>
+            <tr>
+              <th scope="row">What &ldquo;exclusive&rdquo; means</th>
+              <td>A sold-out show, a premiere, a table at the restaurant that says it&rsquo;s booked</td>
+              <td>
+                Twelve chairs in a private dining room on the second night of
+                RSA Conference, invited from your executive&rsquo;s own inbox
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Who pays</th>
+              <td>The member, through a card or an annual fee</td>
+              <td>The event budget, usually the hospitality line</td>
+            </tr>
+            <tr>
+              <th scope="row">How the access is won</th>
+              <td>Standing relationships with venues and ticket sellers</td>
+              <td>Booking the room the day show dates go public, then knowing exactly who&rsquo;s coming</td>
+            </tr>
+            <tr>
+              <th scope="row">What it should produce</th>
+              <td>A great night</td>
+              <td>A meeting that moves a deal a stage, tracked through the rep&rsquo;s follow-up</td>
+            </tr>
+            <tr>
+              <th scope="row">Where it breaks</th>
+              <td>Everyone wants the same seat</td>
+              <td>Nobody wrote down that the CISO doesn&rsquo;t drink</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
         There&rsquo;s a word next to my name at the top of this site that
         makes people squint a little. Concierge.
       </p>
@@ -103,6 +164,30 @@ export function eventConciergePost() {
         dignity when the equipment fails is concierge work of the most
         sweat-through-your-blazer kind, and it&rsquo;s the whole story of{" "}
         <Link href="/blog/the-target-run">The Target Run</Link>.
+      </p>
+
+      <h2>Can a Concierge Get My Customers Into Exclusive Events?</h2>
+
+      <p>
+        Sometimes. Buying the ticket is the boring version.
+      </p>
+
+      <p>
+        Companies like Quintessentially, and the concierge desks attached to
+        premium credit cards, are very good at finding a seat at somebody
+        else&rsquo;s party, and I&rsquo;d never talk a CMO out of using one for
+        a thank-you gift. But a courtside seat puts your customer next to a
+        stranger. I&rsquo;d rather spend the money on the{" "}
+        <Link href="/blog/keynote-sponsorship-vs-ancillary-suite">
+          suite across Howard Street
+        </Link>{" "}
+        during RSA week, or a{" "}
+        <Link href="/blog/executive-vip-dinner-trade-show">
+          dinner for twelve on the second night
+        </Link>
+        , where the guest list is the exclusive part and your CRO is sitting
+        two chairs away. Nobody can resell that seat. It only exists because
+        someone on your side noticed who should meet whom.
       </p>
 
       <h2>The Oat Milk</h2>
